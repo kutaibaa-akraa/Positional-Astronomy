@@ -1,0 +1,191 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!-- عنوان الصفحة -->
+	<title>
+الانكسار الجوي
+               </title> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="css/theme.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+	 <style type="text/css">
+/* تهيئة الصندوق لعناوين الفقرات القابلة للطي */
+input.button {
+  color: #fff; background: #c0c0c0 ;
+  font-size: 1em;
+  font-weight:bold;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: solid 1px #ffcf31 ;
+}
+</style>
+<script type="text/javascript">
+function toggleMe(a){
+  var e=document.getElementById(a);
+  if(!e)return true;
+  if(e.style.display=="none"){
+    e.style.display="block"
+  } else {
+    e.style.display="none"
+  }
+  return true;
+}
+</script>
+</head> 	
+<body> 
+<!-- Start of first page: #one -->
+<div data-role="page" id="one" data-theme="b">
+	<div data-role="header" data-position="fixed"><h1>الانكسار الجوي</h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
+	</div><!-- /header -->
+	<div data-role="content">
+	<div class="mikimg"><img src="images/positional.png" class="mikimg" style="max-width: 100%" /></div>
+
+<H1><FONT SIZE=5>الانكسار الجوي <BR></FONT><FONT SIZE=4>Refraction</FONT></H1>
+
+<P><FONT SIZE=3><B>{Note:</B> If your browser does not distinguish
+between &quot;a,b&quot; and &quot;&alpha;, &beta;&quot; (the Greek letters 
+&quot;<I>alpha, beta</I>&quot;)
+then I am afraid you will not be able to make much sense of the
+equations on this page.}
+
+
+<P><FONT SIZE=4>The apparent position of an object in the sky may be
+changed by several different physical effects. <BR>One of these is
+refraction.</FONT></P>
+<P><FONT SIZE=4>The speed of light changes as it passes through a
+medium such as air. <BR>We define the <B>refractive index</B> of any
+transparent medium as 1/v,<BR>where v is the speed of light in that
+medium. </FONT>
+</P>
+<P><FONT SIZE=4>The speed of light in air depends on its temperature
+and its pressure, <BR>so the refractive index of the air varies in
+different parts of the atmosphere. </FONT>
+</P>
+<P><FONT SIZE=4>Make a simple model of the atmosphere as <I>n</I>
+layers of uniform air above a flat Earth, <BR>with a different
+velocity of light v</FONT><I><FONT SIZE=1>i</FONT><FONT SIZE=4> </FONT></I><FONT SIZE=4>for
+each layer (<I>i</I> from 1 to <I>n</I>). <BR>Apply Snell's Law of
+Refraction at each boundary. </FONT>
+</P>
+<P> <div class="mikimg"><img src=" images/refract.png" class="mikimg" style="max-width: 100%" /></div> 
+<FONT SIZE=4>At the first boundary, sin(i<SUB>1</SUB>) / sin(r<SUB>1</SUB>) = v<SUB>0
+</SUB>/ v<SUB>1 </SUB>. <BR>At the next boundary, sin(i<SUB>2</SUB>)
+/ sin(r<SUB>2</SUB>) = v<SUB>1 </SUB>/ v<SUB>2 </SUB>, and so on. </FONT>
+</P>
+<P><FONT SIZE=4>But, by simple geometry, r<SUB>1</SUB> = i<SUB>2</SUB>,
+r<SUB>2</SUB> = i<SUB>3</SUB> and so on. </FONT>
+</P>
+<P><FONT SIZE=4>So we have <BR>sin(i<SUB>1</SUB>) = (v<SUB>0 </SUB>/
+v<SUB>1</SUB>) sin(r<SUB>1</SUB>) <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+(v<SUB>0 </SUB>/ v<SUB>1</SUB>) sin(i<SUB>2</SUB>) <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+(v<SUB>0 </SUB>/ v<SUB>1</SUB>) (v<SUB>1 </SUB>/ v<SUB>2</SUB>)
+sin(r<SUB>2</SUB>) <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+(v<SUB>0 </SUB>/ v<SUB>2</SUB>) sin(r<SUB>2</SUB>) <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+.......... <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+(v<SUB>0 </SUB>/ v<I><SUB>n</SUB></I>) sin(r<I><SUB>n</SUB></I>) </FONT>
+</P>
+<P><FONT SIZE=4>In other words, the refractive indices of the
+intervening layers all cancel out. <BR>The only thing that matters is
+the ratio between v<SUB>0</SUB></FONT><FONT SIZE=1> <BR></FONT><FONT SIZE=4>(which
+is c, the speed of light in vacuum) <BR>and v<I><SUB>n</SUB></I> (the
+speed in the air at ground level). </FONT>
+</P>
+<P><FONT SIZE=4>Now r<I><SUB>n</SUB></I> is the <I>apparent </I>zenith
+distance of the star, z', <BR>and i<SUB>1</SUB> is its <I>true </I>zenith
+distance, z.<BR>So sin(z) =  (v<SUB>0 </SUB>/ v<I><SUB>n</SUB></I>)
+sin(z').</FONT></P>
+<P><FONT SIZE=4>Refraction has no effect if a star is at the zenith
+(z=0). <BR>But at any other position, the star is apparently <I>raised</I>;
+the effect is greatest at the horizon. </FONT>
+</P>
+<P><FONT SIZE=4>Define the <B>angle of refraction </B>R by <B>R = z -
+z'</B>. <BR>Rearrange this as z = R + z'. <BR>Then sin(z) = sin(R)
+cos(z') + cos(R) sin(z'). </FONT>
+</P>
+<P><FONT SIZE=4>We assume R will be small, so, approximately,<BR>sin(R)
+= R (in radians), and cos(R) = 0. </FONT>
+</P>
+<P><FONT SIZE=4>Thus, approximately, <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sin(z)
+= sin(z') + R cos(z'). <BR>Divide throughout by sin(z') to get
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sin(z)/sin(z') = 1 + R/tan(z')
+<BR>which is to say, <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v<SUB>0</SUB>/v<I><SUB>n</SUB></I>
+= 1 + R/tan(z'). <BR>So we can write <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R
+= (v<SUB>0</SUB>/v<I><SUB>n</SUB></I> - 1) tan(z')<BR>We write this
+as<BR><B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R = k tan(z')</B><SPAN STYLE="font-weight: medium"><BR>where
+k = (v<SUB>0</SUB>/v<I><SUB>n</SUB></I> - 1)</SPAN></FONT></P>
+<P><FONT SIZE=4>Here v<SUB>0</SUB> is c, the velocity of light in a
+vacuum, which is constant. <BR>But v<I><SUB>n</SUB></I> depends on
+the temperature and pressure of the air at ground level. <BR>At
+&quot;standard&quot; temperature (0&deg;C = 273K) and pressure (1000
+millibars),<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;k = 59.6 arc-seconds.
+<BR>The formula in the <I>Astronomical Almanac</I> is <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;k
+= 16.27&quot; P/(273+T) <BR>where P is in millibars, and T is in &deg;C.</FONT></P>
+<P><FONT COLOR="#800000"><FONT SIZE=4 STYLE="font-size: 16pt"><B><BR>Exercise:</B></FONT></FONT></P>
+<P><FONT COLOR="#800000"><FONT SIZE=4>A star is at Right Ascension 5h
+0m and declination +26&deg;20'. 
+
+<BR>The latitude &phi;
+is +56&deg;20'. <BR>Local Sidereal Time is 5h 0m.<BR>Atmospheric
+pressure is 1050 millibars, <BR>and the temperature is +5&deg;C.
+
+<BR><BR>What is the star&#146;s true altitude?</FONT></FONT></P>
+<P><FONT COLOR="#800000"><FONT SIZE=4>How much will the star&#146;s
+image be shifted by atmospheric refraction, <BR>and in which
+direction?</FONT></FONT></P>
+<P><FONT COLOR="#800000"><FONT SIZE=4>What will be the star&#146;s
+Right Ascension and declination, <BR>corrected for refraction?</FONT></FONT></P>
+<P> <div>
+<input type="button" class="button" onclick="return toggleMe('para1')" value=" اضغط هنا للحصول على الجواب ">
+</div>
+<div id="para1" style="display:none">
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>LST = RA, so the star is on the
+local meridian, <BR>so altitude a = (90&deg;-&phi;)
++ &delta; = 60&deg;.</FONT></FONT></P>
+<P><FONT COLOR="#800000"><FONT SIZE=4>How much will the star&#146;s
+image be shifted by atmospheric refraction, <BR>and in which
+direction?</FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>Zenith distance z =
+90&deg;-altitude = 30&deg;.<BR>Angle of refraction R = k tan(z')
+<BR>where k = 16.27&quot; P/(273+T) = 16.27&quot; <I>x</I> 1050 /278
+= 61.45&quot;.</FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>However, we don't know z', only
+z.<BR>For a first, approximate answer, take z = z' = 30&deg;.<BR>This
+gives R = 35.5&quot;, <BR>so z' = z+R = 30&deg; 0' 35.5&quot;.</FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>Now recalculate R = k tan(z') =
+35.5&quot; <BR><I>(unchanged, so no need to iterate further)</I><SPAN STYLE="font-style: normal">.</SPAN></FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4><SPAN STYLE="font-style: normal">So
+the star is raised by 35.5&quot;.</SPAN> <BR></FONT></FONT><BR><BR>
+</P>
+<P><FONT COLOR="#800000"><FONT SIZE=4>What will be the star&#146;s
+Right Ascension and declination, <BR>corrected for refraction?</FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>Since the star is on the local
+meridian, the shift is only in declination.<BR>The apparent altitude
+is increased by 35.5&quot;, <BR>so the apparent declination is
+similarly increased.<BR>So the apparent coordinates are:<BR>Right
+Ascension 5h 0m and declination +26&deg;20'35.5&quot;.</FONT></FONT></P>
+</div>
+<P STYLE="font-weight: medium"><FONT SIZE=4>At large zenith
+distances, this model is inadequate. <BR>The amount of refraction
+<I>near the horizon </I>is actually determined observationally. <BR>At
+standard temperature and pressure, <BR>refraction at the horizon
+(<B>horizontal refraction</B>) is found to be 34 arc-minutes. </FONT>
+</P>
+<br><hr>
+<FONT SIZE=4>الموضوع السابق: </FONT><A HREF="010a.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
+القمر</FONT>
+</A><br />
+	<FONT SIZE=4>الموضوع التالي: </FONT><A HREF="012.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
+الانكسار الجوي</FONT>
+</A>
+<FONT SIZE=4> <BR>العودة إلى </FONT><A HREF="index.html" data-icon="refresh" rel="external" ><FONT SIZE=4>الفهرس</FONT></A><FONT SIZE=4>
+</FONT>
+</div><!-- /content -->
+
+<div data-role="footer"  data-position="fixed">
+		<h3>ترجمة قتيبة أقرع</h3>
+	</div><!-- /footer -->
+</div><!-- /page one --> 
+</body>
+</html>

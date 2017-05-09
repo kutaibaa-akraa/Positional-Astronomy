@@ -1,0 +1,166 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>الحركة الظاهرية للنجوم</title>
+	<meta charset="utf-8">
+	<!--meta name="viewport" content="width=device-width, initial-scale=0.6"-->           
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
+	<!--<link rel="stylesheet" href="css/theme.css" /-->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+
+<!--<link rel="stylesheet" href="css/page2.css" type="text/css">
+<style type="text/css">
+/*div#total { align: center; width: 500px; height: 400px; }
+/*div#canvas { align:center; width: 100%; height: 100%; }*/
+canvas {align:center;}
+/* div#panel { background-color: #F9F5EC; align:center; width: 460px; height: 200px; } */
+input[type="text"] { width: 20px; }
+input[type="range"] { width: 100%; }
+select { width: 50px; height: 22px; }
+</style>-->
+<script src="js/starposition.js"></script>
+<script src="js/starposition_en.js"></script>
+<script src="js/page_en.js"></script>
+<meta name="description" content="HTML5 app: Apparent movement of a star">
+<meta name="author" content="Walter Fendt">
+<meta name="keywords" content="app, astronomy, spherical astronomy">
+</head>
+
+<body dir="rtl">
+
+<div data-role="" id="one" data-theme="b"> 
+	<div data-role="header" data-position="fixed"><h1>الحركة الظاهرية للنجوم</h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
+	</div><!-- /header -->
+
+  <div  data-role="content">
+  	<table align="center">
+  		<tr> <td colspan="6"><canvas height="400px" width="800px" id="cvx">This browser doesn't support HTML5 canvas!</canvas>
+  
+ <!-- <div style="max-width=100%" id="panel"-->
+</td>  </tr>
+  <tr>
+  	 <td colspan="3">
+  	 	<div ><button id="bu1" style="background-color: #00ffff;" value="إعادة تعيين"></button></div>
+  	 	</td>
+  	 	 	 	 	<td colspan="3">
+    <div>
+    	<button id="bu2" style="background-color: #ffff00;" value="البدء/توقف مؤقت"></button></div></td> 
+    </tr>
+    <tr>
+    	<td colspan="3"><!-- تركيز اهتمام-->
+  	  <div style="top: 30px;"><span id="ip7a" 	></span>
+  	  </td>
+  	  	<td colspan="3">
+  	  <select id="ip7b"></select>
+  	  </div>
+  	  </td>
+  	  </tr>
+  	  <tr><!-- منزلقات-->
+    <td colspan="6">
+    <div style="top: 350px;">
+    	<input id="ip8" type="range" min=0 max=36 step=1 value=0></div>
+    <div style="top: 380px;"><input id="ip9" type="range" min=0 max=18 step=1 value=0></div>
+    </td>
+ 	
+   </tr>
+   <tr><!--longitude-->
+   <td>
+   	 <div style="top: 20px;"><span id="ip1a" 	></span>
+   	 </td>
+   	 <td>
+   	 	<input id="ip1b" type="text" 	>
+   	 	</td>
+   	 	<td>
+      <span id="ip1c" 	></span>
+      </td>
+      <td colspan="3">
+      	<select id="ip1d"></select>
+      	</div></td> 	
+      </tr>
+      <tr><!--latitude-->
+   <td>
+   	 <span id="ip2a" 	></span>
+   	 </td>
+   	 <td>
+   	 	<input id="ip2b" type="text" 	>
+   	 		</td>
+   	 		<td>
+      <span id="ip2c" 	></span>
+      </td>
+      <td colspan="3">
+      	<select id="ip2d"></select>
+      	</td> 
+      </tr>
+      <tr><!-- التاريخ-->
+   <td>
+   	 <div style="top: 90px;">
+    	<span id="ip3a" 	></span>
+    	</td>
+    	<td>
+    <input id="ip3b" type="text" 	>
+    	</td>
+    	<td>
+    	<span id="ip3c" 	></span>
+    	</td>
+    	<td>
+      <input id="ip3d" type="text" 	>
+      	</td>
+      	<td>
+      	<span id="ip3e" 	></span>
+      	</td>
+      	<td>
+      	<input id="ip3f" type="text" 	></div>
+      	</td>
+      </tr>
+      <tr><!--الوقت-->
+    <td>
+    	<div style="top: 120px;"><span id="ip4a" 	></span>
+    	</td>
+    	<td>
+    		<input id="ip4b" type="text" 	>
+    			</td>
+    			<td>
+    				<span id="ip4c" 	></span>
+    				</td>
+    				<td>
+      <input id="ip4d" type="text" 	>
+      	</td>
+      	<td dir="ltr" colspan="2">
+      		<span id="ip4e" 	></span></div>
+      		</td> 
+      </tr>
+      <tr><!--المطلع المستقيم-->
+   <td>
+   	 <div style="top: 160px;"><span id="ip5a" 	></span>
+   	 </td>
+   	 <td>
+   	 	<input id="ip5b" type="text" 	>
+   	 		</td>
+   	 		<td>
+      <span id="ip5c" 	></span></div></td>
+	<td></td> <td></td> <td></td>
+      </tr>
+      <tr><!--الميل-->
+   <td>
+   	 <div style="top: 190px;"><span id="ip6a" 	></span>
+   	 </td>
+   	 <td>
+   	 	<input id="ip6b" type="text" 	>
+   	 		</td>
+   	 		<td>
+      <span id="ip6c" 	></span></div>
+      </td>
+   	<td></td> <td></td> <td></td>
+      </tr>
+      <tr><!-- المؤلف-->
+  <td colspan="6">
+  	<div style="text-align:center;"><span id="author" 	></span></div></td>
+ 	
+  </tr>
+  </table>
+<!--/div> <!-- div panl -->
+</div> <!-- div content -->
+</div><!-- /page one --> 
+</body>
+</html>

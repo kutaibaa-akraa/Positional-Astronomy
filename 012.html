@@ -1,0 +1,178 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!-- عنوان الصفحة -->
+	<title>
+شروق و غروب الشمس
+               </title> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="css/theme.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+	 <style type="text/css">
+/* تهيئة الصندوق لعناوين الفقرات القابلة للطي */
+input.button {
+  color: #fff; background: #c0c0c0 ;
+  font-size: 1em;
+  font-weight:bold;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: solid 1px #ffcf31 ;
+}
+</style>
+<script type="text/javascript">
+function toggleMe(a){
+  var e=document.getElementById(a);
+  if(!e)return true;
+  if(e.style.display=="none"){
+    e.style.display="block"
+  } else {
+    e.style.display="none"
+  }
+  return true;
+}
+</script>
+</head> 	
+<body> 
+<!-- Start of first page: #one -->
+<div data-role="page" id="one" data-theme="b">
+	<div data-role="header" data-position="fixed"><h1>شروق و غروب الشمس، الشفق</h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
+	</div><!-- /header -->
+	<div data-role="content">
+	<div class="mikimg"><img src="images/positional.png" class="mikimg" style="max-width: 100%" /></div>
+
+<H1><FONT SIZE=5>شروق و غروب الشمس، الشفق<BR></FONT><FONT SIZE=4>Sunrise,
+sunset and twilight</FONT></H1>
+
+<P><FONT SIZE=3><B>{Note:</B> If your browser does not distinguish
+between &quot;a,b&quot; and &quot;&alpha;, &beta;&quot; (the Greek letters 
+&quot;<I>alpha, beta</I>&quot;)
+then I am afraid you will not be able to make much sense of the
+equations on this page.}
+
+
+
+<P><FONT SIZE=4>Since refraction affects zenith angle, <BR>it
+generally changes both the Right Ascension and declination of an
+object. <BR>It also affects the time the object appears to rise and
+set. </FONT>
+</P>
+
+<P><FONT SIZE=4>The standard formula for the altitude of an object
+is:<BR>sin(&alpha;) = sin(&delta;)sin(&phi;) + cos(&delta;) cos(&phi;)  
+cos(H)</FONT></P>
+
+<P><FONT SIZE=4>If a = 0&deg; (the object is on horizon, either
+rising or setting), <BR>then this equation becomes:
+
+<BR>cos(H) = -
+tan(&phi;) tan(&delta;)</FONT></P>
+<P><FONT SIZE=4>This gives the <B>semi-diurnal arc</B> H: <BR>the
+time between the object crossing the horizon, and crossing the
+meridian. </FONT>
+</P>
+<P><FONT SIZE=4>Knowing the Right Ascension of the object, and its
+semi-diurnal arc, <BR>we can find the Local Sidereal Time of meridian
+transit, <BR>and hence calculate its rising and setting times. </FONT>
+</P>
+<P><FONT SIZE=4>However, refraction means that this simplified
+formula is not accurate, <BR>since the altitude should be, not 0&deg;,
+but -0&deg;34'. <BR>This is not too important for<I> stars</I>, which
+are rarely observed close to the horizon. <BR>But it makes an
+important difference in calculating the times of rising and setting
+of the <I>Sun</I>.</FONT></P>
+<P><FONT SIZE=4>Furthermore, &quot;sunrise&quot; and &quot;sunset&quot;
+generally refer to the moment <BR>when the <I>top </I>of the Sun's
+disc is just on the horizon.<BR>The formula would give us the time of
+rising or setting<BR>for the <I>centre </I>of the Sun's disc. <BR>So
+we must also allow for the <I>semi-diameter</I> of the Sun's disc,
+<BR>which is 16 arc-minutes. </FONT>
+</P>
+<P><FONT SIZE=4>So sunrise and sunset actually occur when the Sun has
+altitude -0&deg;50' <BR>(34' for refraction, and another 16' for the
+semi-diameter of the disc).</FONT></P>
+<P><FONT SIZE=4>Since the atmosphere scatters sunlight, the sky does
+not become dark instantly at sunset; <BR>there is a period of
+<B>twilight</B>. </FONT>
+</P>
+<P><FONT SIZE=4><BR>During<B> civil twilight,</B> it is still light
+enough to carry on ordinary activities out-of-doors; <BR>this
+continues until the Sun's altitude is -6&deg;. <BR>During <B>nautical
+twilight</B>, it is dark enough to see the brighter stars, <BR>but
+still light enough to see the horizon, enabling sailors to measure
+stellar altitudes for navigation; <BR>this continues until the Sun's
+altitude is -12&deg;. <BR>During <B>astronomical twilight,</B> the
+sky is still too light for making reliable astronomical observations;
+<BR>this continues until the Sun's altitude is -18&deg;. <BR>Once the
+Sun is more than 18&deg; below the horizon, we have <B>astronomical
+darkness</B>.<BR>The same pattern of twilights repeats, in reverse,
+before sunrise. </FONT>
+</P>
+<P><FONT SIZE=4>In summer, astronomical twilight will last all night,
+for any place with latitude above 48.6&deg;.</FONT></P>
+<P><BR><BR>
+</P>
+<P><FONT COLOR="#800000"><FONT SIZE=4 STYLE="font-size: 16pt"><B>Exercise:</B></FONT></FONT></P>
+<P><FONT COLOR="#800000"><FONT SIZE=4>The Sun is at declination -14&deg;.
+<BR>What will be its hour angle at sunrise <BR>(the moment the top
+edge of the Sun first appears over the horizon), <BR>at a latitude of
++56&deg;20'?</FONT></FONT></P>
+<P><FONT COLOR="#800000"><FONT SIZE=4>If the Sun is on the local
+meridian at 12:03, <BR>what time is sunrise? <BR>and what time is
+sunset?</FONT></FONT></P>
+<P><FONT COLOR="#800000"><FONT SIZE=4>And when will astronomical
+twilight start and finish?</FONT></FONT></P>
+<div>
+<input type="button" class="button" onclick="return toggleMe('para1')" value=" اضغط هنا للحصول على الجواب ">
+</div>
+<div id="para1" style="display:none">
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>At sunrise, the true altitude
+of the Sun is a = -0&deg;50' <BR>(allowing for semi-diameter and
+horizontal refraction).</FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>Use the formula <BR>cos(H) = {
+sin(a) - sin(&phi;) sin(&delta;)
+} / cos(&phi;) cos(&delta;)<BR>where
+&phi; = +56&deg;20' and &delta;
+= -14&deg;.<BR>This gives cos(H) = 0.35, <BR>so H = 69.7&deg; or
+290.3&deg; <BR>= 4h39m or 19h21m.</FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>To decide which, <BR>note that
+the Sun is to the <I>east </I>of the meridian at sunrise, <BR>so H =
+19h21m.</FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><FONT COLOR="#800000"><FONT SIZE=4>If the Sun is on the local
+meridian at 12:03, <BR>what time is sunrise? <BR>and what time is
+sunset?</FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>The semi-diurnal arc is
+4h39m.<BR>Sunrise is at (12:03 - 4h39m) = 07:24.<BR>Sunset is at
+(12:03 + 4h39m) = 16:42.</FONT></FONT></P>
+<P><BR><BR>
+</P>
+<P><FONT COLOR="#800000"><FONT SIZE=4>And when will astronomical
+twilight start and finish?</FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>It is astronomical twilight <BR>if
+the Sun&#146;s altitude is -18&deg; or higher.</FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>Set a = -18&deg; and use the
+same formula again, to obtain<BR>H = 101.55&deg; = 6h46m.</FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>So twilight starts at (12:03 -
+6h46m) = 05:17, <BR>and ends at (12:03 + 6h46m) = 18:49.</FONT></FONT></P>
+</div>
+<br /><hr>
+<FONT SIZE=4>الموضوع السابق: </FONT><A HREF="011.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
+الانكسار الجوي</FONT>
+</A><br />
+	<FONT SIZE=4>الموضوع التالي: </FONT><A HREF="013.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
+اختلاف المنظر المركزي</FONT>
+</A>
+<FONT SIZE=4> <BR>العودة إلى </FONT><A HREF="index.html" data-icon="refresh" rel="external" ><FONT SIZE=4>الفهرس</FONT></A><FONT SIZE=4>
+</FONT>
+
+</div><!-- /content -->
+
+<div data-role="footer"  data-position="fixed">
+		<h3>ترجمة قتيبة أقرع</h3>
+	</div><!-- /footer -->
+</div><!-- /page one --> 
+</body>
+</html>

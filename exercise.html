@@ -1,0 +1,174 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!-- عنوان الصفحة -->
+	<title>
+امتحان أخير 
+               </title> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="css/theme.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+	 <style type="text/css">
+/* تهيئة الصندوق لعناوين الفقرات القابلة للطي */
+input.button {
+  color: #fff; background: #c0c0c0 ;
+  font-size: 1em;
+  font-weight:bold;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: solid 1px #ffcf31 ;
+}
+</style>
+<script type="text/javascript">
+function toggleMe(a){
+  var e=document.getElementById(a);
+  if(!e)return true;
+  if(e.style.display=="none"){
+    e.style.display="block"
+  } else {
+    e.style.display="none"
+  }
+  return true;
+}
+</script>
+</head> 	
+<body> 
+<!-- Start of first page: #one -->
+<div data-role="page" id="one" data-theme="b">
+	<div data-role="header" data-position="fixed"><h1>امتحان أخير</h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
+	</div><!-- /header -->
+	<div data-role="content">
+	<div class="mikimg"><img src="images/positional.png" class="mikimg" style="max-width: 100%" /></div>
+
+<H1><FONT SIZE=5>الامتحان الأخير</FONT><FONT SIZE=5> </FONT></FONT>
+</H1>
+<P><FONT COLOR="#800000"><FONT SIZE=4>انت الآن تائه في منطقة صحراوية و معك جهاز "السدس"، و ساعة ميقاتية دقيقة، و حمام زاجل و نسخة ورقية من موقع "الفلك الموضعي". اشرح لنا الطريقة لانقاذ نفسك .(بافتراض أن ساعتك الميقاتية مضبوطة وفق غرينتش GMT, و أنك تعرف تاريخ اليوم.)</FONT></FONT></P>
+
+<BR>
+
+<div>
+<input type="button" class="button" onclick="return toggleMe('para1')" value=" اضغط هنا للحصول على الجواب ">
+</div>
+<div id="para1" style="display:none">
+
+<P><FONT COLOR="#0000ff"><FONT SIZE=4><B>Step 1: determine your
+latitude.</B> <BR>There are (at least) two possible techniques. </FONT></FONT>
+</P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4><B>1</B>. Measure the altitude
+of Polaris above the northern horizon, using the sextant. <BR>This is
+approximately equal to your latitude. <BR>(Polaris, the &quot;North
+Star&quot;, lies very close to the North Celestial Pole.)</FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>There are various problems with
+this. <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Firstly, if you are in the
+southern hemisphere, Polaris will be below the horizon!
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Secondly, you need to carry out the
+measurement in nautical twilight, <BR>while it is still light enough
+to see the horizon, <BR>and Polaris is only a second-magnitude star,
+<BR>so it may not appear bright enough to measure accurately.
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thirdly, Polaris does not lie
+exactly at the North Celestial Pole, <BR>so your result could be
+nearly 1 degree in error. </FONT></FONT>
+</P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4><B>2</B>. So, as an
+alternative,<BR>measure the altitude of the Sun at midday, using the
+sextant. </FONT></FONT>
+</P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>Knowing the date, calculate the
+declination of the Sun <BR>(it varies sinusoidally, <BR>with a period
+of 1 year starting at the spring equinox, <BR>and an amplitude of
+23.4 degrees.) </FONT></FONT>
+</P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>The midday altitude, when the
+Sun is on the local meridian, <BR>is composed of: <BR>the height of
+the celestial equator above the southern horizon (equal to the
+co-latitude) <BR>plus the height of the Sun above the celestial
+equator (its declination). <BR>(If you are in the southern
+hemisphere,<BR>the celestial equator will be closer to the <I>northern
+</I>horizon;<BR>in this case its distance from the <I>southern
+</I>horizon, the co-latitude, <BR>will be greater than 90&deg;.)
+<BR>Knowing the altitude and the solar declination, <BR>calculate the
+co-latitude and hence the latitude. </FONT></FONT>
+</P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>If the sextant can be read to
+an accuracy of a few arc-minutes, <BR>you should correct your reading
+for refraction. <BR>The apparent zenith angle of an object <I>z' </I>is
+greater than its true zenith angle <I>z</I> <BR>by the value <I>k
+tan(z')</I>, where <I>k</I> is approximately 1 arc-minute. </FONT></FONT>
+</P>
+<BR>
+
+<P><FONT COLOR="#0000ff"><FONT SIZE=4><B>Step 2: Determine your
+longitude</B>. <BR>Again there are (at least) two possible
+techniques. </FONT></FONT>
+</P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4><B>1</B>. During nautical
+twilight, <BR>if you can locate a star whose celestial coordinates
+you know, <BR>measure its altitude above the horizon using the
+sextant, <BR>and note the time (GMT) using the chronometer. </FONT></FONT>
+</P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>Knowing the star's altitude,
+its declination, and your latitude (previously determined),
+<BR>calculate its Hour Angle <BR>by applying the cosine rule to &quot;the&quot;
+Astronomical Triangle. </FONT></FONT>
+</P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>Knowing the star's Right
+Ascension, <BR>calculate the local sidereal time of the observation
+<BR>(Local Hour Angle = Local Sidereal Time - Right Ascension). </FONT></FONT>
+</P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>Knowing the date, <BR>calculate
+the Greenwich Sidereal Time <BR>corresponding to the Greenwich Mean
+Time of the observation. <BR>GST is equal to GMT at the autumn
+equinox, <BR>and GST runs faster than GMT by one day in 365.25 days. 
+</FONT></FONT>
+</P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>The difference between the
+Local Sidereal Time (from your observation) <BR>and Greenwich
+Sidereal Time (from the chronometer) <BR>is your longitude east or
+west of Greenwich. </FONT></FONT>
+</P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4><B>2</B>. Failing a star with
+known coordinates, use the Sun. <BR>Note the time (GMT) when it
+reaches its greatest altitude: <BR>this is midday, Local Apparent
+Time. </FONT></FONT>
+</P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>Use the formulae given in
+Smart's <I>Spherical Astronomy</I> <BR>to calculate the Equation of
+Time on that date. <BR>(Or derive it from first principles: <BR>allow
+firstly for the non-uniform motion of the Sun around the ecliptic
+(Kepler's Second Law); <BR>then allow for the fact that the ecliptic
+is tilted to the equator.) </FONT></FONT>
+</P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>Add or subtract the Equation of
+Time to your Local Apparent Time, <BR>to obtain Local Mean Time. <BR>The
+difference between Local Mean Time and GMT <BR>is your longitude east
+or west of Greenwich. </FONT></FONT>
+</P>
+<BR>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4><B>Step 3</B>: <BR>Tear a strip
+of paper from the title-page of Smart's <I>Spherical Astronomy</I>
+<BR>to write a message giving your latitude and longitude. <BR>Launch
+it by carrier-pigeon and wait to be rescued! </FONT></FONT>
+</P>
+<br>
+<P><FONT SIZE=4><FONT COLOR="#000000"><I>This question formed part of
+the final exam at UCLA in 1961. <BR>(Trimble, V., &quot;The
+Observatory&quot; <B>118</B>, 32, 1998).</I> <BR></FONT></FONT><BR><BR>
+</P>
+</div>
+<br><hr>
+<FONT SIZE=4>الموضوع السابق: </FONT><A HREF="017.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
+تقاويم </FONT>
+</A><br />
+<FONT SIZE=4> <BR>العودة إلى </FONT><A HREF="index.html" data-icon="refresh" rel="external" ><FONT SIZE=4>الفهرس</FONT></A><FONT SIZE=4>
+</FONT>
+
+</div><!-- /content -->
+
+<div data-role="footer"  data-position="fixed">
+		<h3>ترجمة قتيبة أقرع</h3>
+	</div><!-- /footer -->
+</div><!-- /page one --> 
+</body>
+</html>
