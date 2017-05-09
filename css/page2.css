@@ -1,0 +1,220 @@
+/*=================================================================================================
+  Stylesheet f�r HTML5-App-Seiten
+  Letzte �nderung: 2016-03-24       
+  =================================================================================================*/
+  
+/*-------------------------------------------------------------------------------------------------
+  Allgemeine Vorgaben
+  -------------------------------------------------------------------------------------------------*/
+  
+/* Alle Elemente */
+
+  
+  
+/* Hervorhebung von Begriffen */
+  
+em.Begriff {                          
+  font-style: normal;                            /* Normale Schrift (nicht kursiv) */
+  color: blue;                                   /* Schriftfarbe */
+  }
+
+/* Inline-Elemente ohne automatischen Zeilenumbruch */
+  
+span.nobr {
+  white-space: nowrap;                           /* Kein automatischer Zeilenumbruch */
+  }
+  
+/*-------------------------------------------------------------------------------------------------
+  Vorgaben f�r spezielle Bereiche
+  -------------------------------------------------------------------------------------------------*/
+  
+/* Eingerahmte Formel */
+  
+span.Formel {
+  background-color: #00e0ff;                     /* Hintergrundfarbe */
+  border: 4px solid #000000;                     /* Rand */
+  padding: 8px;                                  /* Innenabstand */
+  text-align: center;                            /* Zentrierung */
+  font-size: 20px;                               /* Schriftgr��e */
+  }
+  
+/* Liste der Symbole in einer Formel */
+  
+
+  
+/* Eingerahmte Definition */
+
+div.Def {
+  margin-left: auto;                             /* Zentrierung */
+  margin-right: auto;                            /* Zentrierung */
+  padding: 10px;                                 /* Innenabstand */
+  background-color: #80ffa0;                     /* Hintergrundfarbe */
+  border: 8px double #000000;                    /* Rand */
+  font-size: 18px;                               /* Schriftgr��e */
+  }
+  
+/* Eingerahmter Satz */
+
+div.Satz {
+  margin-left: auto;                             /* Zentrierung */
+  margin-right: auto;                            /* Zentrierung */
+  padding: 10px;                                 /* Innenabstand */
+  background-color: #ff80a0;                     /* Hintergrundfarbe */
+  border: 8px double #000000;                    /* Rand */
+  font-size: 18px;                               /* Schriftgr��e */
+  }
+    
+/* Logo mit Link zum Inhaltsverzeichnis */
+
+div#Index {
+  /*width: 170px; */
+  margin: 20px auto 20px auto;
+  border: 5px double #000000;
+  background-color: silver;
+  }
+  
+div#Index1 {
+  padding: 12px;
+  background-color: #F9F5EC;
+  border: 1px solid #000000;
+  text-align: center;
+  }
+  
+div#Index2 {
+  padding: 8px;
+  background-color: #ffff00;
+  border: 1px solid #000000;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0000ff;
+  }
+   
+/* Absatz f�r URL usw. */
+  
+p.Ende {                                
+  font-size: 10pt;                               /* Schriftgr��e */
+  }
+  
+/*-------------------------------------------------------------------------------------------------
+  Vorgaben f�r Apps
+  -------------------------------------------------------------------------------------------------*/
+ 
+/* Gesamte App */
+   
+div#total {
+  position: relative;
+  margin-top: 0px;                              /* Abstand nach oben */
+  margin-left: auto; margin-right: auto;         /* Waagrechte Zentrierung */
+  }
+  
+/* Zeichenfl�che */
+
+div#canvas {
+  position: absolute;
+  background-color: #F9F5EC;                     /* Hintergrundfarbe */
+  border: 1px solid #000000;                     /* Rand */
+  }
+  
+/* Schaltfl�che */
+  
+div#panel, div#panel1, div#panel2 {
+  position: absolute;
+  background-color: #F9F5EC;                     /* Hintergrundfarbe */
+  border: 1px solid #000000;                     /* Rand */
+  font-size: 12px;                               /* Schriftgr��e */
+  font-weight: bold;                             /* Fettdruck */
+  }
+  
+/* Zeile einer Schaltfl�che */
+  
+div#panel div , div#panel1 div, div#panel2 div {
+  position: absolute;
+  }
+  
+/* Inline-Element einer Schaltfl�che */
+  
+div#panel span, div#panel1 span, div#panel2 span {
+  position: absolute;
+  white-space: nowrap;                           /* Kein Zeilenumbruch bei Leerzeichen */
+  font-family: sans-serif;
+  font-size: 12px;
+  }
+  
+/* Schaltknopf */
+  
+button {
+  height: 30px;                                  /* H�he */
+  border-radius: 0px;                            /* Abgerundete Ecken verhindern */
+  margin-left: 10px;                             /* Abstand vom linken Rand */
+  font-family: sans-serif;                       /* Schriftart */
+  font-size: 12px;                               /* Schriftgr��e */
+  font-weight: bold;                             /* Fettdruck */
+  } 
+  
+/* Optionsfeld */
+
+input[type="checkbox"] {
+  margin-left: 10px;                             /* Abstand vom linken Rand */
+  border-radius: 0px;                            /* Abgerundete Ecken verhindern */
+  }
+  
+/* Radiobutton */
+
+input[type="radio"] {
+  margin-left: 10px;                             /* Abstand vom linken Rand */
+  }
+  
+/* Text f�r Optionsfeld oder Radiobutton */
+  
+label {
+  margin-left: 5px;                              /* Abstand zum Optionsfeld bzw. Radiobutton */
+  vertical-align: 2px;                           /* Kleine Korrektur der H�he */
+  } 
+  
+/* Eingabefeld */
+
+input[type="text"] {
+  position: absolute;
+  padding-left: 2px;                             /* Innenabstand links */
+  height: 14px;                                  /* H�he */
+  border-radius: 0px;                            /* Abgerundete Ecken verhindern */
+  font-family: sans-serif;                       /* Schriftart */
+  font-size: 12px;                               /* Schriftgr��e */
+  font-weight: bold;                             /* Fettdruck */
+  } 
+  
+/* Auswahlfeld */
+
+select {
+  position: absolute;
+  top: -2px;                                     /* Kleine Korrektur der H�he */
+  left: 10px;                                    /* Abstand zum linken Rand */
+  height: 20px;                                  /* H�he */
+  border-radius: 0px;                            /* Abgerundete Ecken verhindern */
+  font-family: sans-serif;                       /* Schriftart */
+  font-size: 12px;                               /* Schriftgr��e */
+  font-weight: bold;                             /* Fettdruck */
+  }
+  
+/* Schieberegler */
+
+input[type="range"] {
+  position: absolute;
+  left: 10px;
+  }
+  
+/* Textbereich */
+
+textarea {
+  position: absolute;
+  padding: 3px;                                  /* Innenabstand */
+  left: 10px;                                    /* Abstand zum linken Rand */
+  border-radius: 0px;                            /* Abgerundete Ecken verhindern */
+  font-family: sans-serif;                       /* Schriftart */
+  font-size: 12px;                               /* Schriftgr��e */
+  font-weight: bold;                             /* Fettdruck */
+  }
+  
+  
+  
