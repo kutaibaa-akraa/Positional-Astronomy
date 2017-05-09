@@ -1,0 +1,226 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!-- عنوان الصفحة -->
+	<title>
+الإحداثيات الأفقية
+               </title> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="css/theme.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+	 <style type="text/css">
+/* تهيئة الصندوق لعناوين الفقرات القابلة للطي */
+input.button {
+  color: #fff; background: #c0c0c0 ;
+  font-size: 1em;
+  font-weight:bold;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: solid 1px #ffcf31 ;
+}
+</style>
+<script type="text/javascript">
+function toggleMe(a){
+  var e=document.getElementById(a);
+  if(!e)return true;
+  if(e.style.display=="none"){
+    e.style.display="block"
+  } else {
+    e.style.display="none"
+  }
+  return true;
+}
+</script>
+</head> 	
+<body> 
+<!-- Start of first page: #one -->
+<div data-role="page" id="one" data-theme="b">
+	<div data-role="header" data-position="fixed"><h1>الإحداثيات الأفقية</h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
+	</div><!-- /header -->
+	<div data-role="content">
+	<div class="mikimg"><img src="images/positional.png" class="mikimg" style="max-width: 100%" /></div>
+
+<H1><FONT SIZE=5>الإحداثيات الأفقية - نظام &quot;alt-az&quot;<BR></FONT><FONT SIZE=4>the horizontal or &quot;alt-az&quot; system </FONT>
+</H1>
+<P><FONT SIZE=4>The location of an object on the sky is fixed by
+celestial coordinates <BR>analogous to the terrestrial
+latitude/longitude system. <BR>There are various systems, suitable
+for different purposes; <BR>each system needs a <I>fundamental circle</I>
+and a <I>fixed point on it</I>. </FONT>
+</P>
+<P><FONT SIZE=4>The simplest is the <B>horizontal system</B>, which
+uses the horizon as its fundamental circle. <BR>The poles of this
+circle are the <B>zenith</B> overhead and the <B>nadir</B> underfoot;
+<BR>these are defined by the local vertical (using a plumb-line or
+similar). </FONT>
+</P>
+<P><FONT SIZE=4>Draw a <B>vertical circle</B> from the zenith to the
+nadir through object X. </FONT>
+</P>
+<P>
+	 <div class="mikimg"><img src=" images/altaz.png" class="mikimg" style="max-width: 100%" /></div>
+
+<FONT SIZE=4>The <B>altitude</B> <B>(a)</B> of object X is the angular distance along
+the vertical circle from the horizon to X, <BR>measured from -90&deg;
+at nadir to +90&deg; at zenith. <BR>Alternatively, the <B>zenith
+distance</B> of X is 90&deg; - a.<BR>(Some authors use  h  instead of
+ a .) <BR>Any two objects with the same altitude <BR>lie on a small
+circle called a <B>parallel of altitude</B>. </FONT>
+</P>
+<P><FONT SIZE=4>To fix a point of origin on horizon, <BR>we look at
+where the spin axis of the Earth intersects the celestial sphere, <BR>at
+the <B>North </B>and<B> South Celestial Poles</B>. <BR>The vertical
+circle through these is called the <B>principal vertical</B>. <BR>Where
+this intersects the horizon, it gives the north and south <B>cardinal
+points</B> <BR>(the north point is the one nearest the North
+Celestial Pole). <BR>Midway between these are the east and west
+cardinal points; <BR>the vertical circle through these is called the
+<B>prime vertical <BR></B><SPAN STYLE="font-weight: medium">(not
+shown on the diagram), at 90&deg; to the principal vertical. </SPAN></FONT>
+</P>
+<P><FONT SIZE=4>The <B>azimuth (A) </B>of object X is the angular
+distance around the horizon <BR>from the north cardinal point to the
+vertical circle through X, <BR>measured 0&deg;-360&deg; westwards
+(clockwise). </FONT>
+</P>
+<P><FONT SIZE=4>Note that the <B>altitude of the North Celestial Pole</B>
+is equal to <B>the latitude of the observer</B>. </FONT>
+</P><BR>
+<P><FONT SIZE=4>Comparison with the terrestrial system:</FONT></P>
+<TABLE WIDTH=328 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<COL WIDTH=164>
+	<COL WIDTH=164>
+	<TR VALIGN=TOP>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4><B>terrestrial </B></FONT>
+			</P>
+		</TD>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4><B>alt-az</B></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4>equator </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4>horizon</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4>North Pole </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4>zenith</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4>South Pole </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4>nadir</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4>latitude </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4>altitude</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4>co-latitude </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4>zenith distance</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4>parallel of latitude </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4>parallel of altitude</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4>meridian of longitude </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4>vertical circle</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4>Greenwich Meridian </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4>Principal Vertical</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4>longitude </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=164>
+			<P><FONT SIZE=4>azimuth </FONT>
+			</P>
+		</TD>
+	</TR>
+</TABLE>
+<BR>
+<P><FONT COLOR="#800000"><FONT SIZE=4><B><FONT SIZE=4 STYLE="font-size: 16pt">Exercise:<BR><BR></FONT></B>From
+St.Andrews, at 6 pm on 1998 February 2nd, <BR>the Moon appeared at
+altitude +39&deg;, azimuth 196&deg;, <BR>while Saturn was at altitude
++34&deg;, azimuth 210&deg;. <BR><BR>How far apart did the two objects
+appear? <BR>Which was further east?</FONT></FONT></P>
+<div><input type="button" class="button" onclick="return toggleMe('para1')" value=" اضغط هنا للحصول على الجواب ">
+</div>
+<div id="para1" style="display:none">
+ <div class="mikimg"><img src=" images/problem3.png" class="mikimg" style="max-width: 100%" /></div>
+  <P><FONT COLOR="#0000ff"><FONT SIZE=4>The
+difference in azimuth is 14&deg;.</FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>Use the cosine rule:<BR>cos MS
+= cos MZ cos ZS + sin MZ sin ZS cos Z = 0.98<BR>so MS = 12.3&deg;</FONT></FONT></P>
+<BR>
+<P><FONT COLOR="#800000"><FONT SIZE=4>Which was further east?</FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>The Moon is further east, and
+higher up, than Saturn.</FONT></FONT></P>
+<BR>
+
+
+</div>
+<br><hr>
+ <FONT SIZE=4>الموضوع السابق: </FONT><A HREF="002a.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
+ملاحظات حول الهندسة الكروية</FONT>
+</A><br />
+	<FONT SIZE=4>الموضوع التالي: </FONT><A HREF="004.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
+إحداثيات استوائية (1) HA-Dec </FONT>
+</A>
+<FONT SIZE=4> <BR>العودة إلى </FONT><A HREF="index.html" data-icon="refresh" rel="external" ><FONT SIZE=4>الفهرس</FONT></A><FONT SIZE=4>
+</FONT>
+</div><!-- /content -->
+
+
+<div data-role="footer"  data-position="fixed">
+		<h3>ترجمة قتيبة أقرع</h3>
+	</div><!-- /footer -->
+</div><!-- /page one --> 
+</body>
+</html>

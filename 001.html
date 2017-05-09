@@ -1,0 +1,162 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!-- عنوان الصفحة -->
+	<title>
+الكرة الأرضية
+              </title> 
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="css/theme.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+	 <style type="text/css">
+/* تهيئة الصندوق لعناوين الفقرات القابلة للطي */
+input.button {
+  color: #fff; background: #c0c0c0 ;
+  font-size: 1em;
+  font-weight:bold;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: solid 1px #ffcf31 ;
+}
+</style>
+<script type="text/javascript">
+function toggleMe(a){
+  var e=document.getElementById(a);
+  if(!e)return true;
+  if(e.style.display=="none"){
+    e.style.display="block"
+  } else {
+    e.style.display="none"
+  }
+  return true;
+}
+</script>
+</head> 	
+
+<body> 
+<!-- Start of first page: #one -->
+<div data-role="page" id="one" data-theme="b">
+	<div data-role="header" data-position="fixed"><h1> الكرة الأرضية</h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
+	</div><!-- /header -->
+	<div data-role="content">
+
+	<div style="text-align:center;"><img src="images/positional.png" style="max-width:100%"/></div>
+
+<H1><FONT SIZE=5>الكرة الأرضية <BR></FONT><FONT SIZE=4>The
+terrestrial sphere</FONT><FONT SIZE=5> </FONT>
+</H1>
+<P><FONT SIZE=4>Start with a familiar sphere: the Earth (assume for
+the moment that it <I>is </I>spherical), spinning around an axis. </FONT>
+</P>
+<P><FONT SIZE=4>The <B>North &amp; South Poles</B> are where this
+axis meets the Earth's surface. The <B>equator</B> lies midway
+between them. </FONT>
+</P>
+<P><FONT SIZE=4>The equator is an example of a <B>great circle</B>:
+one whose plane passes through the centre of the sphere. <BR>Every
+great circle has two <I>poles</I>. We can define these: <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a)
+as the points which are 90&deg; away from the circle, on the surface
+of the sphere.<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b) as the points
+where the perpendicular to the plane of the great circle cuts the
+surface of the sphere. <BR>These two definitions are equivalent. </FONT>
+</P>
+<P><FONT SIZE=4>The <B>length of a great-circle arc</B> on the
+surface of a sphere <BR>is the angle between its end-points, as seen
+at the centre of the sphere, <BR>and is expressed in degrees (not
+miles, kilometres etc.). </FONT>
+</P>
+<P><FONT SIZE=4>A great circle is a <B>geodesic</B> (the shortest
+distance between two points) on the surface of a sphere, <BR>analogous
+to a straight line on a plane surface. </FONT>
+</P>
+<P><FONT SIZE=4>To describe a location X on the surface of the Earth,
+we use<B> latitude </B>and <B>longitude</B> <BR>(two coordinates,
+because the surface is two-dimensional).</FONT></P>
+
+ <div class="mikimg"><img src="images/xworld.png" style="max-width: 100%" /></div>
+
+<P><FONT SIZE=4>Draw a great circle from pole to pole, passing
+through location X: this is a <B>meridian of longitude</B>. </FONT>
+</P>
+<P><FONT SIZE=4>The <B>latitude </B>of X is the angular distance
+along this meridian from the equator to X, <BR>measured from -90&deg;
+at the South Pole to +90&deg; at the North Pole. </FONT>
+</P>
+<P><FONT SIZE=4>The <B>co-latitude</B> of X is the angular distance
+from the North Pole to X <B>= 90&deg; - latitude</B>.</FONT></P>
+<P><FONT SIZE=4>There is no obvious point of origin for measuring
+longitude; <BR>for historical reasons, the zero-point is the meridian
+which passes through Greenwich (also called the <B>Prime Meridian</B>).
+<BR>The <B>longitude</B> of X is the angular distance along the
+equator from the Prime Meridian to the meridian through X. <BR>It may
+be measured east or west 0&deg; to 360&deg;, or both ways 0&deg; to
+180&deg;. </FONT>
+</P>
+<P><FONT SIZE=4>Small circles parallel to equator are <B>parallels of
+latitude</B>. <BR>The circumference of a small circle at any given
+latitude is 360&nbsp;</FONT><I>x</I><FONT SIZE=4> cos(latitude)
+degrees. </FONT>
+</P>
+<P><FONT SIZE=4>The <B>length of arc of a small circle</B> between
+two meridians of longitude is <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(difference
+in longitude) </FONT><I>x</I><FONT SIZE=4> cos(latitude). <BR>The
+great-circle distance is always less than this, as we shall see in
+the next section. </FONT>
+</P>
+<P><FONT SIZE=4>Note that a position on the surface of the Earth is
+fixed using <BR><I>one fundamental circle</I> (the equator) <BR>and
+<I>one fixed point on it</I> (the intersection with Greenwich
+Meridian). </FONT>
+</P>
+<P><FONT SIZE=4>Celestial navigation used at sea (and in the air)
+involves spherical trigonometry, <BR>so the results are in angular
+measure (degrees). <BR>These must be converted to linear measure for
+practical use. <BR>We define the <B>nautical mile</B> as 1 arc-minute
+along a great circle on Earth's surface. <BR>This comes out about 15%
+greater than the normal &quot;statute&quot; mile (6080 feet instead
+of 5280 feet). </FONT>
+</P>
+<P><FONT COLOR="#800000"><FONT SIZE=4><B><FONT SIZE=4 STYLE="font-size: 16pt">Exercise:<BR></FONT></B>Alderney,
+in the Channel Islands, has longitude 2&deg;W, latitude 50&deg;N.
+<BR>Winnipeg, in Canada, has longitude 97&deg;W, latitude 50&deg;N.
+<BR>How far apart are they, in nautical miles, along a parallel of
+latitude? </FONT></FONT>
+</P>
+<div><input type="button" class="button" onclick="return toggleMe('para1')" value=" اضغط هنا للحصول على الجواب ">
+</div>
+<div id="para1" style="display:none">
+
+<P><FONT COLOR="#280099"><FONT SIZE=4>Distance along a parallel of
+latitude is (difference in longitude) x cos(latitude) <BR>= (97&deg;
+- 2&deg;) cos(50&deg;) = 61.06&deg; </FONT></FONT>
+</P>
+<P><FONT COLOR="#280099"><FONT SIZE=4>But 1&deg; = 60 nautical miles.</FONT></FONT></P>
+<P><FONT COLOR="#280099"><FONT SIZE=4>So the distance is 61.06 x 60 =
+3663 nautical miles.</FONT></FONT></P>
+
+</div>
+<p><font size=3><i><b>Note:</b> terrestrial coordinates are actually more complicated than this, because the Earth is not really a sphere.  
+One source where you 
+can find out more about this is the Ordnance Survey's "<a href="http://www.ordnancesurvey.co.uk/oswebsite/gps/docs/A_Guide_to_Coordinate_Systems_in_Great_Britain.pdf">Guide 
+to coordinate systems in Great Britain</a>".</i></font>
+</P>
+<BR><hr>
+<FONT SIZE=4>الموضوع السابق: </FONT>
+ <a  href="intro.html" data-icon="refresh" rel="external"> <FONT SIZE=4>مقدمة<FONT SIZE=4>
+</a>
+<BR />
+الموضوع التالي: </FONT> <a  href="002.html" data-icon="refresh" rel="external"><FONT SIZE=4>هندسة المثلثات الكروية</FONT></A>
+<FONT SIZE=4> <BR>العودة إلى </FONT> <a  href="index.html" data-icon="refresh" rel="external"> <FONT SIZE=4>الفهرس</FONT></A>
+
+
+</div><!-- /content -->
+
+<div data-role="footer"  data-position="fixed">
+		<h3>ترجمة قتيبة أقرع</h3>
+	</div><!-- /footer -->
+</div><!-- /page one --> 
+</body>
+</html>

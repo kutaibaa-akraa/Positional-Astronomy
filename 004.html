@@ -1,0 +1,236 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!-- عنوان الصفحة -->
+	<title>
+إحداثيات استوائية (1) HA-Dec
+               </title> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="css/theme.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+	 <style type="text/css">
+/* تهيئة الصندوق لعناوين الفقرات القابلة للطي */
+input.button {
+  color: #fff; background: #c0c0c0 ;
+  font-size: 1em;
+  font-weight:bold;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: solid 1px #ffcf31 ;
+}
+</style>
+<script type="text/javascript">
+function toggleMe(a){
+  var e=document.getElementById(a);
+  if(!e)return true;
+  if(e.style.display=="none"){
+    e.style.display="block"
+  } else {
+    e.style.display="none"
+  }
+  return true;
+}
+</script>
+</head> 	
+<body> 
+<!-- Start of first page: #one -->
+<div data-role="page" id="one" data-theme="b">
+	<div data-role="header" data-position="fixed"><h1>إحداثيات استوائية (1) HA-Dec</h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
+	</div><!-- /header -->
+	<div data-role="content">
+	<div class="mikimg"><img src="images/positional.png" class="mikimg" style="max-width: 100%" /></div>
+
+<H1><FONT SIZE=5>إحداثيات استوائية (1) HA-Dec <BR></FONT><FONT SIZE=4>the first equatorial or &quot;HA-dec.&quot; system </FONT>
+</H1>
+
+<P><FONT SIZE=3><B>{Note:</B> If your browser does not distinguish between
+&quot;a,b&quot; and &quot;&alpha;, &beta; &quot; (the Greek letters
+&quot;<I>alpha, beta</I>&quot;)  then I am afraid you will not be able to
+make much sense of the equations on this page.}
+
+
+<P><FONT SIZE=4>Any coordinates given in the horizontal or alt-az
+system <BR>depend on the <I>place </I><SPAN STYLE="font-style: normal">of
+observation</SPAN><I> <BR></I>(because the sky appears different from
+different points on Earth) <BR>and on the <I>time </I><SPAN STYLE="font-style: normal">of
+observation</SPAN><I> <BR></I>(because the Earth rotates, and each
+star appears to trace out a circle centred on North Celestial Pole). </FONT>
+</P>
+<P><FONT SIZE=4>We need a system of celestial coordinates which is
+fixed on the sky, <BR>independent of the observer's time and place.
+<BR>For this, we change the <I>fundamental circle</I> <BR>from the
+horizon to the <I>celestial equator</I>. </FONT>
+</P>
+<P><FONT SIZE=4>The North Celestial Pole (NCP) and the South
+Celestial Pole (SCP)<BR>lie directly above North and South Poles of
+Earth. <BR>The NCP and SCP form the poles of a great circle on
+celestial sphere, analogous to the equator on Earth. <BR>It is called
+the <B>celestial equator</B> and it lies directly above the Earth's
+equator. </FONT>
+</P>
+<P><FONT SIZE=4>Any great circle between the NCP and the SCP is a
+<B>meridian</B>. <BR>The one which also passes through the zenith and
+the nadir <BR>is &quot;the&quot; <B>celestial meridian</B>, or the
+observer's meridian. <BR>(It is identical to the principal vertical.)
+<BR>This provides our new zero-point; <BR>in this case, we use the
+point where it crosses the <I>southern</I> half of the equator. </FONT>
+</P>
+<P> <div class="mikimg"><img src=" images/HADEC.png" class="mikimg" style="max-width: 100%" /></div>
+
+<p>A typical star comes up over the horizon (rises) somewhere in the
+eastern sector; <BR>it moves round to the right, climbing higher in
+the sky; <BR>it reaches its highest point when it's due south, <I>i.e.</I>
+on the meridian; <BR>it continues moving right, and sinking lower;
+<BR>and it disappears below the horizon (sets) somewhere in the
+western sector.<BR><I>(Note that this is only true in the northern
+hemisphere;<BR>in the southern hemisphere, the star will move to the
+left, <BR>and reach its highest point when it's due north.<BR>In what
+follows, I assume we are in the northern hemisphere.)</I> <BR>The
+star's highest point, due south, is called <B>(upper) transit</B> or
+<B>culmination</B>. <BR>The star will also cross the meridian again,
+in the opposite direction, <BR>at the lowest point in its daily path.
+<BR>This is called <B>lower transit</B>, and it occurs below the
+horizon unless the star is <B>circumpolar</B>. </FONT>
+</P>
+<P><FONT SIZE=4>Stars close to North Celestial Pole never set; <BR>if
+a star's north polar distance is less than the altitude of the Pole,
+<BR>then that star cannot reach the horizon. <BR>These are defined as
+<B>north circumpolar stars</B>. <BR>Similarly, stars close to the
+South Celestial Pole will never rise: <BR>these are <B>south
+circumpolar stars</B>. <BR>All others are <B>equatorial stars</B>,
+which rise and set.<BR>The division between circumpolar and
+equatorial stars <BR>depends on the altitude of the North Celestial
+Pole, <BR><I>i.e.</I> on the observer's latitude. </FONT>
+</P>
+<P><FONT SIZE=4>To fix the coordinates of an object X on the
+celestial sphere, <BR>draw the meridian through X. <BR>The
+<B>declination</B> &delta; of X is the
+angular distance <BR>from the celestial equator to X, <BR>measured
+from -90&deg; at the SCP to +90&deg; at the NCP. <BR>Any point on
+celestial equator has declination 0&deg;. <BR>Alternatively, the
+<B>North Polar Distance</B> of X = 90&deg; - &delta;.
+<BR>Any two objects with the same declination lie on a <B>parallel of
+declination</B>. </FONT>
+</P>
+<P><FONT SIZE=4>The <B>Hour Angle</B> or HA (H) of object X <BR>is
+the angular distance between the meridian of X and &quot;the&quot;
+celestial meridian. <BR>It is measured westwards in <I>hours</I>,
+0h-24h, since the Earth rotates 360&deg; in 24 hours.</FONT></P>
+<TABLE>
+	<TR >
+		<th >
+			<B>time interval </B>
+		</th>
+		<th>&nbsp;&nbsp;</th>
+		<th>
+			<B>angle&nbsp;</B>
+		</th>
+	</TR>
+	<TR >
+		<TD >
+			1 hour
+		</TD>
+		<td></td>
+		<TD>
+			15&deg;
+		</TD>
+	</TR>
+	<TR >
+		<TD>
+			1 minute
+		</TD> 	<td></td>
+		<TD >
+			15'
+		</TD>
+	</TR>
+	<TR >
+		<TD>
+			1 second
+		</TD> 	<td></td>
+		<TD>
+			15&quot;
+		</TD>
+	</TR>
+</TABLE>
+<P><FONT SIZE=4><BR>An object on the meridian (culminating) has H =
+0h. <BR>Its HA then steadily increases as the object moves westwards.
+<BR>At lower transit, when it is due north (and possibly below the
+horizon), H = 12h. <BR>At H = 23h, it is just one hour short of
+culminating again. </FONT>
+</P>
+<P><FONT SIZE=4>This system is still dependent on the time of
+observation, <BR>but an object's declination generally doesn't change
+rapidly, <BR>and its Hour Angle can be determined quite simply,
+<BR>given the time and the location. <BR>A telescope can be built on
+an <B>equatorial mounting</B>, <BR>with its axis pointing at the NCP.
+<BR>Once it is set on a star, <BR>if the telescope rotates about its
+polar axis at the correct speed (15&deg; per hour), <BR>the star will
+stay in view.</FONT></P>
+<P><FONT COLOR="#800000"><FONT SIZE=4><B><FONT SIZE=4 STYLE="font-size: 16pt">Exercise:<BR><BR></FONT></B>The
+most northerly star of the Southern Cross, &gamma; 
+Crucis, has declination -57&deg;.<BR>At what latitude will it just be
+visible? </FONT></FONT>
+</P>
+<P><FONT COLOR="#800000"><FONT SIZE=4>At what latitude will it pass
+directly overhead?</FONT></FONT></P>
+<P><FONT COLOR="#800000"><FONT SIZE=4>At what latitudes will it never
+set? </FONT></FONT></P>
+<div><input type="button" class="button" onclick="return toggleMe('para1')" value=" اضغط هنا للحصول على الجواب ">
+</div>
+<div id="para1" style="display:none">
+
+ <div class="mikimg"><img src=" images/prob4a.png" class="mikimg" style="max-width: 100%" /></div>
+
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>The star is at S (just on the
+horizon), 57&deg; from the equator. <BR>So at this place, it must be
+33&deg; from the equator to the zenith. <BR>So it must be 57&deg;
+from the zenith to the north celestial pole. <BR>So it must be 33&deg;
+from the pole to the northern horizon.<BR>But the altitude of the
+north celestial pole is the latitude of the place.<BR>So the latitude
+is 33&deg;N.<BR>So any observer north of latitude 33&deg;N is unable
+to see the Southern Cross.</FONT></FONT></P>
+<P><FONT COLOR="#800000"><FONT SIZE=4><BR>At
+what latitude will it pass directly overhead?</FONT></FONT></P>
+<P> <div class="mikimg"><img src=" images/prob4b.png" class="mikimg" style="max-width: 100%" /></div>
+</P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>The star is at Z, the
+zenith.<BR>It is 57&deg; from there to the equator, <BR>so at this
+place it must be 33&deg; from the equator to the horizon. <BR>So P is
+57&deg; below the northern horizon.<BR>So the latitude is 57&deg;S.<BR><I>Note:
+as a general rule, if a star of declination x&deg; passes
+overhead,<BR>then the place has latitude x&deg;.</I></FONT></FONT></P>
+<P><FONT COLOR="#800000"><FONT SIZE=4><BR>At
+what latitudes will it never set? </FONT></FONT>
+</P>
+<br>
+<P> <div class="mikimg"><img src=" images/prob4c.png" class="mikimg" style="max-width: 100%" /></div>
+<BR>
+</P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>Suppose the star is at S, just
+on the southern horizon.<BR>It is 57&deg; from S down to the
+equator<BR>so it must be 33&deg; from S up to the south celestial
+pole.<BR>If the SCP is 33&deg; above the southern horizon,<BR>then
+the NCP must be 33&deg; below the northern horizon.<BR>So the
+latitude here is -33&deg;, or 33&deg;S. <BR>The star will never set
+(it will be circumpolar) <BR>for any observer south of 33&deg;S.</FONT></FONT></P>
+</div>
+<br><hr>
+<FONT SIZE=4>الموضوع السابق: </FONT><A HREF="003.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
+الإحداثيات الأفقية</FONT>
+</A><br />
+	<FONT SIZE=4>الموضوع التالي: </FONT><A HREF="005.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
+إحداثيات استوائية (2) Ra-Dec </FONT>
+</A>
+<FONT SIZE=4> <BR>العودة إلى </FONT><A HREF="index.html" data-icon="refresh" rel="external" ><FONT SIZE=4>الفهرس</FONT></A><FONT SIZE=4>
+</FONT>
+
+</div><!-- /content -->
+
+<div data-role="footer"  data-position="fixed">
+		<h3>ترجمة قتيبة أقرع</h3>
+	</div><!-- /footer -->
+</div><!-- /page one --> 
+</body>
+</html>

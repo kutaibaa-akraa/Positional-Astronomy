@@ -1,0 +1,214 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!-- عنوان الصفحة -->
+	<title>
+الهندسة الكروية
+               </title> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="css/theme.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+	 <style type="text/css">
+/* تهيئة الصندوق لعناوين الفقرات القابلة للطي */
+input.button {
+  color: #fff; background: #c0c0c0 ;
+  font-size: 1em;
+  font-weight:bold;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: solid 1px #ffcf31 ;
+}
+</style>
+<script type="text/javascript">
+function toggleMe(a){
+  var e=document.getElementById(a);
+  if(!e)return true;
+  if(e.style.display=="none"){
+    e.style.display="block"
+  } else {
+    e.style.display="none"
+  }
+  return true;
+}
+</script>
+</head> 	
+<body> 
+<!-- Start of first page: #one -->
+<div data-role="page" id="one" data-theme="b">
+	<div data-role="header" data-position="fixed"><h1>الهندسة الكروية</h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
+	</div><!-- /header -->
+	<div data-role="content">
+	<div class="mikimg"><img src="images/positional.png" class="mikimg" style="max-width: 100%" /></div>
+<H1><FONT SIZE=5> الهندسة الكروية</FONT>
+</H1>
+<P><FONT SIZE=4>A great-circle arc, on the sphere, is the analogue of
+a straight line, on the plane. 
+</FONT>
+</P>
+<P><FONT SIZE=4>
+Where two such arcs intersect, we can define the
+<B>spherical angle</B> 
+<I>either</I> as angle between the
+tangents to the two arcs, at the point of intersection, <I>or</I>
+as the angle between the planes of the two great circles where they
+intersect at the centre of the sphere. (Spherical angle is only
+defined where arcs of <I>great </I>circles meet.) </FONT>
+</P>
+<P><FONT SIZE=4>
+A <B>المثلث الكروي</B> is made up of three arcs
+of great circles, all less than 180&deg;. The sum of the angles
+is not fixed, but will always be greater than 180&deg;. If any
+side of the triangle is exactly 90&deg;, the triangle is called
+<B>quadrantal</B>.
+ </FONT>
+</P>
+<P><FONT SIZE=4>
+There are many formulae relating the sides and angles
+of a spherical triangle. <BR>
+In this course we use only two: the <I>sine
+rule </I>and the <I>cosine rule</I>.
+</FONT></P><br/>
+<P><div class="mikimg"><img src=" images/derive1.png " class="mikimg" style="max-width: 100%" /></div>
+<FONT SIZE=4>
+Consider
+a triangle ABC on the surface of a sphere with radius = 1.
+ </FONT>
+</P><br/>
+<P ALIGN=RIGHT><I><FONT SIZE=4>(See <A HREF="002a.html" data-icon="refresh" rel="external" > ملاحظات حول الهندسة الكروية)</A></FONT></I>
+</P>
+<P><FONT SIZE=4>
+We use the capital letters A, B, C to denote the
+angles at these corners;<BR>we use the lower-case letters a, b, c to
+denote the <I>opposite </I>sides.<BR>(Remember that, in spherical
+geometry, the side of a triangle is the arc of a great circle, <BR>
+so
+it is also an angle.)</FONT></P>
+<P><FONT SIZE=4><BR>Turn the sphere so that A is at the &quot;north
+pole&quot;, <BR>and let arc AB define the &quot;prime meridian&quot;.
+</FONT>
+</P>
+<P ALIGN=RIGHT><BR>
+</P>
+<P><FONT SIZE=4>Set up a system of rectangular axes OXYZ: <BR>O is at
+the centre of the sphere; <BR>OZ passes through A; <BR>OX passes
+through arc AB (or the extension of it); <BR>OY is perpendicular to
+both. <BR>Find the coordinates of C in this system: <BR>
+	<FONT COLOR="#004a4a">x
+= sin(b) cos(A) <BR>y = sin(b) sin(A) <BR>z = cos(b) </FONT></FONT><BR>
+</P>
+<P>
+	 	<div class="mikimg"><img src="images/derive2.png" class="mikimg" style="max-width:100%"/></div> 
+<FONT SIZE=4>Now
+create a new set of axes, keeping the y-axis fixed and moving the
+&quot;pole&quot; from A to B <BR>(i.e. rotating the x,y-plane through
+angle c). <BR>The new coordinates of C are <BR><FONT COLOR="#004a4a">x'
+= sin(a) cos(180-B) = - sin(a) cos(B)<BR>y' = sin(a) sin(180-B) =
+&nbsp;&nbsp;&nbsp;sin(a) sin(B)<BR>z' = cos(a) </FONT></FONT>
+</P>
+<P><FONT SIZE=4><BR>The relation
+between the old and new systems <BR>is simply a rotation of the
+x,z-axes through angle c: <BR><FONT COLOR="#004a4a">x' = x cos(c) - z
+sin(c) <BR>y' = y <BR>z' = x sin(c) + z cos(c) </FONT></FONT>
+</P>
+<P><FONT SIZE=4>That is: <BR><FONT COLOR="#004a4a">- sin(a) cos(B) =
+sin(b) cos(A) cos(c) - cos(b) sin(c) <BR>&nbsp;&nbsp;sin(a) sin(B) &nbsp;=
+sin(b) sin(A) <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cos(a)
+= sin(b) cos(A) sin(c) + cos(b) cos(c) </FONT></FONT>
+</P>
+<P><FONT SIZE=4>These three equations give us the formulae for
+solving spherical triangles.</FONT></P>
+<P><BR><BR>
+</P>
+<P><FONT SIZE=4>The first equation is the <B>transposed cosine rule</B>,
+<BR>which is sometimes useful but need not be memorised. </FONT>
+</P>
+<P><BR><BR>
+</P>
+<P><FONT SIZE=4>The second equation gives the <B>sine rule</B>.
+Rearrange as: <BR><FONT COLOR="#004a4a">&nbsp;&nbsp;&nbsp;sin(a)/sin(A)
+= sin(b)/sin(B)</FONT> <BR>Similarly, <BR>&nbsp;&nbsp;&nbsp;sin(b)/sin(B)
+= sin(c)/sin(C), etc. <BR><BR>So the sine rule is usually expressed
+as:<BR>
+ <B>&nbsp;&nbsp;&nbsp;sin(a)/sin(A) = sin(b)/sin(B) =
+sin(c)/sin(C) </B></FONT>
+</P>
+<P><BR><BR>
+</P>
+<P><FONT SIZE=4>The third equation gives the <B>cosine rule</B>:
+<BR>&nbsp;&nbsp;&nbsp;&nbsp;<B>cos(a) = cos(b) cos(c) + sin(b) sin(c)
+cos(A) <BR></B>and similarly: <BR>&nbsp;&nbsp;&nbsp;&nbsp;<B>cos(b) =
+cos(c) cos(a) + sin(c) sin(a) cos(B) <BR>&nbsp;&nbsp;&nbsp;&nbsp;cos(c)
+= cos(a) cos(b) + sin(a) sin(b) cos(C) </B></FONT>
+</P>
+<P><FONT SIZE=4><BR>Here they are together:</FONT></P>
+<P ALIGN=LEFT STYLE="border: 1.00pt solid #800000; padding: 0.05cm"><FONT COLOR="#800000"><FONT SIZE=4><B>sine
+rule:</B><BR><B>&nbsp;&nbsp;&nbsp;sin(a)/sin(A) = sin(b)/sin(B) =
+sin(c)/sin(C) <BR><BR>cosine rule:<BR>&nbsp;&nbsp;&nbsp;&nbsp;cos(a)
+= cos(b) cos(c) + sin(b) sin(c) cos(A) <BR>&nbsp;&nbsp;&nbsp;&nbsp;cos(b)
+= cos(c) cos(a) + sin(c) sin(a) cos(B) <BR>&nbsp;&nbsp;&nbsp;&nbsp;cos(c)
+= cos(a) cos(b) + sin(a) sin(b) cos(C)</B></FONT></FONT></P>
+<P><FONT SIZE=4>The cosine rule will solve almost any triangle if it
+is applied often enough. <BR>The sine rule is simpler to remember but
+not always applicable.</FONT></P>
+<P><FONT SIZE=4><B>Note </B>that both formulae can suffer from
+ambiguity: <BR><I>E.g.</I> if the sine rule yields <BR>&nbsp;&nbsp;&nbsp;sin(x)
+= 0.5, <BR>then x may be 30&deg; <I>or</I> 150&deg;. <BR>Or, if the
+cosine rule yields<BR>&nbsp;&nbsp;&nbsp;cos(x) = 0.5,<BR>then x may
+be 60&deg; <I>or </I>300&deg; (-60&deg;). <BR>In this case, there is
+no ambiguity if x is a <I>side </I>of the triangle, as it must be
+less than 180&deg;, <BR>but there could still be uncertainty if an
+<I>angle </I>of the triangle was positive or negative.</FONT></P>
+<P><FONT SIZE=4>So, when applying either formula, check to see if the
+answer is sensible. <BR>If in doubt, recalculate using the other
+formula, as a check.</FONT></P>
+<P><FONT COLOR="#800000"><FONT SIZE=4><B><FONT SIZE=4 STYLE="font-size: 16pt">Exercise:<BR><BR></FONT></B>Alderney,
+in the Channel Islands, has longitude 2&deg;W, latitude 50&deg;N.
+<BR>Winnipeg, in Canada, has longitude 97&deg;W, latitude 50&deg;N.
+<BR>How far apart are they, in nautical miles, along a great-circle
+arc? <BR><BR>If you set off from Alderney on a great-circle route to
+Winnipeg, <BR>in what direction (towards what azimuth) would you
+head?</FONT></FONT></P>
+<div><input type="button" class="button" onclick="return toggleMe('para1')" value=" اضغط هنا للحصول على الجواب ">
+</div>
+<div id="para1" style="display:none">
+<div class="mikimg"><img src=" images/problem2.png" class="mikimg" style="max-width: 100%" /></div>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>Use
+the cosine rule:<BR>cos AW = cos WP cos AP + sin WP sin AP cos P <BR>=
+cos<sup>2</sup>40&deg; + sin<sup>2</sup>40&deg; cos 95&deg;<br> = 0.5508
+<BR>So AW = 56.58&deg; <BR>= 
+3395
+nautical miles <BR>(This is 7% shorter than the route along a
+parallel of latitude).</FONT></FONT></P>
+<P><FONT COLOR="#800000"><FONT SIZE=4>If you set off from Alderney on
+a great-circle route to Winnipeg, <BR>in what direction (towards what
+azimuth) would you head?</FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>Use the sine rule:<BR>sin A /
+sin WP = sin P / sin WA<BR>so sin x = sin 40&deg; sin 95&deg; / sin
+56.58&deg; = 0.77<BR>so x = 50.1&deg; or 129.9&deg; .</FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>Common sense says 50.1&deg; (or
+check using cosine rule to get PW).<BR><BR>Azimuth is measured
+clockwise from north, <BR>so azimuth is 360&deg; - 50.1&deg; = 309.9&deg;
+</FONT></FONT>
+</P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>(Note that this is 40&deg;
+north of the &#147;obvious&#148; due-west course.)</FONT></FONT></P>
+
+</div>
+
+<br> <hr>
+<FONT SIZE=4>الموضوع السابق: </FONT><A HREF="001.html" data-icon="refresh" rel="external" ><FONT SIZE=4>الكرة الأرضية</FONT>
+</A><br />
+	<FONT SIZE=4>الموضوع التالي: </FONT><A HREF="002a.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
+ملاحظات حول الهندسة الكروية</FONT>
+</A>
+<FONT SIZE=4> <BR>العودة إلى </FONT><A HREF="index.html" data-icon="refresh" rel="external" ><FONT SIZE=4>الفهرس</FONT></A>
+
+</div><!-- /content -->
+<div data-role="footer"  data-position="fixed">
+		<h3>ترجمة قتيبة أقرع</h3>
+	</div><!-- /footer -->
+</div><!-- /page one --> 
+</body>
+</html>

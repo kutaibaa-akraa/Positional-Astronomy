@@ -1,0 +1,363 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!-- عنوان الصفحة -->
+	<title>
+ Ra-Decإحداثيات استوائية
+               </title> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="css/theme.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+	 <style type="text/css">
+/* تهيئة الصندوق لعناوين الفقرات القابلة للطي */
+input.button {
+  color: #fff; background: #c0c0c0 ;
+  font-size: 1em;
+  font-weight:bold;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: solid 1px #ffcf31 ;
+}
+</style>
+<script type="text/javascript">
+function toggleMe(a){
+  var e=document.getElementById(a);
+  if(!e)return true;
+  if(e.style.display=="none"){
+    e.style.display="block"
+  } else {
+    e.style.display="none"
+  }
+  return true;
+}
+</script>
+</head> 	
+<body> 
+<!-- Start of first page: #one -->
+<div data-role="page" id="one" data-theme="b">
+	<div data-role="header" data-position="fixed"><h1>إحداثيات استوائية RA-Dec</h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
+	</div><!-- /header -->
+	<div data-role="content">
+	<div class="mikimg"><img src="images/positional.png" class="mikimg" style="max-width: 100%" /></div>
+
+<H1><FONT SIZE=5>إحداثيات استوائية (2) RA-Dec <BR></FONT><FONT SIZE=4>the second equatorial or &quot;RA-dec.&quot; system </FONT>
+</H1>
+
+<P><FONT SIZE=3><B>{Note:</B> If your browser does not distinguish
+between &quot;a,b&quot; and &quot; &alpha;, &beta;
+&quot; (the Greek letters &quot;<I>alpha, beta</I>&quot;)
+then I am afraid you will not be able to make much sense of the
+equations on this page.}
+
+
+<P> <div class="mikimg"><img src=" images/RADEC.png" class="mikimg" style="max-width: 100%" /></div>
+<FONT 
+SIZE=4></p>
+<p>Coordinates
+in the first equatorial system (HA and declination) <BR>still depend
+on the <I>time </I>of observation. <BR>Now we change the <I>zero-point</I>
+for our coordinates. <BR>We choose a fixed point on the celestial
+equator, <BR>called the <B>vernal equinox</B>, or the <B>First Point
+of Aries</B>. <BR>The symbol for this is the astrological symbol for
+Aries: </FONT>
+ <div class="mikimg"><img src=" images/aries.png" class="mikimg" style="max-width: 100%" /></div>
+<BR><FONT SIZE=4>(The
+function of this point will become clearer later on.)</FONT></P>
+<P><FONT SIZE=4>The <B>declination</B>
+(&delta;) of object X is measured in the same way as before. <BR>The 
+<B>Right
+Ascension</B> or RA (&alpha;) of object X
+<BR>is the angle along the celestial equator measured eastwards <BR>from
+the vernal equinox to the meridian of X. <BR>Like HA, RA is measured
+in hours 0-24h, but it goes in the opposite direction. </FONT>
+</P>
+<br>
+<P><FONT SIZE=4>Comparison of these celestial coordinate systems with
+the terrestrial system:</FONT></P>
+<TABLE WIDTH=665 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+
+	<TR VALIGN=TOP>
+		<TD WIDTH=183>
+			<P><FONT SIZE=4><B>terrestrial </B></FONT>
+			</P>
+		</TD>
+		<TD WIDTH=142>
+			<P><FONT SIZE=4><B>alt-az</B></FONT></P>
+		</TD>
+		<TD WIDTH=168>
+			<P><FONT SIZE=4><B>HA-dec.</B></FONT></P>
+		</TD>
+		<TD WIDTH=172>
+			<P><FONT SIZE=4><B>RA-dec.</B></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=183>
+			<P><FONT SIZE=4>equator </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=142>
+			<P><FONT SIZE=4>horizon</FONT></P>
+		</TD>
+		<TD WIDTH=168>
+			<P><FONT SIZE=4>celestial equator</FONT></P>
+		</TD>
+		<TD WIDTH=172>
+			<P><FONT SIZE=4>celestial equator</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=183>
+			<P><FONT SIZE=4>North Pole </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=142>
+			<P><FONT SIZE=4>zenith</FONT></P>
+		</TD>
+		<TD WIDTH=168>
+			<P><FONT SIZE=4>North Celestial Pole</FONT></P>
+		</TD>
+		<TD WIDTH=172>
+			<P><FONT SIZE=4>North Celestial Pole</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=183>
+			<P><FONT SIZE=4>South Pole </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=142>
+			<P><FONT SIZE=4>nadir</FONT></P>
+		</TD>
+		<TD WIDTH=168>
+			<P><FONT SIZE=4>South Celestial Pole</FONT></P>
+		</TD>
+		<TD WIDTH=172>
+			<P><FONT SIZE=4>South Celestial Pole</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=183>
+			<P><FONT SIZE=4>latitude </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=142>
+			<P><FONT SIZE=4>altitude</FONT></P>
+		</TD>
+		<TD WIDTH=168>
+			<P><FONT SIZE=4>declination</FONT></P>
+		</TD>
+		<TD WIDTH=172>
+			<P><FONT SIZE=4>declination</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=183>
+			<P><FONT SIZE=4>co-latitude </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=142>
+			<P><FONT SIZE=4>zenith distance</FONT></P>
+		</TD>
+		<TD WIDTH=168>
+			<P><FONT SIZE=4>North Polar Distance</FONT></P>
+		</TD>
+		<TD WIDTH=172>
+			<P><FONT SIZE=4>North Polar Distance</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=183>
+			<P><FONT SIZE=4>parallel of latitude </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=142>
+			<P><FONT SIZE=4>parallel of altitude</FONT></P>
+		</TD>
+		<TD WIDTH=168>
+			<P><FONT SIZE=4>parallel of declination</FONT></P>
+		</TD>
+		<TD WIDTH=172>
+			<P><FONT SIZE=4>parallel of declination</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=183>
+			<P><FONT SIZE=4>meridian of longitude </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=142>
+			<P><FONT SIZE=4>vertical circle</FONT></P>
+		</TD>
+		<TD WIDTH=168>
+			<P><FONT SIZE=4>meridian</FONT></P>
+		</TD>
+		<TD WIDTH=172>
+			<P><FONT SIZE=4>meridian</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=183>
+			<P><FONT SIZE=4>Greenwich Meridian </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=142>
+			<P><FONT SIZE=4>Principal Vertical</FONT></P>
+		</TD>
+		<TD WIDTH=168>
+			<P><FONT SIZE=4>celestial meridian</FONT></P>
+		</TD>
+		<TD WIDTH=172>
+			<P><FONT SIZE=4>vernal equinox</FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=183>
+			<P><FONT SIZE=4>longitude </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=142>
+			<P><FONT SIZE=4>azimuth </FONT>
+			</P>
+		</TD>
+		<TD WIDTH=168>
+			<P><FONT SIZE=4>Hour Angle</FONT></P>
+		</TD>
+		<TD WIDTH=172>
+			<P><FONT SIZE=4>Right Ascension</FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<br>
+<P><FONT COLOR="#800000"><FONT SIZE=4><B><FONT SIZE=4 STYLE="font-size: 16pt">Exercise:<BR><BR></FONT></B>The
+four stars at the corners of the &#147;Great Square of Pegasus&#148;
+are:</FONT></FONT></P>
+<TABLE WIDTH=229 BORDER=0 CELLPADDING=0 CELLSPACING=0>
+	<COL WIDTH=61>
+	<COL WIDTH=73>
+	<COL WIDTH=95>
+	<TR VALIGN=TOP>
+		<TD WIDTH=61>
+			<P><FONT COLOR="#800000"><FONT SIZE=4><B>star</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=73>
+			<P><FONT COLOR="#800000"><FONT SIZE=4><B>R.A.</B></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=95>
+			<P><FONT COLOR="#800000"><FONT SIZE=4><B>declination</B></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=61>
+			<P STYLE="font-weight: medium"><FONT 
+COLOR="#800000"><FONT SIZE=4>&alpha;
+			And</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=73>
+			<P STYLE="font-weight: medium"><FONT COLOR="#800000"><FONT SIZE=4>00h
+			08m</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=95>
+			<P STYLE="font-weight: medium"><FONT COLOR="#800000"><FONT SIZE=4>+29&deg;05'
+			</FONT></FONT>
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=61>
+			<P STYLE="font-weight: medium"><FONT 
+COLOR="#800000"><FONT SIZE=4>&beta;
+			Peg</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=73>
+			<P STYLE="font-weight: medium"><FONT COLOR="#800000"><FONT SIZE=4>23h
+			04m</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=95>
+			<P STYLE="font-weight: medium"><FONT COLOR="#800000"><FONT SIZE=4>+28&deg;
+			05' </FONT></FONT>
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=61>
+			<P STYLE="font-weight: medium"><FONT 
+COLOR="#800000"><FONT SIZE=4>&alpha;
+			Peg</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=73>
+			<P STYLE="font-weight: medium"><FONT COLOR="#800000"><FONT SIZE=4>23h
+			05m</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=95>
+			<P STYLE="font-weight: medium"><FONT COLOR="#800000"><FONT SIZE=4>+15&deg;
+			12' </FONT></FONT>
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=61>
+			<P STYLE="font-weight: medium"><FONT 
+COLOR="#800000"><FONT SIZE=4>&gamma;
+			Peg</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=73>
+			<P STYLE="font-weight: medium"><FONT COLOR="#800000"><FONT SIZE=4>00h
+			13m</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=95>
+			<P STYLE="font-weight: medium"><FONT COLOR="#800000"><FONT SIZE=4>+15&deg;
+			11'</FONT></FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<P><FONT COLOR="#800000"><FONT SIZE=4>Calculate the lengths of the
+two diagonals of the &#147;Square&#148;.</FONT></FONT></P>
+
+<div><input type="button" class="button" onclick="return toggleMe('para1')" value=" اضغط هنا للحصول على الجواب ">
+</div>
+<div id="para1" style="display:none">
+<P> <div class="mikimg"><img src=" images/prob5a.png" class="mikimg" style="max-width: 100%" /></div>
+
+</P>
+<br>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>It is necessary to plot the
+four stars, at least approximately,<BR>to find out which pairs form
+the diagonals!</FONT></FONT></P>
+<P><BR><FONT SIZE=4><FONT COLOR="#0000ff">Then, to find the length of
+each diagonal, use the cosine rule:<BR>cos S<SUB>1</SUB>S<SUB>2</SUB>
+= cos S<SUB>1</SUB>P cos S<SUB>2</SUB>P + sin S<SUB>1</SUB>P sin S<SUB>2</SUB>P
+cos P</FONT></FONT></P>
+<P> <div class="mikimg"><img src=" images/prob5b.png" class="mikimg" style="max-width: 100%" /></div>
+</P>
+<br>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>This gives &alpha;
+And to &alpha; Peg = 20.1&deg;<BR>and &beta;
+Peg to &gamma; Peg = 20.5&deg;.</FONT></FONT></P>
+</div>
+
+<br>
+<P><FONT SIZE=4>The Right Ascension and declination of a star <BR>do
+not normally change over short periods of time; <BR>but the Hour
+Angle changes constantly with time. <BR>Consequently we have to find
+a way of defining the time.</FONT></P>
+ <br><hr>
+ 	<FONT SIZE=4>الموضوع السابق: </FONT><A HREF="004.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
+إحداثيات استوائية HA-Dec</FONT>
+</A><br />
+	<FONT SIZE=4>الموضوع التالي: </FONT><A HREF="006.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
+الزمن النجمي</FONT>
+</A>
+<FONT SIZE=4> <BR>العودة إلى </FONT><A HREF="index.html" data-icon="refresh" rel="external" ><FONT SIZE=4>الفهرس</FONT></A><FONT SIZE=4>
+</FONT>
+
+</div><!-- /content -->
+
+<div data-role="footer"  data-position="fixed">
+		<h3>ترجمة قتيبة أقرع</h3>
+	</div><!-- /footer -->
+</div><!-- /page one --> 
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!-- عنوان الصفحة -->
+	<title>
+الزمن النجمي  </title> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
+	<link rel="stylesheet" href="css/theme.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.1.min.js"></script>
+	 <style type="text/css">
+/* تهيئة الصندوق لعناوين الفقرات القابلة للطي */
+input.button {
+  color: #fff; background: #c0c0c0 ;
+  font-size: 1em;
+  font-weight:bold;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: solid 1px #ffcf31 ;
+}
+</style>
+<script type="text/javascript">
+function toggleMe(a){
+  var e=document.getElementById(a);
+  if(!e)return true;
+  if(e.style.display=="none"){
+    e.style.display="block"
+  } else {
+    e.style.display="none"
+  }
+  return true;
+}
+</script>
+</head> 	
+<body> 
+<!-- Start of first page: #one -->
+<div data-role="page" id="one" data-theme="b">
+	<div data-role="header" data-position="fixed"><h1>الزمن النجمي</h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
+	</div><!-- /header -->
+	<div data-role="content">
+	<div class="mikimg"><img src="images/positional.png" class="mikimg" style="max-width: 100%" /></div>
+
+<H1><FONT SIZE=5>الزمن النجمي<BR></FONT><FONT SIZE=4>Sidereal
+Time</FONT></H1>
+<P> <div class="mikimg"><img src=" images/sidsolar.png" class="mikimg" style="max-width: 50%;" /></div>
+<FONT SIZE=4>Which
+stars are on your local meridian?<BR>It depends on the time at which
+you observe.<BR>In fact, it depends on both the <I>date </I>and the
+(clock) time,<BR>because the Earth is in orbit around the Sun.</FONT></P>
+<P><FONT SIZE=4>Consider the Earth at position E<SUB>1</SUB> on the
+diagram. <BR>The star shown is on the meridian at midnight by the
+clock.<BR>But three months later, when the Earth reaches position E<SUB>2</SUB>
+, <BR>the same star is on the meridian at 6 p.m. by the clock.</FONT></P>
+<P><FONT SIZE=4>Our clocks are set to run (approximately) on <B>solar
+time </B>(sun time).<BR>But for astronomical observations, we need to
+use <B>sidereal time </B>(star time).</FONT></P>
+<P><BR><BR>
+</P>
+<P><FONT SIZE=4>Consider the rotation of the Earth relative to the
+stars. <BR>We define one rotation of Earth as one <B>sidereal
+day</B><SPAN STYLE="font-weight: medium">,</SPAN><B><BR></B><SPAN STYLE="font-weight: medium">measured
+as the time between two successive meridian passages of the same
+star.<BR>Because of the Earth's orbital motion, this is a little
+shorter than a solar day. <BR><I>(In one year, the Earth rotates 365
+times relative to the Sun,<BR>but 366 times relative to the stars.
+<BR>So the sidereal day is about 4 minutes shorter than the solar
+day.)</I></SPAN></FONT></P>
+<P><FONT SIZE=4>We define <B>Local Sidereal Time</B> (LST) to be 0
+hours <BR>when the vernal equinox 
+ <div class="mikimg"><img src=" images/aries.png" class="mikimg" style="max-width: 100%" /></div>
+
+is on the observer's local meridian. <BR>One hour later, <BR>the
+local Hour Angle (LHA) of the equinox is +1h (by the definition of
+Hour Angle), <BR>and the Local Sidereal Time is 1h. <BR>So at any
+instant, <B>Local Sidereal Time = Local Hour Angle of the vernal
+equinox.</B></FONT></P>
+<P><FONT SIZE=4>Here's an alternative definition: <BR>suppose that
+LST = 1h. <BR>This means that the vernal equinox has moved 15&deg;
+(1h) west of the meridian, <BR>and now some other star X is on the
+meridian. <BR>But the Right Ascension of star X is the angular
+distance from the vernal equinox to X = 1h = LST. <BR>So at any
+instant, <B>Local Sidereal Time = Right Ascension of whichever stars
+are on the meridian</B>. </FONT>
+</P>
+<P><FONT SIZE=4>And in general, <FONT COLOR="#800000">the Local Hour
+Angle of a star = Local Sidereal Time - RA of the star.</FONT></FONT></P>
+<P><FONT SIZE=4>However, at any instant,<BR>different observers, to
+the east or west, will have different stars on their local
+meridians.<BR>We need to choose one particular meridian to act as a
+reference point; we choose Greenwich.</FONT></P>
+<P><FONT SIZE=4>We define the <B>Greenwich Hour Angle</B> of X <BR>as
+the Hour Angle of X relative to the celestial meridian <I>at
+Greenwich</I>. <BR>Then we can define <B>Greenwich Sidereal Time</B>
+(GST) <BR>as the Greenwich Hour Angle of the vernal equinox. <BR>This
+gives the important relation <BR><B>LST = GST - longitude west</B>.
+<BR><BR>Recall that the Local Hour Angle (LHA) of a star = Local
+Sidereal Time - RA of the star. <BR>In particular, the Greenwich Hour
+Angle (GHA) of a star = Greenwich Sidereal Time - RA of the star.
+<BR>Combining these, we find<BR><B>LHA(star) = GHA(star) - longitude
+west</B>. </FONT>
+</P>
+<P><FONT COLOR="#800000"><FONT SIZE=4 STYLE="font-size: 16pt"><B>Exercise:</B></FONT></FONT></P>
+<P><FONT COLOR="#800000"><FONT SIZE=4>At midnight on 1998 February
+4th, <BR>Local Sidereal Time at St.Andrews was 8h45m. <BR>St.Andrews
+has longitude 2&deg;48'W. <BR>What was the Local Hour Angle of
+Betelgeuse (R.A. = 5h55m) at midnight? </FONT></FONT>
+</P>
+<P><FONT COLOR="#800000"><FONT SIZE=4>At what time was Betelgeuse on
+the meridian at St.Andrews? </FONT></FONT>
+</P>
+<P><FONT COLOR="#800000"><FONT SIZE=4>At what time was Betelgeuse on
+the meridian at Greenwich? </FONT></FONT>
+</P>
+<div><input type="button" class="button" onclick="return toggleMe('para1')" value=" اضغط هنا للحصول على الجواب ">
+</div>
+<div id="para1" style="display:none">
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>RA of Betelgeuse = 5h 55m<BR>At
+midnight, LST = 8h 45m<BR>Local Hour Angle = LST - RA <BR>so the
+Local Hour Angle of Betelgeuse was 8h 45m - 5h 55m = 2h 50m.</FONT></FONT></P>
+<P><FONT COLOR="#800000"><FONT SIZE=4>At what time was Betelgeuse on
+the meridian at St.Andrews?</FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>On the meridian, Local Hour
+Angle = 0, <BR>so if Betelgeuse was on the meridian at St.Andrews,
+<BR>LST in St.Andrews = RA of Betelgeuse = 5h 55m.<BR>(Recall that
+LST = RA of stars on local meridian.)</FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>We are told that the LST was 8h
+45m at midnight.<BR>But at midnight, Betelgeuse was at Hour Angle 2h
+50m, <BR>so it would be on the meridian 2h 50m <I>before
+</I>midnight,<BR>that is, at 21h 10m.<BR>So Betelgeuse was on the
+meridian <SPAN STYLE="font-style: normal">in St.Andrews </SPAN>at 21h
+10m.</FONT></FONT></P>
+<P><FONT COLOR="#800000"><FONT SIZE=4>At what time was Betelgeuse on
+the meridian at Greenwich?</FONT></FONT></P>
+<P><FONT COLOR="#0000ff"><FONT SIZE=4>St.Andrews is 2&deg;48' west of
+Greenwich = 0h 11m (divide by 15).<BR>So Betelgeuse was on the
+<I>Greenwich </I>meridian <BR>11 minutes before it reached the
+St.Andrews meridian. <BR><I>i.e</I>. at 20h 59m.</FONT></FONT></P>
+</div>
+
+<p><font size=4><i>For a more detailed discussion of Sidereal Time and related topics, see Chapter 2 of 
+<a 
+href="http://www.usno.navy.mil/USNO/astronomical-applications/publications/Circular_179.pdf"> USNO 
+Circular No.179</a></i>.
+
+
+<br><hr>
+	<FONT SIZE=4>الموضوع السابق: </FONT><A HREF="005.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
+إحداثيات استوائية  RA-Dec</FONT>
+</A><br />
+	<FONT SIZE=4>الموضوع التالي: </FONT><A HREF="007.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
+تحويلات أفقية - استوائية</FONT>
+</A>
+<FONT SIZE=4> <BR>العودة إلى </FONT><A HREF="index.html" data-icon="refresh" rel="external" ><FONT SIZE=4>الفهرس</FONT></A><FONT SIZE=4>
+</FONT>
+
+</div><!-- /content -->
+
+<div data-role="footer"  data-position="fixed">
+		<h3>ترجمة قتيبة أقرع</h3>
+	</div><!-- /footer -->
+</div><!-- /page one --> 
+</body>
+</html>
