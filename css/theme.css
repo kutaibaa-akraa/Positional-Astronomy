@@ -22,12 +22,14 @@ p {
 	 TEXT-ALIGN: justify; 
 	 TEXT-KASHIDA: 0% ;
 	 align: justify;
+   FONT-FAMILY: Simplified Arabic;
+  line-height: 2em;
 	 }
  
 h1 {
-   font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+   font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif,Simplified Arabic;
    font-weight: bold;
-   color: #A98;
+   color: #A988;
    font-size: 1em;
    line-height: 1.4em;
    text-align: center;
@@ -35,7 +37,7 @@ h1 {
 }
 
 h2 {
-   font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+   font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif, Simplified Arabic;
    font-weight: normal;
    text-align: center;
    direction: rtl;
@@ -45,14 +47,14 @@ h2 {
 }
 
 h3 {
-   font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+   font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif, Simplified Arabic;
    font-weight: bold;
    text-align: center;
    line-height: 1em;
 }
 
 h4 {
-   font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif;
+   font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif, Simplified Arabic;
    font-weight: normal;
    text-align: center;
    font-size: 0.8em;
@@ -82,10 +84,7 @@ list-style: square inside none;
 padding: 3px 0;
 margin: 0;
 }
-h3 {
-  color: #FF6600;
-  font-size:16px;
-}
+
 .imp > h3 ,.imp> h2{
   text-align: center;
 }
