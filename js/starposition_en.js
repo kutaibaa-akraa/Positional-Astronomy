@@ -3,18 +3,18 @@
 
 // Texte in HTML-Schreibweise:
 
-var text101 = "الطول الجغرافي:";
-var text103 = "العرض الجغرافي:";
-var text105 = "التاريخ:";
-var text106 = "الوقت:";
-var text107 = "h (UT)";
-var text108 = "المطلع المستقيم:";
-var text109 = "الميل:";
+var text101 = "الطول الجغرافي";
+var text103 = "العرض الجغرافي";
+var text105 = "التاريخ";
+var text106 = "الوقت";
+var text107 = "<span dir=\"ltr\">h (UT)</span>";
+var text108 = "المطلع المستقيم";
+var text109 = "الميل";
 var text110 = "إعادة تعيين";
 var text111 = ["إبدأ", "توقف مؤقت", "متابعة"];
-var text12 = "تركيز الاهتمام على:";
+var text12 = "تركيز الانتباه نحو";
 
-var author = "&nbsp;&nbsp;&copy;&nbsp; W. Fendt 1999 <br>تمت الترجمة و إعادة ترتيب بجهود<br>&nbsp;&nbsp; قتيبة أقرع - 2016";
+var author = "&nbsp;&nbsp;&copy;&nbsp; W. Fendt 1999 <br>تمت الترجمة و إعادة ترتيب بجهود<br>&nbsp;&nbsp; قتيبة أقرع - 2017";
 
 // Symbole und Einheiten:
 
@@ -25,8 +25,8 @@ var degree = "&deg;درجة";
 
 // Texte in Unicode-Schreibweise:
 
-var text102 = ["(طول شرقي)", "(طول غربي)"];
-var text104 = ["(عرض شمالي)", "(عرض جنوبي)"];
+var text102 = ["شرقاً","غرباً"];
+var text104 = ["شمالاً", "جنوباً"];
 var text13 = ["", "نقطة الرصد", "الأفق",
               "نقطة الشمال", "نقطة الغرب", "نقطة الجنوب", "نقطة الشرق", 
               "سمت الرأس", "النظير", "خط منتصف النهار", "دائرة الارتفاع", 
@@ -49,9 +49,9 @@ var symbolSouth = "جنوب";                                     // S�dpunkt
 var symbolEast = "شرق";                                      // Ostpunkt
 var symbolZenith = "سمت الرأس";                                   // Zenit
 var symbolNadir = "النظير";                                    // Nadir
-var symbolNorthPole = "القطب السماوي الشمالي";                                // Himmelsnordpol
-var symbolSouthPole = "القطب السماوي الجنوبي";                                // Himmelss�dpol
-var symbolVernalEquinox = "نقطة الاعتدال الربيعي";                             // Fr�hlingspunkt
+var symbolNorthPole = "ق س ش";                                // Himmelsnordpol
+var symbolSouthPole = "ق س ج";                                // Himmelss�dpol
+var symbolVernalEquinox = "الاعتدال الربيعي";                             // Fr�hlingspunkt
 var symbolStar = "نجم";                                     // Stern
 var symbolHour = "h";                                      // Stunde
 
@@ -61,5 +61,5 @@ var defaultLongitude = 36*DEG;                              // Geographische L�
 var defaultLatitude = 33*DEG;                              // Geographische Breite (دمشق)
 var defaultDay = 1;                                        // Tag
 var defaultMonth = 1;                                      // Monat
-var defaultYear = 2000;                                    // Jahr
+var defaultYear = 2017;                                    // Jahr
 var defaultTimeZone = 0;                                   // Zeitzone relativ zu UT (h)

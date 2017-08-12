@@ -13,11 +13,11 @@
 
 // Farben:
 
-var colorBackground = "#F9F5EC";                           // Hintergrundfarbe
-var colorHeaven = "#00ffff";                               // Farbe f�r Himmelskugel
-var colorHorizon = "#00ff00";                              // Farbe f�r Horizontebene
-var colorEarth = "#ffc040";                                // Farbe f�r Bereich unter dem Horizont
-var colorVisible = "#ff00ff";                              // Farbe f�r Objekte �ber dem Horizont
+var colorBackground = " #c0c0c0 ";                           // Hintergrundfarbe
+var colorHeaven = "A8E4FF";                               // Farbe f�r Himmelskugel
+var colorHorizon = "B3FF99";                              // Farbe f�r Horizontebene
+var colorEarth = "FFC65B";                                // Farbe f�r Bereich unter dem Horizont
+var colorVisible = "F70000";                              // Farbe f�r Objekte �ber dem Horizont
 var colorEmphasize = "#ff0000";                            // Farbe f�r Hervorhebungen
 
 // Sonstige Konstanten:
@@ -91,7 +91,7 @@ function start () {
   canvas = getElement("cvx");                               // Zeichenfl�che
   width = canvas.width; height = canvas.height;            // Abmessungen (Pixel)
   ctx = canvas.getContext("2d");                           // Grafikkontext
-  uM = width/2; vM = R+18;                                 // Mittelpunkt der Himmelskugel (Pixel)
+  uM = width/2; vM = R+10;                                 // Mittelpunkt der Himmelskugel (Pixel)
   getElement("ip1a",text101);                               // Erkl�render Text (geographische L�nge)
   ip1 = getElement("ip1b");                                // Eingabefeld (geographische L�nge)
   getElement("ip1c",degree);                               // Einheit (geographische L�nge)
@@ -787,19 +787,19 @@ function valueAngle (s, w, x, y) {
 function values () {
   ctx.textAlign = "left";                                  // Textausrichtung
   ctx.fillStyle = "#000000";                               // Schriftfarbe
-  ctx.fillText(text14,20,height-60);                       // Erkl�render Text (Uhrzeit)
+  ctx.fillText(text14,70,height-60);                       // Erkl�render Text (Uhrzeit)
   var mi = minute+Math.floor(t*12);                        // Minuten, vorl�ufiger Wert
   var ho = (hour+Math.floor(mi/60))%24;                    // Stunden
   mi %= 60;                                                // Minuten, endg�ltiger Wert
   var s = ""+ho+timeSeparator;                             // Anfang der Zeichenkette f�r die Uhrzeit 
   if (mi < 10) s += "0";                                   // Gegebenenfalls Minuten mit f�hrender Null
   s += mi+" "+symbolHour;                                  // Zeichenkette f�r die Uhrzeit vervollst�ndigen
-  ctx.textAlign = "right";                                 // Textausrichtung
-  ctx.fillText(s,155,height-60);                           // Ausgabe Uhrzeit
-  valueAngle(text15,sidTime,20,height-40);                 // Ausgabe Sternzeit (Gradma�)
-  valueAngle(text17,hourAngle,uM,height-40);               // Ausgabe Stundenwinkel (Gradma�)
-  valueAngle(text16,azimuth,20,height-20);                 // Ausgabe Azimut (Gradma�)
-  valueAngle(text18,altitude,uM,height-20);                // Ausgabe H�he (Gradma�)
+  ctx.textAlign = "left";                                // Textausrichtung
+  ctx.fillText(s,105,height-60);                           // Ausgabe Uhrzeit
+  valueAngle(text15,sidTime,10,height-40);                 // Ausgabe Sternzeit (Gradma�)
+  valueAngle(text17,hourAngle,uM+20,height-40);               // Ausgabe Stundenwinkel (Gradma�)
+  valueAngle(text16,azimuth,10,height-20);                 // Ausgabe Azimut (Gradma�)
+  valueAngle(text18,altitude,uM+20,height-20);                // Ausgabe H�he (Gradma�)
   }
   
 // Grafikausgabe:
