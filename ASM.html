@@ -18,152 +18,176 @@
 </head>
 
 <body dir="rtl">
+ 
 <!-- Start of first page: #one -->
-<div data-role="page" id="one" data-theme="b">
+<div data-role="page" id="one" data-theme="c">
+<div data-role="panel" data-display="overlay" data-theme="b" id="listpanel">
+	<ul data-inset="true" data-role="listview" data-mini="true" data-iconpos="right" data-filter="true" data-filter-placeholder="بحث عن اسم موضوع">
+	<li data-role="divider">
+<h4>	"الفلك الموضعي"</h4></li>
+		<li>
+ <a rel="external" href="intro.html">مقدمة</a></li>
+<li>
+    <a rel="external" href="001.html"> الكرة الأرضية</a> </li><li>
+<a rel="external" href="002.html"> هندسة المثلثات الكروية</a> </li><li>
+  <a rel="external" href="002a.html">ملاحظات حول الهندسة الكروية 
+</a> </li>
+<li>
+  <a rel="external" href="003.html">إحداثيات أفقية &quot;alt-az&quot; </a> </li><li>
+  <a rel="external" href="004.html"> إحداثيات استوائية &quot;HA-dec&quot; </a> </li><li>
+  <a rel="external" href="005.html"> إحداثيات استوائية  &quot;RA-dec&quot; </a> </li><li>
+ <a rel="external" href="006.html"> الزمن النجمي </a> </li><li>
+ <a rel="external" href="007.html"> الانتقال بين أفقي و استوائي </a> </li><li>
+	<a rel="external" href="008.html"> إحداثيات مجرية </a> </li><li>
+	<a rel="external" href="009.html"> إحداثيات بروجية </a> </li><li>
+   <a rel="external" href="009a.html">الرابط بين الإحداثيات المجرية و البروجية</a> </li><li>
+<a rel="external" href="010.html">حركة الشمس و ضبط الوقت</a> </li><li>
+	<a rel="external" href="010a.html">القمر</a> </li><li>
+<a rel="external" href="011.html">الإنكسار الجوي</a> </li><li>
+<a rel="external" href="012.html">شروق و غروب الشمس، الشفق</a> </li><li>
+<a rel="external" href="013.html">اختلاف المنظر المركزي اليومي
+</a> </li><li>
+<a rel="external" href="014.html">اختلاف المنظر الموسمي</a> </li><li>
+<a rel="external" href="015.html">الزيغ</a> </li><li>
+<a rel="external" href="016.html"> المبادرة و الترنح :اضطراب محور الأرض </a> </li><li>
+<a rel="external" href="017.html">تقاويم</a> </li><li>
+<a rel="external" href="exercise.html"> الامتحان الأخير</a> </li><li>
+<a rel="external" href="arabicartic.html"> الإحداثيات الفلكية، خضر الأحمد</a> </li><li>
+<a rel="external" href="ASM.html">الحركة الظاهرية للنجوم (تفاعلي)</a> </li><li>
+<a rel="external" href="polar.html">الأقطاب السماوية (تفاعلي)</a>
+</li></ul>
+</div><!--/panel-->
+	<div data-role="header" data-theme="b" data-position="fixed"><h4>الحركة الظاهرية للنجوم</h4><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
+<a href="#listpanel" data-icon="bars" rel="external">المواضيع</a>
 
-	<div data-role="header" data-position="fixed"><h1>الحركة الظاهرية للنجوم</h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
 	</div><!-- /header -->
 
-
  	<div data-role="content" id="one" data-theme="b">
-
+<form>
+    <ul data-role="listview" data-inset="true">
+   <li > <!-- منزلقات-->
+  <label for="ip8">تغيير زاوية الرؤية</label>
+    	<input id="ip8" type="range" min="0" max="36" step="1" value="8" data-highlight="true">
+    <input id="ip9" type="range" min="0" max="18" step="1" value="5" data-highlight="true">
+        </li>
+<li class="ui-field-contain">
  <div data-role="ui-block-solo" ><canvas style="display: block; height: 100%; width: 100%;" height="400em" width="auto"  id="cvx">This browser doesn't support HTML5 canvas!</canvas>
+</div><!--solo-->
+</li>
+    
+        <li >
+  <label for="ip7b" class="select"><span id="ip7a" 	></span> </label>
+        
+   <select id="ip7b"></select> 
+       </li>
+ <li class="ui-body ui-body-b" >
+ <label for="ip1a"><span id="ip1a" ></span> </label>   
+    <fieldset class="ui-grid-a"> 
+<div class="ui-block-a">
+<!--longitude-->
+ <input id="ip1b" type="text" 	> 
+ <span id="ip1c" 	></span>
 </div>
 
-  	<table align="center">  <tr>
-  	 <td colspan="3">
-  	 	<div ><button id="bu1" style="background-color: #00ffff;" value="إعادة تعيين"></button></div>
-  	 	</td>
-  	 	 	 	 	<td colspan="3">
-    <div>
-    	<button id="bu2" value="البدء/توقف مؤقت"></button></div></td> 
-    </tr>
-    <tr>
-    	<td colspan="3"><!-- تركيز اهتمام-->
-  	  <div style="top: 30px;"><span id="ip7a" 	></span>
-  	  </td>
-  	  	<td colspan="3">
-  	  <select id="ip7b"></select>
-  	  </div>
-  	  </td>
-  	  </tr>
-  	  <tr><!-- منزلقات-->
-    <td colspan="6">
-    <div style="top: 350px;">
-    	<input id="ip8" type="range" min=0 max=36 step=1 value=0></div>
-    <div style="top: 380px;"><input id="ip9" type="range" min=0 max=18 step=1 value=0></div>
-    </td>
- 	
-   </tr>
-   <tr><!--longitude-->
-   <td>
-   	 <div style="top: 20px;"><span id="ip1a" 	></span>
-   	 </td>
-   	 <td>
-   	 	<input id="ip1b" type="text" 	>
-   	 	</td>
-   	 	<td>
-      <span id="ip1c" 	></span>
-      </td>
-      <td colspan="3">
+<div class="ui-block-b">
+   
       	<select id="ip1d"></select>
-      	</div></td> 	
-      </tr>
-      <tr><!--latitude-->
-   <td>
-   	 <span id="ip2a" 	></span>
-   	 </td>
-   	 <td>
+</div>
+    </fieldset> <!--/grid-a-->
+     </li>
+    <li class="ui-body ui-body-b">
+      <label for="ip1a"><span id="ip2a" ></span> </label> <!--latitude-->
+  
+     <fieldset class="ui-grid-a"> 
+   	 <div class="ui-block-a">
+
    	 	<input id="ip2b" type="text" 	>
-   	 		</td>
-   	 		<td>
-      <span id="ip2c" 	></span>
-      </td>
-      <td colspan="3">
+  <span id="ip2c" 	></span>
+ </div>	 	
+<div class="ui-block-b">
       	<select id="ip2d"></select>
-      	</td> 
-      </tr>
-      <tr><!-- التاريخ-->
-   <td>
-   	 <div style="top: 90px;">
-    	<span id="ip3a" 	></span>
-    	</td>
-    	<td>
-    <input id="ip3b" type="text" 	>
-    	</td>
-    	<td>
-    	<span id="ip3c" 	></span>
-    	</td>
-    	<td>
-      <input id="ip3d" type="text" 	>
-      	</td>
-      	<td>
-      	<span id="ip3e" 	></span>
-      	</td>
-      	<td>
-      	<input id="ip3f" type="text" 	></div>
-      	</td>
-      </tr>
-      <tr><!--الوقت-->
-    <td>
-    	<div style="top: 120px;"><span id="ip4a" 	></span>
-    	</td>
-    	<td>
-    		<input id="ip4b" type="text" 	>
-    			</td>
-    			<td>
-    				<span id="ip4c" 	></span>
-    				</td>
-    				<td>
+</div>
+      <!--/grid-a-->
+</fieldset>
+        </li>
+
+ <li class="ui-body ui-body-b" >
+  <label for="ip5a">احداثيات النجم المفترض</label> 
+    <fieldset class="ui-grid-a"> 
+
+<div class="ui-block-a">
+    <!--المطلع المستقيم-->
+	<h4><span id="ip5a" 	></span></h4> 
+   	 	<input id="ip5b" type="text">
+       <span id="ip5c" 	></span> 
+</div>
+<div class="ui-block-b">
+      <!--الميل-->
+   
+   <h4><span id="ip6a" 	></span></h4>
+   	   	 	<input id="ip6b" type="text" 	>
+   	 	      <span id="ip6c" 	></span>   
+</div>
+</fieldset>
+</li>
+ <li class="ui-body ui-body-b" >
+  <label for=""> <span id="ip3a" 	></span> </label> <!-- التاريخ-->
+     <fieldset class="ui-grid-d">  
+  	 <div class="ui-block-a">
+ <input id="ip3b" type="text" 	></div>
+  	 <div class="ui-block-b">
+<h4><span id="ip3c" 	></span></div></h4>
+  	 <div class="ui-block-c">
+  <input id="ip3d" type="text" 	></div>
+  	 <div class="ui-block-d">
+  	<h4><span id="ip3e" 	></span></h4></div>
+	 <div class="ui-block-e">
+	<input id="ip3f" type="text" 	>
+</div>
+</fieldset>
+</li>
+      <li class="ui-body ui-body-b" >
+  <label for=""> <span id="ip4a" 	></span> </label>    <!--الوقت-->
+     <fieldset class="ui-grid-c">  
+  	 <div class="ui-block-a">
+     		<input id="ip4b" type="text" 	>
+    			</div>
+    		 	 <div class="ui-block-b">
+    			<h4>	<span id="ip4c" 	></span></h4>
+    				</div>
+    			 	 <div class="ui-block-c">
       <input id="ip4d" type="text" 	>
-      	</td>
-      	<td dir="ltr" colspan="2">
-      		<span id="ip4e" 	></span></div>
-      		</td> 
-      </tr>
-      <tr><!--المطلع المستقيم-->
-   <td>
-   	 <div style="top: 160px;"><span id="ip5a" 	></span>
-   	 </td>
-   	 <td>
-   	 	<input id="ip5b" type="text" 	>
-   	 		</td>
-   	 		<td>
-      <span id="ip5c" 	></span></div></td>
-	<td></td> <td></td> <td></td>
-      </tr>
-      <tr><!--الميل-->
-   <td>
-   	 <div style="top: 190px;"><span id="ip6a" 	></span>
-   	 </td>
-   	 <td>
-   	 	<input id="ip6b" type="text" 	>
-   	 		</td>
-   	 		<td>
-      <span id="ip6c" 	></span></div>
-      </td>
-   	<td></td> <td></td> <td></td>
-      </tr>
-      <tr><!-- المؤلف-->
-  <td colspan="6">
-  	<div style="text-align:center;"><span id="author" 	></span></div></td>
+      	</div>
+      	 <div class="ui-block-d">
+      	<h4>	<span id="ip4e" 	></span> </h4>	
+     </div>
+</fieldset>
+</li>
+    </ul>
+</form> 
+
+      <!-- المؤلف-->
+ <span style="text-align: center;"> 
+  <div id="author" 	></div></td>
  	
-  </tr>
-  </table>
+ </span>
 <!--/div> <!-- div panl -->
 </div> <!-- div content -->
-<div data-role="footer" data-theme="a" data-position="fixed">
+<div data-role="footer" data-theme="b" data-position="fixed">
 	<div data-role="navbar">
 		
 		<ul>
-	<li> <a href=" " data-icon="arrow-l" data-iconpos="left" rel="external"> </a></li>
+<li>
+<button id="bu1">إعادة تعيين</button>
+</li>
 	 <li><h4>إعداد قتيبة أقرع</h4></li>
 			
-	 <li><a href=" " class="ui-bar" data-icon="arrow-r" data-iconpos="right" rel="external"></a></li>
+	 <li> <button type="button" id="bu2" class="ui-btn ui-btn-b">بدء/توقف مؤقت</button> </li>
 
 		</ul>	
-</div><!--navbar-->
+</div><!--/navbar-->
 	</div><!-- /footer -->
 </div><!-- /page one --> 
+
 </body>
 </html>
