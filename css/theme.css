@@ -25,7 +25,17 @@ p {
    FONT-FAMILY: Simplified Arabic;
   line-height: 2em;
 	 }
- 
+ .bu2 {
+  height:3em;
+  width: 100%; 
+/*  margin-top: 1.25em;
+ /* H�he */
+  border-radius: 10px;                            /* Abgerundete Ecken verhindern */
+ /* margin-left: 10px;                             /* Abstand vom linken Rand */
+  /* font-family: sans-serif;                       /* Schriftart */
+ /* font-size: 12px;                               /* Schriftgr��e */
+  font-weight: bold;                             /* Fettdruck */
+  } 
 h1 {
    font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif,Simplified Arabic;
    font-weight: bold;
