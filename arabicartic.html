@@ -16,7 +16,7 @@
 <!-- Start of first page: #one -->
 <div data-role="page" id="one" data-theme="b">
 <div data-role="panel" data-display="overlay" data-theme="b" id="listpanel">
-	<ul data-inset="true" data-role="listview" data-mini="true" data-iconpos="right" data-filter="true" data-filter-placeholder="بحث عن اسم موضوع">
+	<ul data-inset="true" data-role="listview" data-mini="true" data-iconpos="right" data-filter="true" data-filter-placeholder="بحث عن موضوع">
 	<li data-role="divider">
 <h4>	"الفلك الموضعي"</h4></li>
 		<li>
@@ -52,12 +52,12 @@
 </li></ul>
 </div><!--/panel-->
 
-	<div data-role="header" data-position="fixed"><h1>الإحداثيات الفلكية</h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
+	<div data-role="header" data-theme="b" data-position="fixed"><h1>الإحداثيات الفلكية</h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
 <a href="#listpanel" data-icon="bars" rel="external">المواضيع</a>
 	</div><!-- /header -->
 	<div data-role="content">
 	<div class="mikimg"><img src="images/positional.png" class="mikimg" style="max-width: 100%" /></div>
-<h1>الإحداثيات الفلكية</h1>
+<h1 class="que">الإحداثيات الفلكية</h1>
 
 <p>يطلق اسم الإحداثيات الفلكية
 <b dir="ltr">astronomical coordinates</b> على كل مجموعة من الأعداد تحدد موضع جرم سماوي في الفضاء، أو موضع نقطة من هذا الجرم. وعلى سبيل المثال، يمثل الطول والعرض الجغرافيان لمدينة إحداثيين فلكيين يسميان الإحداثيين الجغرافيين، وهما يمكنان من تحديد موقع هذه المدينة على الكرة الأرضية. و
@@ -212,7 +212,7 @@ dir="rtl"></span> تنشأ عن تغيرات في أوضاع محور دوران
 </div><!--7-->
 <div data-role="collapsible" data-content-theme="b"><!--8-->
 <h1>التصحيحات التي يجب إجراؤها على الأرصاد الفلكية</h1>
-<p><span>من الواجب إخضاع نتائج الأرصاد التي أجريت للنجوم إلى التصحيحات التالية: </span></p>
+<p><span>من الواجب إخضاع نتائج الأرصاد التي أجريت للنجوم إلى التصحيحات التالية </span></p>
 
 <p><span>1- تصحيح الانكسار الجوي.
  وفي الحقيقة، فإن وجود الغلاف الجوي المحيط بالأرض يغير من مقدار البعد السمتي س. والقسم الرئيسي من تصحيح الانكسار، وهو مقدار سالب، يساوي مـ=60ً ظل س، حيث يعبر عن مـ بالثواني. وعند الحساب الدقيق لهذا التصحيح، فإنه يجب أن يؤخذ في الحسبان درجة حرارة الجو وضغطه في تلك اللحظة التي يجري فيها الرصد ولئن كان تصحيح الانكسار ليس سوى دقيقة واحدة عندما يكون البعد السمتي 45ْ، فإنه يساوي 36ً 36َ عندما يكون هذا البعد 90ْ. ومن الواضح أن عدم دقة النتيجة تزيد مع تزايد قيم مـ. ولإجراء قياسات دقيقة، فمن الضروري الامتناع عن رصد الأجرام القريبة من الأفق (الشكل9). </span></p>
@@ -268,13 +268,17 @@ style="FONT-SIZE: 14pt; FONT-FAMILY: Simplified Arabic" xml:lang="ar-sy"> أ ن<
 <p>    ص = صَ – به حب صَ التي تبين تصحيح البعد السمتي المقيس صَ لجرم سماوي اختلاف منظره الأفقي «به». </p>
 </div><!--8-->
 <h3 style="TEXT-ALIGN: left" align="justify">خضر الأحمد </b></h3>
-<P>
-<FONT SIZE=4> <BR>العودة إلى </FONT><A HREF="index.html" data-icon="refresh" rel="external" ><FONT SIZE=4>الفهرس</FONT></A><FONT SIZE=4></FONT>
-</P>
+
 </div><!-- /content -->
 
-<div data-role="footer"  data-position="fixed">
-		<h3>ترجمة قتيبة أقرع</h3>
+<div data-role="footer" data-theme="b"  data-position="fixed">
+<div data-role="navbar">
+<ul>
+<li> <a href="exercise.html" data-icon="arrow-l" data-iconpos="left" rel="external">الامتحان الأخير</a> </li>
+	<li>	<h4>ترجمة قتيبة أقرع</h4></li>
+<li><a href="ASM.html" data-icon="arrow-r" data-iconpos="right" rel="external">الحركة الظاهرية للنجوم</a></li>
+</ul>
+</div><!--/navbar-->
 	</div><!-- /footer -->
 </div><!-- /page one --> 
 </body>
