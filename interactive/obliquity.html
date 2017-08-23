@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Obliquity Simulator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="robots" content="noindex" />
+
+<script type="text/javascript">
+/* <![CDATA[ */
+function checkSwfPlacement() {
+	var window = document.getElementById("windowBlock");
+	var swf = document.getElementById("swfBlock");
+	var info = document.getElementById("infoBlock");
+	var swfHeight = parseFloat(swf.style.height);
+	var prevTopMargin = parseFloat(swf.style.marginTop);
+	var newTopMargin = -0.25*parseFloat(swfHeight);
+	var minTopMargin = -0.25*parseFloat(window.clientHeight);
+	if (navigator.appName=="Microsoft Internet Explorer") {
+		newTopMargin = -Math.round(-newTopMargin);
+		minTopMargin = -Math.round(-minTopMargin);
+	}
+	if (newTopMargin<=minTopMargin) {
+		newTopMargin = minTopMargin;
+	}
+	else if (Math.abs(newTopMargin-prevTopMargin)<2) {
+		return;
+	}
+	swf.style.marginTop = String(newTopMargin) + "px";
+	info.style.marginTop = String(swfHeight + newTopMargin + 25) + "px";
+}
+function selectInputField(id) {
+	var obj = window.document.getElementById(id);
+	if (obj!=null) {
+		obj.focus(); 
+		obj.select();
+	}
+}
+window.onload = checkSwfPlacement;
+window.onresize = checkSwfPlacement;
+/* ]]> */
+</script>
+
+<style type="text/css">
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	margin: 0;
+	background-color: #606060;
+	font-size: small;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	color: #ffffff;
+}
+h1 {
+	font-family: verdana, helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 110%;
+	margin: 0px;
+	padding: 0px;
+}
+p {
+	margin: 0.7em 0em 0em 10px;
+	padding: 0px;
+	font-size: 100%;
+	line-height: 120%;	
+}
+a:link {
+	font-weight: bold;
+	color: #d0d0ff;
+	text-decoration: none;
+}
+a:visited
+{
+	font-weight: bold;
+	color: #d0d0ff;
+	text-decoration: none;
+}
+a:hover {
+	color: #d0d0ff;
+	text-decoration: underline;
+}
+.swfBlock {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+}
+.infoBlockOuter {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	width: 45em;	
+	margin-left: -22.5em;
+	background-color: #747474;
+	border: 1px solid #545454;	
+	color: #ffffff;	
+	padding: 0em;
+}
+.infoBlockInner {
+	padding: 1em;
+}
+</style>
+
+</head>
+<body>
+
+<div id="windowBlock" style="position: relative; height: 100%; width: 100%;">
+	
+	<div id="swfBlock" class="swfBlock" style="width: 600px; height: 400px; margin-left: -300.0px; margin-top: -100.0px;">
+		
+		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="600" height="400">
+		<param name="movie" value="obliquity.swf" />
+		 <!--[if !IE]>-->
+		 <object type="application/x-shockwave-flash" data="obliquity.swf" width="600" height="400">
+		 <!--<![endif]-->
+		  <p>flash animation</p>
+		 <!--[if !IE]>-->
+		 </object>
+		 <!--<![endif]-->
+		</object>
+		
+	</div>
+	
+	<div id="infoBlock" class="infoBlockOuter" style="margin-top: 325.0px;">
+		<div class="infoBlockInner">
+			
+			<h1>Obliquity Simulator</h1>
+			
+			<p>Shows how obliquity (tilt) is defined.</p>
+			
+			<p>This simulation is part of the Coordinates and Motions module of the <a href="http://astro.unl.edu/classaction/">ClassAction</a> project, a collection of think-pair-share questions and resources for astronomy education.</p> 
+			
+			<div style="position: absolute; top: 100%; width: 100%; height: 40px;"></div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
