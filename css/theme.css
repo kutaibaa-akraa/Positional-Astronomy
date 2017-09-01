@@ -32,6 +32,11 @@ p {
    FONT-FAMILY: Simplified Arabic;
   line-height: 2em;
 	 }
+b {
+  font-style: italic;
+  font-weight: bold;
+  background: none repeat scroll 0 0 #F6F6F6;
+}
 .box {
   border: 1.00pt solid #800000;
   padding: 1.0em 1.5em;
