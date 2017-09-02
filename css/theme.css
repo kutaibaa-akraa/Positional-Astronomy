@@ -11,6 +11,40 @@ body {
    margin: 0px;
    padding: 0;
 }
+.contain {
+    position: relative;
+}
+.center {
+position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+}
+@font-face {
+  font-family: "myfont";
+  src: url("fonts/almateen.ttf"); format("truetype");
+}
+.mateen {
+    font-family: "myfont";
+    font-size: 1.4em;
+}
+@font-face {
+  font-family: "myfont";
+  src: url("fonts/almothnna_bold.ttf"); format("truetype");
+}
+.mothanna {
+   font-family: "myfont";
+   font-size: 1.4em;
+}​
+img.op {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
 .navy {
 color: #280099;
 }
@@ -66,8 +100,8 @@ h1 {
    font-family: Arial, Helvetica, 'Nimbus Sans L', sans-serif, Simplified Arabic;
    font-weight: bold;
    color: #A988;
-   font-size: 1em;
-   line-height: 1.5em;
+   font-size: 1.5em;
+   line-height: 1em;
    text-align: center; 
 }
 
@@ -97,6 +131,7 @@ h4 {
 .ui-page { -webkit-backface-visibility: hidden; }
 .mikimg {
   text-align: center;
+  max-width: 100% !important;
 }
 .mikimg img {
 border: 2px solid #FFF;
