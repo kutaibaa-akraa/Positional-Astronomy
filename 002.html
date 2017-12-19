@@ -64,58 +64,39 @@
   <img class="op" src="images/positional.png" alt="positional" width="660" height="100" >
   <h1 class="center mateen">الهندسة الكروية</h1>
 </div></div>
-<P>A great-circle arc, on the sphere, is the analogue of a straight line, on the plane.
+<P>يناظر قوس الدائرة الكبرى على سطح الكرة و يماثل الخط المستقيم في المستوي.
 </P>
-<P>Where two such arcs intersect, we can define the <B>spherical angle</B> 
-<I>either</I> as angle between the
-tangents to the two arcs, at the point of intersection, <I>or</I>
-as the angle between the planes of the two great circles where they
-intersect at the centre of the sphere. (Spherical angle is only
-defined where arcs of <I>great </I>circles meet.)
+<P>و بتقاطع اثنين من هذه الأقواس, نستطيع تعريف  <B>الزاوية الكروية</B> 
+<I>و كذلك</I>الزاوية بين مماسي القوسين عند نقطة التقاطع, <I>أو</I> الزاوية بين مستويي الدائرتين الكبيرتين عند تقاطعهما في مركز الكرة. (تعرف الزاوية الكروية فقط في نقاط التقاء أقواس الدوائر الكبيرة .)</P>
+<P>يتألف <B>المثلث الكروي</B> من ثلاثة أقواس لدوائر كبرى, مجموعها كلها أقل من  180&deg;. إن مجموع الزوايا غير ثابت, و لكنه دائماً هو أكبر من   180&deg;. و يدعى المثلث الذي يمتلك قيمة   90&deg; لأحدى زواياه;<B> quadrantal</B>.
 </P>
-<P>
-A <B>المثلث الكروي</B> is made up of three arcs of great circles, all less than 180&deg;. The sum of the angles
-is not fixed, but will always be greater than 180&deg;. If any side of the triangle is exactly 90&deg;, the triangle is called
-<B>quadrantal</B>.
-</P>
-<P>There are many formulae relating the sides and angles of a spherical triangle.
-In this course we use only two: the <I>sine
-rule </I>and the <I>cosine rule</I>.
+<P>يوجد العديد من الصيغ الرياضية المتعلقة بزوايا و أطراف المثلث الكروي. و سوف نستخدم في هذا الكورس صيغتين فقط : <I>صيغة الجيب </I>و <I>جيب التمام</I>.
 </P>
 <div class="mikimg"><img src=" images/ar/derive1.png " class="mikimg" style="max-width: 100%" /></div>
-<p>Consider a triangle ABC on the surface of a sphere with radius = 1.
+<p>سنفترض المثلث ABC على سطح كرة قطرها  = 1.
 </P>
 <P><I>(See <a href="002a.html" data-icon="refresh" rel="external" > ملاحظات حول الهندسة الكروية)</a></I>
 </P>
-<P>We use the capital letters A, B, C to denote the angles at these corners;
-<BR>we use the lower-case letters a, b, c to
-denote the <I>opposite </I>sides.<BR>
-(Remember that, in spherical
-geometry, the side of a triangle is the arc of a great circle, so it is also an angle.)</P>
-<P>Turn the sphere so that A is at the &quot;north pole&quot;, 
-<BR>and let arc AB define the &quot;prime meridian&quot;.</P>
+<P>نستخدم الحروف الكبيرة A, B, C للإشارة إلى الزوايا ; في الوقت الذي تستخدم رموز الأحرف الصغيرة  a, b, c للإشارة إلى <I>الأقواس المقابلة </I>للزوايا.
+(تذكر دائماً, إن أطراف المثلث في الهندسة الكروية هي أقواس دوائر كبرى, و بالتالي فهي أيضاً تعتبر زوايا.)</P>
+<P>قم بتدوير الكرة بحيث تضع النقطة  A عند &quot;القطب الشمالي&quot;, و سوف نعتبر القوس  AB تعريفاً &quot;للزوال الرئيسي&quot;.</P>
 
-<P>Set up a system of rectangular axes OXYZ:  O is at the centre of the sphere; OZ passes through A; OX passes through arc AB (or the extension of it); OY is perpendicular to
-both. 
-<BR>Find the coordinates of C in this system: 
-<BR>
+<P>نفترض الآن نظام إحداثيات متعامد OXYZ:  حيث تقع O في مركز الكرة; و يمر الخط OZ عبر النقطة A; المستوي OX يمر عبر القوس AB (أو عبر امتداده); المستوي OY معامد لكلا المستويين السابقين.
+و في نظامنا الإحداثي هذا فإن إحداثيات النقطة C :
 <div class="green" id="twocent">
 x = sin(b) cos(A) 
 <br><br>y = sin(b) sin(A) 
 <br><br>z = cos(b) </div>
 </P>
-	 	<div class="mikimg"><img src="images/ar/derive2.png" class="mikimg" style="max-width:100%"/></div> 
-<p>Now create a new set of axes, keeping the y-axis fixed and moving the
-&quot;pole&quot; from A to B (i.e. rotating the x,y-plane through
-angle c). 
-<BR>The new coordinates of C are 
-<BR><div class="green" id="twocent">
+	<div class="mikimg"><img src="images/ar/derive2.png" class="mikimg" style="max-width:100%"/></div> 
+<p>و الآن لنقم بإنشاء مجموعة إحداثية جديدة, مع ترك المحور y ثابتاً و تحريك &quot;القطب&quot; من النقطة A إلى النقطة B 
+( بما يعني تدوير المستوي  x,yعبر الزاوية c). و تكون الإحداثيات الجديدة ل C هي كالتالي:</p>
+<div class="green" id="twocent">
 x' = sin(a) cos(180-B) = - sin(a) cos(B)
 <br><br>y' = sin(a) sin(180-B) = sin(a) sin(B)
 <br><br>z' = cos(a) </div>
-</P>
-<P>The relation between the old and new systems <BR>is simply a rotation of the
-x,z-axes through angle c: </p>
+
+<P>و ببساطة فإن العلاقة بين الإحداثيات القديمة و الجديدة هي دوران للمحاور x,z  عبر الزاوية c : </p>
 
 <div class="green" id="twocent">
 x' = x cos(c) - z sin(c) 
@@ -123,34 +104,33 @@ x' = x cos(c) - z sin(c)
 <br><br>z' = x sin(c) + z cos(c) 
 </div>
 
-<P>That is: </p>
+<P>و بالتالي نحصل على الصيغ التالية : </p>
 <div class="green" id="twocent">
 - sin(a) cos(B) = sin(b) cos(A) cos(c) - cos(b) sin(c)
 <br><br>sin(a) sin(B) = sin(b) sin(A) 
 <br><br>cos(a) = sin(b) cos(A) sin(c) + cos(b) cos(c)</div>
  
-<P>These three equations give us the formulae for solving spherical triangles.</P>
-<P>The first equation is the <B>transposed cosine rule</B>,
-which is sometimes useful but need not be memorised.
-</P>
-<P>The second equation gives the <B>sine rule</B>.
-Rearrange as: </p>
+<P>هذه المعادلات تعطينا الصيغ القادرة على حل المثلثات الكروية.</P>
+<P>المعادلة الأولى هي <B>قانون جيب التمام المعدل</B>,
+و الذي يكون مفيداً في بعض الحالات و لكن لا يطلب تذكره و حفظه</P>
+<P>المعادلة الثانية تبرز <B>قانون الجيب</B>.
+و يمكن ترتيب هذه المعادلات كالتالي : </p>
 <div class="red" id="twocent">
-sin(a)/sin(A) = sin(b)/sin(B) </div>
-<p>Similarly, </p>
+sin(a)/sin(A) = sin(b)/sin(B)</div>
+<p>بشكل مشابه, </p>
 <div class="red" id="twocent">
 sin(b)/sin(B) = sin(c)/sin(C), etc.</div>
-<p>So the sine rule is usually expressed as:</p>
+<p>عادة ما يكتب قانون الجيب بالشكل التالي:</p>
 <div class="red" id="twocent">
 sin(a)/sin(A) = sin(b)/sin(B) = sin(c)/sin(C) </div>
 
-<P>The third equation gives the <B>cosine rule</B>:
+<P>المعادلة الثالثة تعطينا  <B>قانون جيب التمام</B>:
 <div class="red" id="twocent">cos(a) = cos(b) cos(c) + sin(b) sin(c) cos(A) </div>
-<p>and similarly: </p>
+<p>و بشكل مشابه نكتب: </p>
 <div class="red" id="twocent">cos(b) = cos(c) cos(a) + sin(c) sin(a) cos(B) 
 <br>cos(c) = cos(a) cos(b) + sin(a) sin(b) cos(C) </div>
 </P>
-<P>Here they are together:</P>
+<P>و هنا القوانين الثلاثة بشكل نهائي:</P>
 <!-- box containing rules-->
 <div id="twocent" class="box">
 <div id="one" class="blue">قانون الجيب:</div>
@@ -161,52 +141,56 @@ sin(c)/sin(C)</div>
 <div class="que">cos(b) = cos(c) cos(a) + sin(c) sin(a) cos(B) </div>
 <div class="que">cos(c) = cos(a) cos(b) + sin(a) sin(b) cos(C)</div>
 </div> <!-- /box containing rules-->
-<P>The cosine rule will solve almost any triangle if it is applied often enough.
-<BR>The sine rule is simpler to remember but
-not always applicable.</P>
-<P><B>Note </B>that both formulae can suffer from ambiguity: 
-<BR><I>E.g.</I> if the sine rule yields <BR>sin(x) = 0.5, then x may be 30&deg; <I>or</I> 150&deg;. 
-<BR>Or, if the cosine rule yields
-<br>cos(x) = 0.5, then x may be 60&deg; <I>or </I>300&deg; (-60&deg;). 
-<BR>In this case, there is no ambiguity if x is a <I>side </I>of the triangle, as it must be less than 180&deg;, but there could still be uncertainty if an <I>angle </I>of the triangle was positive or negative.</P>
-<P>So, when applying either formula, check to see if the answer is sensible. If in doubt, recalculate using the other formula, as a check.</P>
+<P>يستطيع قانون جيب التمام تقريباً حل مجمل مسائل المثلث الكروي إذا استخدمت بشكل كاف.
+أما قانون الجيب فحفظه أسهل لكنه غير كاف في العديد من المسائل.</P>
+<P><B>تذكر</B>بأن كلا الصيغتين ربما تعانيان من الالتباس في النتائج : 
+<I>و على سبيل المثال</I>إن كانت نتيجة قانون الجيب  <div class="red" id="twocent">sin(x) = 0.5</div>
+ فيمكن ل x أن تكون 30&deg; <I>أو</I> 150&deg; !!.</p>
+<p>و ربما نتج عن قانون جيب التمام 
+<div class="red" id="twocent">cos(x) = 0.5</div>
+ عندها تكون قيمة الزاوية x هي 60&deg; <I>أو ربما </I>300&deg; (-60&deg;). 
+في هذه الحالة لا يكون هناك التباس إن كانت 
+x هي <I>القوس </I> في المثلث, و هو ما يعني أن قيمته أقل من  180&deg;, لكن ربما سيكون هناك شيء من الشك فيما لو كانت قيمة <I>الزاوية </I>للمثلث ذات قيمة موجبة أو سالبة.</P>
+<P>لهذه الأسباب, عند تطبيق أي من هذه الصيغ, تأكد من كون النتائج ذات معنى منطقي.و في حال الشك, قم باستخدام صيغ أخرى للتأكد من النتيجة.</P>
 
 <div data-role="collapsible" data-content-theme="b">
 <h1 class="red">تمرين:</h1>
-<p class="red">Alderney, in the Channel Islands, has</p> <div class="que">longitude 2&deg;W, latitude 50&deg;N</div>
-<p class="red">Winnipeg, in Canada, has</p> <div class="que">longitude 97&deg;W, latitude 50&deg;N</div>
-<p class="red">How far apart are they, in nautical miles, along a great-circle arc? 
+<p class="red">مدينة Alderney, في جزر الشانيل ذات إحداثيات</p> 
+<div class="que">طول 2&deg;W, عرض 50&deg;N</div>
+<p class="red">مدينة Winnipeg, الكندية, ذات إحداثياتhas</p>
+ <div class="que">طول 97&deg;W, عرض 50&deg;N</div>
+<p class="red">ما هو البعد بين المدينتين محسوباً بالميل البحري, على طول قوس الدائرة الكبرى؟
 </p>
-<p class="red">If you set off from Alderney on a great-circle route to Winnipeg, 
-in what direction (towards what azimuth) would you head?</P>
+<p class="red">إن أردت رسم طريق من مدينة  Alderney على الدائرة الكبرى باتجاه مدينة Winnipeg, 
+ففي أي اتجاه عليك التوجه  (المقصود باتجاه أي سمت)؟</P>
 
 <div data-role="collapsible" data-content-theme="b" >
 <h4> الحل</h4>
 <div class="mikimg"><img src=" images/ar/problem2.png" class="mikimg" style="max-width: 100%" /></div>
-<P><FONT COLOR="#0000ff">Use
-the cosine rule:
-<BR><div class="blue" id="twocent">cos AW =
-<br> cos WP cos AP + sin WP sin AP cos P 
-<BR>= cos<sup>2</sup>40&deg; + sin<sup>2</sup>40&deg; cos 95&deg;<br> = 0.5508
-<BR>So AW = 56.58&deg; 
-<BR>= 3395 nautical miles </div>
-<BR>(This is 7% shorter than the route along a parallel of latitude).</FONT></P>
-<P><FONT COLOR="#800000">If you set off from Alderney on
-a great-circle route to Winnipeg, <BR>in what direction (towards what
-azimuth) would you head?</FONT></P>
-<P class="blue">Use the sine rule:</p>
+<P class="navy">p تمثل نقطة القطب الشمالي , و A تمثل مدينة Alderney ,أما w فتمثل مدينة winnipeg. لنستخدم قانون جيب التمام :
+<div class="blue" id="twocent">cos AW =
+cos WP cos AP + sin WP sin AP cos P 
+<br>= cos<sup>2</sup>40&deg; + sin<sup>2</sup>40&deg; cos 95&deg;
+<br> = 0.5508
+<BR>بالتالي طول القوس يساوي
+<br>AW = 56.58&deg; 
+<BR>= 3395 nautical miles </div></p>
+<p class="navy">(هذه القيمة أقل  7% من المسار على دائرة العرض الموازي ).</P>
+<p class="red">إن أردت رسم طريق من مدينة  Alderney على الدائرة الكبرى باتجاه مدينة Winnipeg, 
+ففي أي اتجاه عليك التوجه  (المقصود باتجاه أي سمت)؟</P>
+
+<P class="blue">سنستخدم قانون الجيب :</p>
 <BR><div class="blue" id="twocent">sin A / sin WP = sin P / sin WA
-<BR>so 
+<BR>بالتالي
 <br>sin x = sin 40&deg; sin 95&deg; / sin
 56.58&deg; = 0.77
-<BR>so 
+<BR>بالتالي
 <br><br>x = 50.1&deg; or 129.9&deg; .</div>
 
-<P class="blue">Common sense says 50.1&deg; (or check using cosine rule to get PW).
-<BR>Azimuth is measured clockwise from north, so azimuth is 360&deg; - 50.1&deg; = 309.9&deg;
+<P class="blue">و الاحساس يقودنا إلى  50.1&deg; (أو يمكنك استخدام قانون جيب التمام للقوس PW).
+<BR>يقاس السمت باتجاه عقارب الساعة بدءاً من الشمال, بالتالي فإن السمت 
+<br> 360&deg; - 50.1&deg; = 309.9&deg; وهو السمت الذي تقع عليه مدينة winnipeg في أفق مدينة alderney. من الواضح انه باتجاه الشمال الغربي.
 </P>
-<P><FONT COLOR="#0000ff">(Note that this is 40&deg;
-north of the &#147;obvious&#148; due-west course.)</FONT></P>
 
 </div><!--collapsible-->
 </div><!--collapsible-->
