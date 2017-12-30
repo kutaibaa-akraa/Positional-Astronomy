@@ -30,6 +30,9 @@ position: absolute;
     font-family: "myfont1";
     font-size: 1.4em;
 }
+.figcap {
+     font-size: 0.7em;
+}
 @font-face {
   font-family: "myfont2";
   src: url("Fonts/almothnna_bold.ttf"); format("truetype");
@@ -134,8 +137,8 @@ h4 {
   max-width: 100% !important;
 }
 .mikimg img {
-border: 2px solid #FFF;
-box-shadow: 0 0 2px #999999;
+/*border: 2px solid #FFF;
+box-shadow: 0 0 2px #999999;*/
 max-width: 100% !important;
 height: auto;
 }
