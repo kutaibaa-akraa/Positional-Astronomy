@@ -11,34 +11,13 @@
 	<link rel="stylesheet" href="css/theme.css" />
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.mobile-1.3.1.min.js"></script>
-	 <style type="text/css">
-/* تهيئة الصندوق لعناوين الفقرات القابلة للطي */
-input.button {
-  color: #fff; background: #c0c0c0 ;
-  font-size: 1em;
-  font-weight:bold;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  border: solid 1px #ffcf31 ;
-}
-</style>
-<script type="text/javascript">
-function toggleMe(a){
-  var e=document.getElementById(a);
-  if(!e)return true;
-  if(e.style.display=="none"){
-    e.style.display="block"
-  } else {
-    e.style.display="none"
-  }
-  return true;
-}
-</script>
+
 </head> 	
 <body> 
 <!-- Start of first page: #one -->
 <div data-role="page" id="one" data-theme="b">
 <div data-role="panel" data-display="overlay" data-theme="b" id="listpanel">
-	<ul data-inset="true" data-role="listview" data-mini="true" data-iconpos="right" data-filter="true" data-filter-placeholder="بحث عن اسم موضوع">
+	<ul data-inset="true" data-role="listview" data-mini="true" data-iconpos="right" data-filter="true" data-filter-placeholder="بحث عن موضوع">
 	<li data-role="divider">
 <h4>	"الفلك الموضعي"</h4></li>
 		<li>
@@ -74,294 +53,235 @@ function toggleMe(a){
 </li></ul>
 </div><!--/panel-->
 
-	<div data-role="header" data-position="fixed"><h1>المبادرة و ترنح محور الأرض</h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
+	<div data-role="header" data-theme="b" data-position="fixed"><h1>المبادرة و ترنح محور الأرض</h1><a  href="#two" data-icon="refresh" rel="external">English</a>
 <a href="#listpanel" data-icon="bars" rel="external">المواضيع</a>
 	</div><!-- /header -->
-	<div data-role="content">
-	<div class="mikimg"><img src="images/positional.png" class="mikimg" style="max-width: 100%" /></div>
-<H1><FONT SIZE=5>المبادرة و ترنح محور الأرض</FONT></H1>
+<div data-role="content">
+  <div class="contain">
+    <div class="mikimg">
+  <img class="op" src="images/positional.png" alt="positional" width="660" height="100" >
+<h1 class="center mateen">  المبادرة و ترنح محور الأرض</h1>
+</div></div>
 
-<P><FONT SIZE=3><B>{Note:</B> If your browser does not distinguish
-between &quot;a,b&quot; and &quot;&alpha;, &beta;&quot; (the Greek 
-letters &quot;<I>alpha, beta</I>&quot;)
-then I am afraid you will not be able to make much sense of the equations on this page.}
+<p>So far, this series of pages has considered<BR>how we assign coordinates to any point in the sky,<BR>and the various
+physical effects that may alter its apparent position.<BR>But there is a more profound problem with the way we determine
+coordinates,<BR>relative to the celestial equator and the ecliptic,<BR>since these are not permanently fixed.</p>
 
-<P><FONT SIZE=4>So far, this series of pages has considered<BR>how we
-assign coordinates to any point in the sky,<BR>and the various
-physical effects that may alter its apparent position.<BR>But there
-is a more profound problem with the way we determine
-coordinates,<BR>relative to the celestial equator and the
-ecliptic,<BR>since these are not permanently fixed.</FONT></P>
 <P> <div class="mikimg"><img src=" images/precess1.png" class="mikimg" style="max-width: 100%" /></div> 
 </P>
-<P> <div class="mikimg"><img src=" images/precess2.png" class="mikimg" style="max-width: 100%" /></div> 
-<BR></P>
-<P><FONT SIZE=4>The Earth&#146;s axis is tilted to its orbital plane.
-<BR>The gravitational pull of the Sun and the Moon on the Earth&#146;s
-equatorial bulge <BR>tend to pull it back towards the plane of the
-ecliptic. <BR>Since the Earth is spinning, its axis <I>precesses</I>.
-<BR>The North Celestial Pole traces out a <B>precessional circle</B>
-<BR>around the pole of the ecliptic, <BR>and this means that the
-<B>equinoxes precess</B> <I>backwards</I> around the ecliptic, <BR>at
-the rate of 50.35 arc-seconds per year <BR>(around 26,000 years for a
-complete cycle).</FONT></P>
-<P><BR><BR>
-</P>
-<P><FONT SIZE=4>Around 2000 years ago, <BR>the Sun was in the
-constellation of Aries at the spring equinox, <BR>in Cancer at the
-summer solstice, <BR>in Libra at the autumn equinox, <BR>and in
-Capricorn at the winter solstice. <BR>Precession means that all of
-these have changed, <BR>but we still use the old names <BR>(e.g. the
-First Point of Aries for the vernal equinox), <BR>and the symbols for
-the vernal and autumnal equinoxes <BR>are the astrological symbols
-for Aries and Libra.</FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4 STYLE="font-size: 16pt"><B>Exercise:</B></FONT></FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>The Vernal Equinox occurs
-nowadays <BR>when the Sun is in the constellation of Pisces.</FONT></FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>Pisces covers a section of the
-ecliptic <BR>from longitude 352&deg; to longitude 28&deg;; <BR>at
-longitude 28&deg; the ecliptic passes into Aries. </FONT></FONT>
-</P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>How many years would we have to
-go back, <BR>to find the Sun at &#147;the First Point of Aries&#148;
-<BR>at the vernal equinox?</FONT></FONT></P>
-<div>
-<input type="button" class="button" onclick="return toggleMe('para1')" value=" اضغط هنا للحصول على الجواب ">
-</div>
-<div id="para1" style="display:none">
 
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>The equinoxes regress along the
+<div class="mikimg"><img src=" images/precess2.png" class="mikimg" style="max-width: 100%" /></div> 
+
+<p>The Earth&#146;s axis is tilted to its orbital plane. The gravitational pull of the Sun and the Moon on the Earth&#146;s
+equatorial bulge tend to pull it back towards the plane of the
+ecliptic. Since the Earth is spinning, its axis <I>precesses</I>.
+<BR>The North Celestial Pole traces out a <B>precessional circle</B> around the pole of the ecliptic, and this means that the
+<B>equinoxes precess</B> <I>backwards</I> around the ecliptic, at the rate of 50.35 arc-seconds per year (around 26,000 years for a complete cycle).</p>
+
+<p>Around 2000 years ago, the Sun was in the constellation of Aries at the spring equinox, in Cancer at the
+summer solstice, in Libra at the autumn equinox, and in Capricorn at the winter solstice. Precession means that all of
+these have changed, but we still use the old names (e.g. the First Point of Aries for the vernal equinox), and the symbols for
+the vernal and autumnal equinoxes are the astrological symbols for Aries and Libra.</p>
+
+<div data-role="collapsible" data-content-theme="b" >
+<h1>تمرين:</h1>
+
+<p class="red">The Vernal Equinox occurs
+nowadays <BR>when the Sun is in the constellation of Pisces.</p>
+<p class="red">Pisces covers a section of the ecliptic from longitude 352&deg; to longitude 28&deg;; at longitude 28&deg; the ecliptic passes into Aries.</P>
+
+<p class="red">How many years would we have to go back, to find the Sun at &#147;the First Point of Aries&#148; at the vernal equinox?</p>
+
+<div data-role="collapsible" data-content-theme="b" >
+<h1>الحل:</h1>
+
+<p class="navy">The equinoxes regress along the
 ecliptic at 50.35&quot; per year.<BR>So the &quot; 0&deg; &quot;
-point moves westwards against the constellations.</FONT></FONT></P>
+point moves westwards against the constellations.</p>
 <P> <div class="mikimg"><img src=" images/prob16a.png" class="mikimg" style="max-width: 100%" /></div> 
 <BR>
 </P>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>It has moved 28&deg; into
+<p class="navy">It has moved 28&deg; into
 Pisces, at a rate of 50.35&quot; per year.<BR>Divide 28&deg; by
-50.35&quot; to get: 2002 years ago.</FONT></FONT></P>
+50.35&quot; to get: 2002 years ago.</p>
+
 </div>
-<P><BR><BR>
-</P>
-<P><FONT SIZE=4>Precession is caused by the Sun and the
-Moon.<BR>However, the Moon does not orbit exactly in the ecliptic
-plane, <BR>but at an inclination of about 5&deg; to it. <BR>The
-Moon&#146;s orbit precesses rapidly, <BR>with the nodes taking 18.6
-years to complete one circuit. <BR>The lunar contribution to
-<B>luni-solar precession</B> <BR>adds a short-period, small-amplitude
-wobble <BR>to the precessional movement of the North Celestial
-Pole,;<BR>this wobble is called <B>nutation</B>.</FONT></P>
-<P><FONT SIZE=4>Ignoring nutation, <BR>luni-solar precession simply
-adds 50.35 arc-seconds per year <BR>to the <I>ecliptic longitude </I>of
-every star, <BR>leaving the ecliptic latitude unchanged.</FONT></P>
-<P><BR><BR>
-</P>
-<P><FONT SIZE=4>This definition assumes the ecliptic itself is
-unchanging. <BR>In fact, the gravitational pull of the other planets
-perturbs the Earth&#146;s orbit <BR>and so it gradually changes the
-plane of the ecliptic. <BR>If the equator were kept fixed, <BR>the
-movement of the ecliptic would shift the equinoxes forward along the
-equator <BR>by about 0.13 arc-seconds per year. <BR>This is <B>planetary
-precession</B>, <BR>which decreases the <I>Right Ascension </I>of
+</div>
+
+<p>Precession is caused by the Sun and the
+Moon. However, the Moon does not orbit exactly in the ecliptic
+plane, but at an inclination of about 5&deg; to it. The Moon&#146;s orbit precesses rapidly, with the nodes taking 18.6
+years to complete one circuit. The lunar contribution to <B>luni-solar precession</B> <BR>adds a short-period, small-amplitude
+wobble to the precessional movement of the North Celestial Pole,; this wobble is called <B>nutation</B>.</p>
+
+<p>Ignoring nutation, luni-solar precession simply adds 50.35 arc-seconds per year <BR>to the <I>ecliptic longitude </I>of
+every star, leaving the ecliptic latitude unchanged.</p>
+
+<p>This definition assumes the ecliptic itself is unchanging. In fact, the gravitational pull of the other planets
+perturbs the Earth&#146;s orbit and so it gradually changes the
+plane of the ecliptic. If the equator were kept fixed, the movement of the ecliptic would shift the equinoxes forward along the
+equator by about 0.13 arc-seconds per year. This is <B>planetary precession</B>, which decreases the <I>Right Ascension </I>of
 every star by 0.13 arc-seconds per year, <BR>leaving the declination
-unchanged. </FONT>
-</P>
-<P><FONT SIZE=4>Combining luni-solar and planetary precessions gives
+unchanged. </P>
+
+<p>Combining luni-solar and planetary precessions gives
 <B>general precession</B>. <BR>(Lunar nutation and planetary
 precession also produce slight changes in the obliquity of the
-ecliptic) </FONT>
+ecliptic) 
 </P>
-<P><BR><BR>
-</P>
-<P><FONT SIZE=4>Because of precession, <BR>our framework of Right
-Ascension and declination is constantly changing. <BR>Consequently,
-it is necessary to state the <B>equator and equinox</B> <BR>of the
-coordinate system to which any position is referred. <BR>Certain
-dates (<I>e.g</I>. 1950.0, 2000.0) are taken as <B>standard epochs</B>,
-<BR>and used for star catalogues etc. </FONT>
-</P>
-<P><FONT SIZE=4>To point a telescope at an object <BR>on a date other
-than its catalogue epoch, <BR>it is necessary to correct for
-pr<FONT COLOR="#000000">ecession. </FONT></FONT>
-</P>
-<P><FONT SIZE=4>Recall the formulae relating equatorial and ecliptic
-coordinates:
 
-<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sin(&delta;) = sin(&beta;)
+<p>Because of precession, <BR>our framework of Right Ascension and declination is constantly changing. <BR>Consequently,
+it is necessary to state the <B>equator and equinox</B> of the coordinate system to which any position is referred. Certain dates (<I>e.g</I>. 1950.0, 2000.0) are taken as <B>standard epochs</B>, and used for star catalogues etc.</P>
+
+<p>To point a telescope at an object on a date other than its catalogue epoch, <BR>it is necessary to correct for precession.</P>
+
+<p>Recall the formulae relating equatorial and ecliptic coordinates:
+
+	sin(&delta;) = sin(&beta;)
 cos(&epsilon;) + cos(&beta;) sin(&epsilon;) sin(&lambda;)
 
-<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sin(&beta;) = sin(&delta;)
+	sin(&beta;) = sin(&delta;)
 cos(&epsilon;) - cos(&delta;) sin(&epsilon;) sin(&alpha;)
 
-<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cos(&lambda;) cos(&beta;) = cos(&alpha;)
-cos(&delta;)</FONT></P>
+	cos(&lambda;) cos(&beta;) = cos(&alpha;)
+cos(&delta;)</p>
 
-<P><FONT SIZE=4>Luni-solar precession affects the ecliptic longitude
+<p>Luni-solar precession affects the ecliptic longitude
 &lambda;.<BR>The resulting corrections to
 Right Ascension and declination <BR>can be worked out by spherical
-trigonometry. <BR>But here we use a different technique.</FONT></P>
+trigonometry. <BR>But here we use a different technique.</p>
 
-<P><FONT SIZE=4>Consider luni-solar precession first, <BR>recalling
-that it causes &lambda; to increase at a
-known, steady rate d&lambda;/dt, <BR>while
-&beta; and &epsilon;
-remain constant.</FONT></P>
+<p>Consider luni-solar precession first, recalling that it causes &lambda; to increase at a known, steady rate d&lambda;/dt, <BR>while &beta; and &epsilon;
+remain constant.</p>
 
-<P><FONT SIZE=4>To find how the declination &delta;
+<p>To find how the declination &delta;
 changes with time t, <BR>take the first equation and <I>differentiate
 </I>it:
 
-<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cos(&delta;) d&delta;/dt = cos(&beta;)
+	cos(&delta;) d&delta;/dt = cos(&beta;)
 sin(&epsilon;) cos(&lambda;) d&lambda;/dt
 
 <BR>To eliminate &beta; and &lambda; from this equation,
 
 <BR>use the third equation:
 
-<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cos(&delta;) d&delta;/dt = cos(&alpha;)
+	cos(&delta;) d&delta;/dt = cos(&alpha;)
 sin(&epsilon;) cos(&delta;) d&lambda;/dt
+<I>i.e</I>. d&delta;/dt = cos(&alpha;) sin(&epsilon;) d&lambda;/dt</p>
 
-<BR><I>i.e</I>.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d&delta;/dt
-= cos(&alpha;) sin(&epsilon;) d&lambda;/dt</FONT></P>
-
-<P><FONT SIZE=4>To find how the Right Ascension &alpha; changes with time,
+<p>To find how the Right Ascension &alpha; changes with time,
 <BR>take the second equation and differentiate it:
 
-<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 = cos(&epsilon;) cos(&delta;)
+	0 = cos(&epsilon;) cos(&delta;)
 d&delta;/dt + sin(&epsilon;) sin(&delta;) d&delta;/dt sin(&alpha;) -
 sin(&epsilon;) cos(&delta;) cos(&alpha;)  d&alpha;/dt
 
-<BR><I>i.e.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</I>sin(&epsilon;) cos(&delta;)
+<BR><I>i.e.					</I>sin(&epsilon;) cos(&delta;)
 cos(&alpha;) d&alpha;/dt = d&delta;/dt [ cos(&epsilon;) cos(&delta;) +
 sin(&epsilon;) sin(&delta;) sin(&alpha;) ]
 
-<br>&nbsp;&nbsp;=
+<br>		=
 cos(&alpha;) sin(&epsilon;) d&lambda;/dt [cos(&epsilon;) cos(&delta;) +
 sin(&epsilon;) sin(&delta;) sin(&alpha;) ]
 
 <BR>Cancelling out sin(&epsilon;) and cos(&alpha;) from both sides gives:
 
-<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cos(&delta;) d&alpha;/dt = d&lambda;/dt
+	cos(&delta;) d&alpha;/dt = d&lambda;/dt
 [ cos(&epsilon;) cos(&delta;) + sin(&epsilon;) sin(&delta;) sin(&alpha;) ]
 
 <BR>Dividing through by cos(&delta;) gives:
 
-<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d&alpha;/dt = [ cos(&epsilon;) +
+	d&alpha;/dt = [ cos(&epsilon;) +
 sin(&epsilon;) sin(&alpha;) tan(&delta;) ] d&lambda;/dt</P>
 
-<P><FONT SIZE=4>So if &Delta;&lambda; is the change in &lambda; in a given
+<p>So if &Delta;&lambda; is the change in &lambda; in a given
 time interval &Delta;t,
 
 <BR>the corresponding changes in &alpha; and &delta; are
 
-<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&Delta;&alpha; = &Delta;&lambda; [
+	&Delta;&alpha; = &Delta;&lambda; [
 cos(&epsilon;) + sin(&epsilon;) sin(&alpha;) tan(&delta;) ]
 
-<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&Delta;&delta; = &Delta;&lambda;
-cos(&alpha;) sin(&epsilon;)</FONT></P>
+	&Delta;&delta; = &Delta;&lambda;
+cos(&alpha;) sin(&epsilon;)</p>
 
-<P><FONT SIZE=4>This is the effect of luni-solar precession. <BR>We
+<p>This is the effect of luni-solar precession. <BR>We
 also have to add in the planetary precession, <BR>which decreases the
-RA by a quantity <I>a</I>, during the same time interval. </FONT>
-</P>
+RA by a quantity <I>a</I>, during the same time interval.</P>
 
-<P><FONT SIZE=4>The combination is general precession:
-<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&Delta;&alpha; = &delta;&lambda; [
-cos(&epsilon;) + sin(&epsilon;) sin(&alpha;) tan(&delta;) ] - <I>a</I>
+<p>The combination is general precession: &Delta;&alpha; = &delta;&lambda; [ cos(&epsilon;) + sin(&epsilon;) sin(&alpha;) tan(&delta;) ] - <I>a</I>  &Delta;&delta; = &Delta;&lambda;
+cos(&alpha;) sin(&epsilon;)</p>
 
-<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&Delta;&delta; = &Delta;&lambda;
-cos(&alpha;) sin(&epsilon;)</FONT></P>
-
-<P><FONT SIZE=4>To make this easier to calculate in practice,<BR>we
+<P>To make this easier to calculate in practice,<BR>we
 introduce two new variables, m and n:
-<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m = &Delta;&lambda; cos(&epsilon;)
+		m = &Delta;&lambda; cos(&epsilon;)
 - <I>a
 
-<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</I>n = &Delta;&lambda;
-sin(&epsilon;)</FONT></P>
+		</I>n = &Delta;&lambda;
+sin(&epsilon;)</P>
 
-<P><FONT SIZE=4>These quantities m and n are almost constant; <BR>they
-are given each year in the <I>Astronomical Almanac</I>. <BR>The
- values for 2000 are approximately: <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m
-= 3.075 seconds of time per year <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;n
-&nbsp;= 1.336 seconds of time per year<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
-20.043 arc-seconds per year</FONT></P>
+<P>These quantities m and n are almost constant; <BR>they are given each year in the <I>Astronomical Almanac</I>. <BR>The
+ values for 2000 are approximately: 	m
+= 3.075 seconds of time per year 	n
+	= 1.336 seconds of time per year					=
+20.043 arc-seconds per year</P>
 
-<P><FONT SIZE=4>We can now write:
-<BR><FONT COLOR="#b84700">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&Delta;&alpha;
+<p>We can now write:
+<BR><FONT COLOR="#b84700">  &Delta;&alpha;
 = m + n sin(&alpha;) tan(&delta;)
+&Delta;&delta; = n cos(&alpha;)</p>
 
-<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&Delta;&delta; = n
-cos(&alpha;)</FONT></FONT></P>
+<p>which means that, <BR>if you know the equatorial coordinates of an object at one date, <BR>you can calculate what they
+should be at another date, <BR>as long as the interval is not too great (20 years or so). <BR>If the object is a star whose proper motion is known, <BR>then that should be corrected for as well.</p>
 
-<P><FONT SIZE=4>which means that, <BR>if you know the equatorial
-coordinates of an object at one date, <BR>you can calculate what they
-should be at another date, <BR>as long as the interval is not too
-great (20 years or so). <BR>If the object is a star whose proper
-motion is known, <BR>then that should be corrected for as well.</FONT></P>
-<P><BR><BR>
-</P>
-<P><FONT COLOR="#800000"><FONT SIZE=4 STYLE="font-size: 16pt"><B>Exercise:</B></FONT></FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>The coordinates of the Galactic
-North Pole are given officially as <BR>&alpha;
-= 12h49m00s, &delta; = +27&deg;24'00&quot;,
-<BR>relative to the equator and equinox of 1950.0.</FONT></FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>What should they be, <BR>relative
-to the equator and equinox of 2000.0? </FONT></FONT>
-</P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>(For this calculation, take the
+<div data-role="collapsible" data-content-theme="b" ><h1>تمرين:</h1>
+
+<p class="red">The coordinates of the Galactic North Pole are given officially as <BR>&alpha; = 12h49m00s, &delta; = +27&deg;24'00&quot;,
+<BR>relative to the equator and equinox of 1950.0.</p>
+
+<p class="red">What should they be, <BR>relative
+to the equator and equinox of 2000.0? </P>
+
+<p class="red">(For this calculation, take the
 values of m and n for the year 1975:<BR>m = 3.074s per year;<BR>n =
-1.337s per year = 20.049&quot; per year.)</FONT></FONT></P>
-<div>
-<input type="button" class="button" onclick="return toggleMe('para2')" value=" اضغط هنا للحصول على الجواب ">
-</div>
-<div id="para2" style="display:none">
-	
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>The formulae are:	
-<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&Delta;&alpha;
-= m + n sin(&alpha;) 
-tan(&delta;)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&Delta;&delta;
-= n cos(&alpha;)</FONT></FONT></P>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>Substitute the coordinates
-given in the question: 
-<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&alpha;<SUB>1950</SUB>
-= 12h49m00s = 192.25&deg;, <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&delta;<SUB>1950</SUB>
-= +27&deg;24'00&quot; = 27.40&deg;,<BR>to get 
+1.337s per year = 20.049&quot; per year.)</p>
 
-<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&Delta;&alpha;
-= 2.927s per year, or +146.348s in 50 years.<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&Delta;&delta;
-= -19.59&quot; per year, or -979.63&quot; in 50 years.</FONT></FONT></P>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>Add these to the 1950 values of
-&alpha; and &delta;,
-to get <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&alpha;<SUB>2000</SUB>
-= 12h51m26s<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&delta;<SUB>2000</SUB>
-= +27&deg;07'40&quot; </FONT></FONT>
-</P>
-<P><BR><BR>
-</P>
-</div>
-<P><FONT SIZE=4>Alternatively, the <I>Astronomical Almanac</I> lists
+<div data-role="collapsible" data-content-theme="b" ><h1>الحل:</h1>
+
+<p class="navy">The formulae are: &Delta;&alpha; = m + n sin(&alpha;) 
+tan(&delta;) &Delta;&delta; = n cos(&alpha;)</p>
+
+<p class="navy"> Substitute the coordinates
+given in the question: &alpha;<SUB>1950</SUB> = 12h49m00s = 192.25&deg;, 	&delta;<SUB>1950</SUB>
+= +27&deg;24'00&quot; = 27.40&deg;,<BR>to get 	&Delta;&alpha;
+= 2.927s per year, or +146.348s in 50 years.	&Delta;&delta;
+= -19.59&quot; per year, or -979.63&quot; in 50 years.</p>
+<p class="navy">Add these to the 1950 values of &alpha; and &delta;, to get 	&alpha;<SUB>2000</SUB>
+= 12h51m26s	&delta;<SUB>2000</SUB>
+= +27&deg;07'40&quot; </P>
+
+</div><!-- /collapsible-->
+</div> <!-- /collapsible-->
+
+<p>Alternatively, the <I>Astronomical Almanac</I> lists
 <B>Besselian Day Numbers</B> throughout the year. <BR>Take a star&#146;s
 equatorial coordinates from a catalogue, <BR>and compute various
 constants from these,<BR>as instructed in the <I>Astronomical
 Almanac</I>. <BR>Combine these with the Day Numbers for a given date,
 <BR>to produce the apparent position of the star, <BR>corrected for
-precession, nutation and aberration.</FONT></P>
-<br><hr>
-<FONT SIZE=4>الموضوع السابق: </FONT><A HREF="015.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
-الزيغ </FONT>
-</A><br />
-	<FONT SIZE=4>الموضوع التالي: </FONT><A HREF="017.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
-تقاويم</FONT>
-</A>
-<FONT SIZE=4> <BR>العودة إلى </FONT><A HREF="index.html" data-icon="refresh" rel="external" ><FONT SIZE=4>الفهرس</FONT></A><FONT SIZE=4>
-</FONT>
+precession, nutation and aberration.</p>
 
 </div><!-- /content -->
 
-<div data-role="footer"  data-position="fixed">
-		<h3>ترجمة قتيبة أقرع</h3>
-	</div><!-- /footer -->
+<div data-role="footer" data-theme="b"  data-position="fixed">
+<div data-role="navbar">
+<ul>
+<li> <a href="015.html#one" data-icon="arrow-l" data-iconpos="left" rel="external">الزيغ</a> </li>
+	<li><h4> ترجمة قتيبة أقرع</h4></li>
+<li><a href="017.html#one" data-icon="arrow-r" data-iconpos="right" rel="external"> تقاويم </a></li>
+</ul>
+</div><!--/navbar-->
+</div><!-- /footer -->
 </div><!-- /page one --> 
 </body>
 </html>
