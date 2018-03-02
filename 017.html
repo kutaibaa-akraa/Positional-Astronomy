@@ -11,34 +11,13 @@
 	<link rel="stylesheet" href="css/theme.css" />
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.mobile-1.3.1.min.js"></script>
-	 <style type="text/css">
-/* تهيئة الصندوق لعناوين الفقرات القابلة للطي */
-input.button {
-  color: #fff; background: #c0c0c0 ;
-  font-size: 1em;
-  font-weight:bold;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  border: solid 1px #ffcf31 ;
-}
-</style>
-<script type="text/javascript">
-function toggleMe(a){
-  var e=document.getElementById(a);
-  if(!e)return true;
-  if(e.style.display=="none"){
-    e.style.display="block"
-  } else {
-    e.style.display="none"
-  }
-  return true;
-}
-</script>
+
 </head> 	
 <body> 
 <!-- Start of first page: #one -->
 <div data-role="page" id="one" data-theme="b">
 <div data-role="panel" data-display="overlay" data-theme="b" id="listpanel">
-	<ul data-inset="true" data-role="listview" data-mini="true" data-iconpos="right" data-filter="true" data-filter-placeholder="بحث عن اسم موضوع">
+	<ul data-inset="true" data-role="listview" data-mini="true" data-iconpos="right" data-filter="true" data-filter-placeholder="بحث عن موضوع">
 	<li data-role="divider">
 <h4>	"الفلك الموضعي"</h4></li>
 		<li>
@@ -74,37 +53,41 @@ function toggleMe(a){
 </li></ul>
 </div><!--/panel-->
 
-	<div data-role="header" data-position="fixed"><h1>تقاويم</h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
+	<div data-role="header" data-theme="b" data-position="fixed"><h1>تقاويم</h1><a  href="#two" data-icon="refresh" rel="external">English</a>
 <a href="#listpanel" data-icon="bars" rel="external">المواضيع</a>
 	</div><!-- /header -->
-	<div data-role="content">
-	<div class="mikimg"><img src="images/positional.png" class="mikimg" style="max-width: 100%" /></div>
-<H1><FONT SIZE=5>تقاويم</FONT></H1>
-<P><FONT SIZE=4>The current <B>standard epoch</B> for star catalogues
-<I>etc. </I>is J2000.0; <BR>the previous one was B1950.0. </FONT>
-</P>
-<P><FONT SIZE=4>In this context, &#147;B&#148; signifies a <B>Besselian
+
+<div data-role="content">
+  <div class="contain">
+    <div class="mikimg">
+  <img class="op" src="images/positional.png" alt="positional" width="660" height="100" >
+<h1 class="center mateen">تقاويم </h1>
+</div></div>
+
+<p>The current <B>standard epoch</B> for star catalogues
+<I>etc. </I>is J2000.0; <BR>the previous one was B1950.0. </p>
+<p>In this context, &#147;B&#148; signifies a <B>Besselian
 year</B>, <BR>which begins when the mean longitude of the Sun is
 exactly 280&deg;; <BR>this always occurs very close to the start of
 the calendar year, <BR>but not always at the same instant. <BR>For
 example, &#147;B1950.0&#148; represents the instant 1950 January
-0.9235.</FONT></P>
-<P><FONT SIZE=4>&#147;J&#148; signifies a <B>Julian year</B>, which
+0.9235.</p>
+<p>&#147;J&#148; signifies a <B>Julian year</B>, which
 is exactly 365.25 days long. <BR>&#147;J2000.0&#148; represents
 midday on 2000 January 1, <BR>and every other Julian year begins at
 an exact multiple of 365.25 days from then. <BR>In 1984 the
 International Astronomical Union recommended <BR>that star positions
 should be calculated on the basis of Julian years rather than
-Besselian ones.</FONT></P>
-<P><FONT SIZE=4><I>Julian </I>years are named for Julius Caesar, <BR>who
+Besselian ones.</p>
+<p><I>Julian </I>years are named for Julius Caesar, <BR>who
 is credited with the first reform of the calendar. <BR>The year (more
 accurately, the &#147;tropical year&#148;), <BR>is measured from one
 spring equinox to the next, <BR>an interval of 365.2421988 mean solar
 days. <BR>In the <B>Julian calendar</B>, most years have 365 days,
 <BR>with an extra day every fourth year (called a leap-year), <BR>thus
 averaging 365.25 days to a year, <BR>with an error of 1 day every 128
-years.</FONT></P>
-<P><FONT SIZE=4>By the 16th century, the accumulated error was 10
+years.</p>
+<p>By the 16th century, the accumulated error was 10
 days, <BR>and Pope Gregory XIII introduced the <B>Gregorian calendar</B>,
 <BR>where century years are only leap-years if they are divisible by
 400; <BR>thus 1900 was not a leap-year, but 2000 was. <BR>The
@@ -112,25 +95,26 @@ Gregorian year thus averages 365.2425 days to a year, <BR>with an
 error of 1 day every 3320 years. <BR>The extra 10 days were
 arbitrarily omitted, <BR>1582 October 4th being followed by 1582
 October 15th. <BR>The Gregorian calendar was adopted in different
-countries at various different dates over the next 350 years.</FONT></P>
-<P><BR><BR>
-</P>
-<P><FONT COLOR="#800000"><FONT SIZE=4 STYLE="font-size: 16pt"><B>Exercise:</B></FONT></FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>When the Gregorian calendar was
+countries at various different dates over the next 350 years.</p>
+
+<div data-role="collapsible" data-content-theme="b" ><h1>تمرين:</h1>
+
+<P class="red">When the Gregorian calendar was
 introduced in 1582, <BR>the accumulated error in the Julian calendar
 was 10 days. <BR>What was the error by the time the Gregorian
-calendar was adopted in Turkey, in 1927?</FONT></FONT></P>
+calendar was adopted in Turkey, in 1927?</p>
 
-<div>
-<input type="button" class="button" onclick="return toggleMe('para1')" value=" اضغط هنا للحصول على الجواب ">
-</div>
-<div id="para1" style="display:none">
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>1600 was a leap-year in both
+<div data-role="collapsible" data-content-theme="b" ><h1>الحل:</h1>
+
+<P class="navy">1600 was a leap-year in both
 calendars, <BR>but 1700, 1800 and 1900 were not leap-years in the
 Gregorian calendar. <BR>Thus the Julian calendar was 13 days adrift,
-by 1927.</FONT></FONT></P></div>
-<br />
-<P><FONT SIZE=4>To avoid complications in calculating calendar dates,
+by 1927.</p>
+
+</div><!-- /collapsible-->
+</div> <!-- /collapsible-->
+
+<p>To avoid complications in calculating calendar dates,
 <BR>astronomers number days in a continuous sequence called the
 <B>Julian Date (JD)</B>. <BR><I>(This system was devised by the
 French astronomer Joseph B. Scaliger, in 1582;<BR>he named it, not after
@@ -140,29 +124,24 @@ BC, <BR>so that all known astronomical records have positive values
 of JD. <BR>The Julian date changes at <I>midday</I>, so that (in
 European countries) <BR>all observations on a particular night have
 the same Julian date. <BR>Midday on 2000 January 1st was JD 2451545.0 .
-</FONT>
-</P>
-<P><FONT SIZE=4>JD must be given to 5 decimal places for an accuracy
+</p>
+<p>JD must be given to 5 decimal places for an accuracy
 of 1 second of time. <BR>A number in this format can cause problems
 in computing, <BR>so many modern applications use the <B>Modified
 Julian Date</B> (<B>MJD)</B>, <BR>where MJD = JD - 2400000.5,
 <BR>meaning that MJD, like the calendar date, changes at midnight.
-<BR>0h on 2000 January 1st was MJD 51544.0 .</FONT></P>
-<BR><hr>
-<FONT SIZE=4>الموضوع السابق: </FONT><A HREF="016.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
-ترنح محور الأرض و المبادرة </FONT>
-</A><br />
-	<FONT SIZE=4>الموضوع التالي: </FONT><A HREF="exercise.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
-امتحان أخير </FONT>
-</A>
-<FONT SIZE=4> <BR>العودة إلى </FONT><A HREF="index.html" data-icon="refresh" rel="external" ><FONT SIZE=4>الفهرس</FONT></A><FONT SIZE=4>
-</FONT>
+<BR>0h on 2000 January 1st was MJD 51544.0 .</p>
 
 </div><!-- /content -->
-
-<div data-role="footer"  data-position="fixed">
-		<h3>ترجمة قتيبة أقرع</h3>
-	</div><!-- /footer -->
+<div data-role="footer" data-theme="b"  data-position="fixed">
+<div data-role="navbar">
+<ul>
+<li> <a href="016.html#one" data-icon="arrow-l" data-iconpos="left" rel="external">المبادرة</a> </li>
+	<li><h4> ترجمة قتيبة أقرع</h4></li>
+<li><a href="exercise.html#one" data-icon="arrow-r" data-iconpos="right" rel="external"> امتحان اخير </a></li>
+</ul>
+</div><!--/navbar-->
+</div><!-- /footer -->
 </div><!-- /page one --> 
 </body>
 </html>

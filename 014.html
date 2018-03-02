@@ -11,34 +11,13 @@
 	<link rel="stylesheet" href="css/theme.css" />
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.mobile-1.3.1.min.js"></script>
-	 <style type="text/css">
-/* تهيئة الصندوق لعناوين الفقرات القابلة للطي */
-input.button {
-  color: #fff; background: #c0c0c0 ;
-  font-size: 1em;
-  font-weight:bold;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  border: solid 1px #ffcf31 ;
-}
-</style>
-<script type="text/javascript">
-function toggleMe(a){
-  var e=document.getElementById(a);
-  if(!e)return true;
-  if(e.style.display=="none"){
-    e.style.display="block"
-  } else {
-    e.style.display="none"
-  }
-  return true;
-}
-</script>
+
 </head> 	
 <body> 
 <!-- Start of first page: #one -->
 <div data-role="page" id="one" data-theme="b">
 <div data-role="panel" data-display="overlay" data-theme="b" id="listpanel">
-	<ul data-inset="true" data-role="listview" data-mini="true" data-iconpos="right" data-filter="true" data-filter-placeholder="بحث عن اسم موضوع">
+	<ul data-inset="true" data-role="listview" data-mini="true" data-iconpos="right" data-filter="true" data-filter-placeholder="بحث عن موضوع">
 	<li data-role="divider">
 <h4>	"الفلك الموضعي"</h4></li>
 		<li>
@@ -74,13 +53,17 @@ function toggleMe(a){
 </li></ul>
 </div><!--/panel-->
 
-	<div data-role="header" data-position="fixed"><h1>اختلاف المنظر الموسمي (السنوي) </h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
+ 	<div data-role="header" data-theme="b" data-position="fixed"><h1>اختلاف المنظر الموسمي (السنوي) </h1><a  href="#two" data-icon="refresh" rel="external">English</a>
 <a href="#listpanel" data-icon="bars" rel="external">المواضيع</a>
 	</div><!-- /header -->
-	<div data-role="content">
-	<div class="mikimg"><img src="images/positional.png" class="mikimg" style="max-width: 100%" /></div>
 
-<H1><FONT SIZE=5>اختلاف المنظر السنوي</FONT></H1>
+<div data-role="content">
+  <div class="contain">
+    <div class="mikimg">
+  <img class="op" src="images/positional.png" alt="positional" width="660" height="100" >
+<h1 class="center mateen">  اختلاف المنظر الموسمي</h1>
+</div></div>
+
 
 <P><FONT SIZE=3><B>{Note:</B> If your browser does not distinguish
 between &quot;a,b&quot; and &quot;&alpha;, &beta;&quot; (the Greek letters 
@@ -300,19 +283,17 @@ yields its distance,
 
 <BR>(In fact, no star is this close.)</FONT></P>
 
-<P><BR><BR>
-</P>
 
-<P><FONT COLOR="#800000"><FONT SIZE=4 STYLE="font-size: 16pt"><B>Exercise:</B></FONT></FONT></P>
+<div data-role="collapsible" data-content-theme="b" >
+<h1>تمرين:</h1>
 <P><FONT COLOR="#800000"><FONT SIZE=4>A star&#146;s true position is
 <BR>Right Ascension 6h 0m 0s, declination 0&deg; 0' 0&quot;,<BR>and
 it lies at a distance of 25 parsecs.<BR>On the date of the Spring
 Equinox, <BR>how far will it appear to be shifted by annual parallax,
 <BR>and in what direction?</FONT></FONT></P>
- <div>
-<input type="button" class="button" onclick="return toggleMe('para1')" value=" اضغط هنا للحصول على الجواب ">
-</div>
-<div id="para1" style="display:none">
+
+<div data-role="collapsible" data-content-theme="b" >
+<h1>الحل:</h1>
 <P><FONT COLOR="#0000ff"><FONT SIZE=4>First convert from RA and dec.
 into ecliptic coordinates.
 
@@ -349,23 +330,19 @@ sin(&lambda;<SUB>S</SUB>-&lambda;) = 0.040&quot;
 eastwards, by parallax.</FONT></FONT></P>
 <P><BR><BR>
 </P>
-</div>
-<BR><hr>
-
-<FONT SIZE=4>الموضوع السابق: </FONT><A HREF="013.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
-اختلاف المنظر المركزي</FONT>
-</A><br />
-	<FONT SIZE=4>الموضوع التالي: </FONT><A HREF="015.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
-الانحراف</FONT>
-</A>
-<FONT SIZE=4> <BR>العودة إلى </FONT><A HREF="index.html" data-icon="refresh" rel="external" ><FONT SIZE=4>الفهرس</FONT></A><FONT SIZE=4>
-</FONT>
-
+</div><!--/collapsible-->
+</div><!--/collapsible-->
 </div><!-- /content -->
 
-<div data-role="footer"  data-position="fixed">
-		<h3>ترجمة قتيبة أقرع</h3>
-	</div><!-- /footer -->
+<div data-role="footer" data-theme="b"  data-position="fixed">
+<div data-role="navbar">
+<ul>
+<li> <a href="013.html#one" data-icon="arrow-l" data-iconpos="left" rel="external"> اختلاف المنظر اليومي المركزي</a> </li>
+	<li><h4> ترجمة قتيبة أقرع</h4></li>
+<li><a href="015.html#one" data-icon="arrow-r" data-iconpos="right" rel="external">الانحراف </a></li>
+</ul>
+</div><!--/navbar-->
+</div><!-- /footer -->
 </div><!-- /page one --> 
 </body>
 </html>

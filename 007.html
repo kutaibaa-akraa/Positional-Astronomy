@@ -11,34 +11,13 @@
 	<link rel="stylesheet" href="css/theme.css" />
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.mobile-1.3.1.min.js"></script>
-	 <style type="text/css">
-/* تهيئة الصندوق لعناوين الفقرات القابلة للطي */
-input.button {
-  color: #fff; background: #c0c0c0 ;
-  font-size: 1em;
-  font-weight:bold;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  border: solid 1px #ffcf31 ;
-}
-</style>
-<script type="text/javascript">
-function toggleMe(a){
-  var e=document.getElementById(a);
-  if(!e)return true;
-  if(e.style.display=="none"){
-    e.style.display="block"
-  } else {
-    e.style.display="none"
-  }
-  return true;
-}
-</script>
+
 </head> 	
 <body> 
 <!-- Start of first page: #one -->
 <div data-role="page" id="one" data-theme="b">
 <div data-role="panel" data-display="overlay" data-theme="b" id="listpanel">
-	<ul data-inset="true" data-role="listview" data-mini="true" data-iconpos="right" data-filter="true" data-filter-placeholder="بحث عن اسم موضوع">
+	<ul data-inset="true" data-role="listview" data-mini="true" data-iconpos="right" data-filter="true" data-filter-placeholder="بحث عن موضوع">
 	<li data-role="divider">
 <h4>	"الفلك الموضعي"</h4></li>
 		<li>
@@ -74,42 +53,41 @@ function toggleMe(a){
 </li></ul>
 </div><!--/panel-->
 
-	<div data-role="header" data-position="fixed"><h1>تحويلات أفقية-استوائية</h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
+	<div data-role="header" data-theme="b" data-position="fixed"><h1>تحويلات أفقية-استوائية</h1><a  href="#two" data-icon="refresh" rel="external">English</a>
 <a href="#listpanel" data-icon="bars" rel="external">المواضيع</a>
 	</div><!-- /header -->
+	
 	<div data-role="content">
-	<div class="mikimg"><img src="images/positional.png" class="mikimg" style="max-width: 100%" /></div>
+<div class="contain">
+<div class="mikimg">
+  <img class="op" src="images/positional.png" alt="positional" width="660" height="100" >
+  <h1 class="center mateen">التحويل بين احداثيات أفقية و استوائية</h1></div></div>
 
-<H1><FONT SIZE=5>التحويل بين الإحداثيات الأفقية و الاستوائية<BR></FONT><FONT SIZE=4>Conversion
-between horizontal and equatorial systems</FONT></H1>
-
-<P><FONT SIZE=3><B>{Note:</B> If your browser does not distinguish
+<P>{<B>Note:</B> If your browser does not distinguish
 between &quot;a,b&quot; and &quot;&alpha;, &beta;&quot; (the Greek letters 
 &quot;<I>alpha, beta</I>&quot;)
 then I am afraid you will not be able to make much sense of the
 equations on this page.}
 
 
-<P><FONT SIZE=4>To convert between the horizontal and equatorial
-coordinates for an object X, <BR>we use a spherical triangle often
-called <I>&quot;The&quot; Astronomical Triangle</I>: XPZ, <BR>where Z
-is the zenith, P is the North Celestial Pole, and X is the object. </FONT>
-</P>
-<P><FONT SIZE=4>The sides of the triangle:<BR>&nbsp;&nbsp;&nbsp;PZ&nbsp;is
-the observer's co-latitude = 90&deg;-&phi;.<BR>&nbsp;&nbsp;&nbsp;ZX
-is the zenith distance of X = 90&deg;-a.<BR>&nbsp;&nbsp;&nbsp;PX is
-the North Polar Distance of X = 90&deg;-&delta;.</FONT></P>
-<P><FONT SIZE=4>The angles of the triangle:<BR>&nbsp;&nbsp;&nbsp;The
+<P>To convert between the horizontal and equatorial coordinates for an object X, we use a spherical triangle often called <I>&quot;The&quot; Astronomical Triangle</I>: XPZ, where Z is the zenith, P is the North Celestial Pole, and X is the object.</P>
+
+<P>The sides of the triangle:
+<br>&nbsp;&nbsp;&nbsp;PZ&nbsp;is
+the observer's co-latitude = 90&deg;-&phi;. <br>ZX is the zenith distance of X = 90&deg;-a.
+<br>&nbsp;&nbsp;&nbsp;PX is
+the North Polar Distance of X = 90&deg;-&delta;.</P>
+<P>The angles of the triangle:<BR>&nbsp;&nbsp;&nbsp;The
 angle at P is H, the local Hour Angle of X.<BR>&nbsp;&nbsp;&nbsp;The
 angle at Z is 360&deg;-A, where A is the azimuth of X.<BR>&nbsp;&nbsp;&nbsp;The
-angle at X is q, the <B>parallactic angle</B>.</FONT></P>
-<P><FONT SIZE=4>We assume we know the observer&#146;s latitude &phi;
+angle at X is q, the <B>parallactic angle</B>.</P>
+<P>We assume we know the observer&#146;s latitude &phi;
 and the Local Sidereal Time LST.<BR>(LST may be obtained, if
 necessary, from Greenwich Sidereal Time and observer&#146;s
-longitude.) </FONT>
-</P>
-<P> <div class="mikimg"><img src=" images/triangle.png" class="mikimg" style="max-width: 100%" /></div>
-<FONT SIZE=4></p>
+longitude.)</P>
+
+ <div class="mikimg"><img src=" images/ar/triangle.png" class="mikimg" style="max-width: 100%" /></div>
+
 <p><FONT COLOR="#b84700"><B>To
 convert from equatorial to horizontal coordinates</B>:</FONT></FONT></P>
 <P><FONT SIZE=4>Given RA &alpha; and
@@ -118,21 +96,21 @@ Hour Angle H = LST - RA, in hours; <BR>convert H to degrees (multiply
 by 15). <BR>Given H and &delta;, we
 require azimuth A and altitude a.</FONT></P>
 
-<P><FONT SIZE=4>By the cosine rule:<BR>cos(90&deg;-a) = cos(90&deg;-&delta;)
+<P>By the cosine rule:<BR>cos(90&deg;-a) = cos(90&deg;-&delta;)
 cos(90&deg;-&phi;) + sin(90&deg;-&delta;)
 sin(90&deg;-&phi;) cos(H)<BR>which
 simplifies to:<BR><B>sin(a) = sin(&delta;)
 sin(&phi;) + cos(&delta;)
 cos(&phi;) cos(H)</B><BR>This gives us
-the altitude a.</FONT></P>
+the altitude a.</P>
 
-<P><FONT SIZE=4>By the sine rule: <BR>sin(360&deg;-A)/sin(90&deg;-&delta;)
+<P>By the sine rule: <BR>sin(360&deg;-A)/sin(90&deg;-&delta;)
 = sin(H)/sin(90&deg;-a)<BR>which simplifies to:<BR>- sin(A)/cos(&delta;)
 = sin(H)/cos(a)<BR><I>i.e. </I><B>sin(A) = - sin(H) cos(&delta;)
 / cos(a)</B><SPAN STYLE="font-weight: medium"><BR>which gives us the
-azimuth A.</SPAN></FONT></P>
+azimuth A.</SPAN></P>
 
-<P><FONT SIZE=4>Alternatively, use the cosine rule again:<BR>cos(90&deg;-&delta;)
+<P>Alternatively, use the cosine rule again:<BR>cos(90&deg;-&delta;)
 = cos(90&deg;-&phi;) cos(90&deg;-a) +
 sin(90&deg;-&phi;) sin(90&deg;-a)
 cos(360&deg;-A)<BR>which simplifies to <BR>sin(&delta;)
@@ -140,55 +118,58 @@ cos(360&deg;-A)<BR>which simplifies to <BR>sin(&delta;)
 cos(a) cos(A)<BR>Rearrange to find A: <BR><B>cos(A) = { sin(&delta;)
 - sin(&phi;) sin(a) } / cos(&phi;)
 cos(a)<BR></B><SPAN STYLE="font-weight: medium">which again gives us
-the azimuth A.</SPAN></FONT></P>
+the azimuth A.</SPAN></P>
 
-<P STYLE="border: 1px solid #eb613d; padding: 0.05cm"><FONT SIZE=4><SPAN STYLE="font-weight: medium">Here
-are all the equations together:<BR><B><FONT COLOR="#b84700">H = t -
-&alpha;</FONT></B><BR><FONT COLOR="#b84700"><B>sin(a)
-= sin(&delta;) sin(&phi;)
-+ cos(&delta;) cos(&phi;)
-cos(H)</B></FONT></SPAN><FONT COLOR="#b84700"><B><BR>sin(A) = -
-sin(H) cos(&delta;) / cos(a)<BR>cos(A) =
-{ sin(&delta;) - sin(&phi;)
-sin(a) } / cos(&phi;) cos(a)</B></FONT></FONT></P>
-<P><BR><BR>
-</P>
+<!-- box containing rules-->
+<div id="twocent" class="box">
+<div id="one" class="blue"> Here are all the equations together: </div>
+<div class="que"> H = t -
+&alpha;</div>
+<div class="que">sin(a) = sin(&delta;) sin(&phi;)
++ cos(&delta;) cos(&phi;) cos(H)</div>
+<div class="que">sin(A) = - sin(H) cos(&delta;) / cos(a)</div>
+<div class="que">cos(A) = { sin(&delta;) - sin(&phi;) sin(a) } / cos(&phi;) cos(a)</div>
+</div> <!--/box -->
 
-<P><FONT SIZE=4>Now for the inverse problem:<BR><B><FONT COLOR="#b84700">to
-convert from horizontal to equatorial coordinates:</FONT></B></FONT></P>
+<P>Now for the inverse problem:
+<B><FONT COLOR="#b84700">to convert from horizontal to equatorial coordinates:</FONT></B></P>
 
-<P><FONT SIZE=4>Given &phi;, a and A,
-what are &alpha; and &delta;?</FONT></P>
+<P>Given &phi;, a and A,
+what are &alpha; and &delta;?</P>
 
-<P><FONT SIZE=4>Start by using the cosine rule to get &delta;,
+<P>Start by using the cosine rule to get &delta;,
 as shown above: <BR><B>sin(&delta;) =
 sin(a)sin(&phi;) + cos(a) cos(&phi;)
-cos(A)</B></FONT></P>
+cos(A)</B></P>
 
-<P><FONT SIZE=4>We can now use the sine rule to get H, using the same
+<P>We can now use the sine rule to get H, using the same
 formula as above: <BR><B>sin(H) = - sin(A) cos(a) / cos(&delta;)
 </B><BR>Or use the cosine rule instead: <BR>sin(a) = sin(&delta;)sin(&phi;)
 + cos(&delta;) cos(&phi;)
 cos(H)<BR>and rearrange to find H: <BR><B>cos(H) = { sin(a) - sin(&delta;)
 sin(&phi;) } / cos(&delta;)
-cos(&phi;)</B></FONT></P>
+cos(&phi;)</B></P>
 
-<P><FONT SIZE=4>Having calculated H, ascertain the Local Sidereal
+<P>Having calculated H, ascertain the Local Sidereal
 Time t. 
 <BR>Then the R.A. follows from <BR>&nbsp;<B>&alpha;
-= t &#150; H </B><SPAN STYLE="font-weight: medium">.</SPAN></FONT></P>
+= t &#150; H </B></P>
 
-<P STYLE="border: 1px solid #b84700; padding: 0.05cm; font-weight: medium">
-<FONT SIZE=4>Here are all the equations together:
-<BR><B><FONT COLOR="#b84700">sin(&delta;)
-= sin(a)sin(&phi;) + cos(a) cos(&phi;) cos(A)
-<BR>sin(H) = - sin(A) cos(a) / cos(&delta;)
-<BR>cos(H) = { sin(a) - sin(&delta;) sin(&phi;)} / cos(&delta;) cos(&phi;)
-<BR>&alpha; = t &#150; H</FONT></B></FONT></P>
-<P><BR><BR>
-</P>
+<!-- box containing rules-->
+<div id="twocent" class="box">
+<div id="one" class="blue"> Here are all the equations together: </div>
+<div class="que">sin(&delta;)
+= sin(a)sin(&phi;) + cos(a) cos(&phi;) cos(A)</div>
 
-<P><FONT COLOR="#800000"><FONT SIZE=4 STYLE="font-size: 16pt"><B>Exercise:</B></FONT></FONT></P>
+<div class="que">sin(H) = - sin(A) cos(a) / cos(&delta;)</div>
+
+<div class="que">cos(H) = { sin(a) - sin(&delta;) sin(&phi;)} / cos(&delta;) cos(&phi;)</div>
+
+<div class="que">&alpha; = t &#150; H</div>
+</div> <!--/box -->
+<div data-role="collapsible" data-content-theme="b" >
+<h1>تمرين:</h1>
+
 <P><FONT COLOR="#800000"><FONT SIZE=4>Prove that the celestial
 equator cuts the horizon at azimuth 90&deg; and 270&deg;, <BR>at any
 latitude (except at the North and South Poles). </FONT></FONT>
@@ -196,11 +177,11 @@ latitude (except at the North and South Poles). </FONT></FONT>
 <P><FONT COLOR="#800000"><FONT SIZE=4>At what <I>angle </I>does the
 celestial equator cut the horizon, at latitude &phi;
 ?</FONT></FONT></P>
-<div><input type="button" class="button" onclick="return toggleMe('para1')" value=" اضغط هنا للحصول على الجواب ">
-</div>
-<div id="para1" style="display:none">
-<P> <div class="mikimg"><img src=" images/prob7a.png" class="mikimg" style="max-width: 100%" /></div>
-<FONT COLOR="#0000ff"><FONT SIZE=4>Draw
+
+<div data-role="collapsible" data-content-theme="b" >
+<h1>الحل:</h1>
+<div class="mikimg"><img src=" images/ar/prob7a.png" class="mikimg" style="max-width: 100%" /></div>
+<p><FONT COLOR="#0000ff"><FONT SIZE=4>Draw
 &quot;the&quot; triangle again.<BR>We require the azimuth A of point
 X, <BR>where X is on the horizon (i.e. a=0) <BR>and also on the
 equator (i.e. &delta;=0)</FONT></FONT></P>
@@ -213,28 +194,26 @@ cos A<BR>Since 90&deg;-&phi; is not 0
 <P><FONT COLOR="#800000"><FONT SIZE=4>At what <I>angle </I>does the
 celestial equator cut the horizon, at latitude &phi;
 ?</FONT></FONT></P>
-<P> <div class="mikimg"><img src=" images/prob7b.png" class="mikimg" style="max-width: 100%" /></div>
+<P> <div class="mikimg"><img src=" images/ar/prob7b.png" class="mikimg" style="max-width: 100%" /></div>
 <FONT COLOR="#0000ff"><FONT SIZE=4>Use
 the cosine formula:<BR>cos SY = cos SW cos YW + sin SW sin YW cos
 W<BR>This gives cos (90&deg;-&phi;) = 0
 + cos x<BR>So the angle x is 90&deg;-&phi;.<BR>The
-celestial equator cuts the horizon at an angle of 90&deg;-&phi;</FONT></FONT></P></div>
+celestial equator cuts the horizon at an angle of 90&deg;-&phi;</FONT></FONT></P>
 </P>
-<br><hr>
- <FONT SIZE=4>الموضوع السابق: </FONT><A HREF="006.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
-الزمن النجمي</FONT>
-</A><br />
-	<FONT SIZE=4>الموضوع التالي: </FONT><A HREF="008.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
-الإحداثيات المجرية</FONT>
-</A>
-<FONT SIZE=4> <BR>العودة إلى </FONT><A HREF="index.html" data-icon="refresh" rel="external" ><FONT SIZE=4>الفهرس</FONT></A><FONT SIZE=4>
-</FONT>
-
+</div><!-- collapsible -->
+</div><!-- collapsible -->
 </div><!-- /content -->
 
-<div data-role="footer"  data-position="fixed">
-		<h3>ترجمة قتيبة أقرع</h3>
-	</div><!-- /footer -->
+<div data-role="footer" data-theme="b"  data-position="fixed">
+<div data-role="navbar">
+<ul>
+<li> <a href="006.html#one" data-icon="arrow-l" data-iconpos="left" rel="external">الزمن النجمي</a> </li>
+	<li><h4> ترجمة قتيبة أقرع</h4></li>
+<li><a href="008.html#one" data-icon="arrow-r" data-iconpos="right" rel="external">الاحداثيات المجرية </a></li>
+</ul>
+</div><!--/navbar-->
+</div><!-- /footer -->
 </div><!-- /page one --> 
 </body>
 </html>

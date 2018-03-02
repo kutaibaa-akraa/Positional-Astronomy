@@ -19,8 +19,7 @@
 	<ul data-inset="true" data-role="listview" data-mini="true" data-iconpos="right" data-filter="true" data-filter-placeholder="بحث عن موضوع">
 	<li data-role="divider">
 <h4>	"الفلك الموضعي"</h4></li>
-		<li>
- <a rel="external" href="intro.html">مقدمة</a></li>
+<li><a rel="external" href="intro.html">مقدمة</a></li>
 <li>
     <a rel="external" href="001.html"> الكرة الأرضية</a> </li><li>
 <a rel="external" href="002.html"> هندسة المثلثات الكروية</a> </li><li>
@@ -60,11 +59,13 @@
 <div class="mikimg">
   <img class="op" src="images/positional.png" alt="positional" width="660" height="100" >
   <h1 class="center mateen">الزمن النجمي</h1></div></div>
-<P> <div class="mikimg"><img src=" images/ar/sidsolar.png" class="mikimg" width="150px" /></div>
-<p>Which stars are on your local meridian?<br>
+ <div class="mikimg"><img src="images/ar/sidsolar.png" class="mikimg" /></div>
+
+<p>Which stars are on your local meridian? 
  It depends on the time at which you observe. In fact, it depends on both the <I>date </I>and the (clock) time,because the Earth is in orbit around the Sun.</P>
 <P>Consider the Earth at position E<SUB>1</SUB> on the diagram. The star shown is on the meridian at midnight by the clock. But three months later, when the Earth reaches position E<SUB>2</SUB>
 , the same star is on the meridian at 6 p.m. by the clock.</P>
+
 <P>Our clocks are set to run (approximately) on <B>solar time </B>(sun time). But for astronomical observations, we need to
 use <B>sidereal time </B>(star time).</P>
 
@@ -74,71 +75,69 @@ star. Because of the Earth's orbital motion, this is a little shorter than a sol
 times relative to the Sun, but 366 times relative to the stars.
 So the sidereal day is about 4 minutes shorter than the solar
 day.)</I></P>
-<P>We define <B>Local Sidereal Time</B> (LST) to be 0 hours, when the vernal equinox 
- <img src=" images/ar/aries.png" class="mikimg" style="max-width: 100%" />
 
+<P>We define <B>Local Sidereal Time</B> (LST) to be 0 hours, when the vernal equinox 
+ <img src=" images/ar/aries.png" style="max-width: 5%" />
 is on the observer's local meridian. One hour later, the local Hour Angle (LHA) of the equinox is +1h (by the definition of
-Hour Angle), and the Local Sidereal Time is 1h. So at any instant,
-<br> <B>Local Sidereal Time = Local Hour Angle of the vernal equinox.</B></P>
-<P>Here's an alternative definition: suppose that LST = 1h. This means that the vernal equinox has moved 15&deg;
-(1h) west of the meridian, and now some other star X is on the
-meridian. But the Right Ascension of star X is the angular
-distance from the vernal equinox to X = 1h = LST. So at any instant,
-<br> <B>Local Sidereal Time = Right Ascension of whichever stars
-are on the meridian</B>. 
-</P>
-<P>And in general,
-<br> <FONT COLOR="#800000">the Local Hour
-Angle of a star = Local Sidereal Time - RA of the star.</FONT></P>
+Hour Angle), and the Local Sidereal Time is 1h. So at any instant,</p>
+
+ <p class="que">Local Sidereal Time = Local Hour Angle of the vernal equinox.</p>
+
+<P>Here's an alternative definition: suppose that LST = 1h. This means that the vernal equinox has moved 15&deg; (1h) west of the meridian, and now some other star X is on the meridian. But the Right Ascension of star X is the angular
+distance from the vernal equinox to X = 1h = LST. So at any instant,</p>
+
+ <p class="que">Local Sidereal Time = Right Ascension of whichever stars
+are on the meridian.</P>
+
+<P>And in general,</p>
+ <p class="que">the Local Hour
+Angle of a star = Local Sidereal Time - RA of the star.</P>
+
 <P>However, at any instant, different observers, to the east or west, will have different stars on their local meridians. We need to choose one particular meridian to act as a reference point; we choose Greenwich.</P>
+
 <P>We define the <B>Greenwich Hour Angle</B> of X as the Hour Angle of X relative to the celestial meridian <I>at
 Greenwich</I>. Then we can define <B>Greenwich Sidereal Time</B>
-(GST) as the Greenwich Hour Angle of the vernal equinox. This
-gives the important relation <B>LST = GST - longitude west</B>.
-Recall that the Local Hour Angle (LHA) of a star = Local
+(GST) as the Greenwich Hour Angle of the vernal equinox. This gives the important relation 
+<p class="que">LST = GST - longitude west</p>.</p>
+<p>Recall that the Local Hour Angle (LHA) of a star = Local
 Sidereal Time - RA of the star. In particular, the Greenwich Hour
 Angle (GHA) of a star = Greenwich Sidereal Time - RA of the star.
 <BR>Combining these, we find
-<br><B>LHA(star) = GHA(star) - longitude
-west</B>. 
-</P>
-		<div data-role="collapsible" data-content-theme="b" >
+<p class="que">LHA(star) = GHA(star) - longitude west</p>.</P>
+		
+<div data-role="collapsible" data-content-theme="b" >
 <h1>تمرين:</h1>
 
-<P><FONT COLOR="#800000"><FONT SIZE=4>At midnight on 1998 February
-4th, <BR>Local Sidereal Time at St.Andrews was 8h45m. <BR>St.Andrews
-has longitude 2&deg;48'W. <BR>What was the Local Hour Angle of
-Betelgeuse (R.A. = 5h55m) at midnight? </FONT></FONT>
-</P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>At what time was Betelgeuse on
-the meridian at St.Andrews? </FONT></FONT>
-</P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>At what time was Betelgeuse on
-the meridian at Greenwich? </FONT></FONT>
-</P>
-		<div data-role="collapsible" data-content-theme="b" >
+<p class="red">At midnight on 1998 February
+4th, Local Sidereal Time at St.Andrews was 8h45m. St.Andrews has longitude 2&deg;48'W. What was the Local Hour Angle of
+Betelgeuse (R.A. = 5h55m) at midnight?</P>
+
+<P class="red">At what time was Betelgeuse on the meridian at St.Andrews?</P>
+
+<P class="red">At what time was Betelgeuse on the meridian at Greenwich?</P>
+
+<div data-role="collapsible" data-content-theme="b" >
 <h1>الحل:</h1>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>RA of Betelgeuse = 5h 55m<BR>At
-midnight, LST = 8h 45m<BR>Local Hour Angle = LST - RA <BR>so the
-Local Hour Angle of Betelgeuse was 8h 45m - 5h 55m = 2h 50m.</FONT></FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>At what time was Betelgeuse on
-the meridian at St.Andrews?</FONT></FONT></P>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>On the meridian, Local Hour
-Angle = 0, <BR>so if Betelgeuse was on the meridian at St.Andrews,
-<BR>LST in St.Andrews = RA of Betelgeuse = 5h 55m.<BR>(Recall that
-LST = RA of stars on local meridian.)</FONT></FONT></P>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>We are told that the LST was 8h
-45m at midnight.<BR>But at midnight, Betelgeuse was at Hour Angle 2h
-50m, <BR>so it would be on the meridian 2h 50m <I>before
-</I>midnight,<BR>that is, at 21h 10m.<BR>So Betelgeuse was on the
-meridian <SPAN STYLE="font-style: normal">in St.Andrews </SPAN>at 21h
-10m.</FONT></FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>At what time was Betelgeuse on
-the meridian at Greenwich?</FONT></FONT></P>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>St.Andrews is 2&deg;48' west of
-Greenwich = 0h 11m (divide by 15).<BR>So Betelgeuse was on the
-<I>Greenwich </I>meridian <BR>11 minutes before it reached the
-St.Andrews meridian. <BR><I>i.e</I>. at 20h 59m.</FONT></FONT></P>
+<P class="navy">RA of Betelgeuse = 5h 55m  At midnight, LST = 8h 45m</p>
+<p class="que">Local Hour Angle = LST - RA </p>
+
+<p class="navy">so the Local Hour Angle of Betelgeuse was :</p>
+
+<p class="que"> 8h 45m - 5h 55m = 2h 50m.</P>
+
+<P class="red">At what time was Betelgeuse on the meridian at St.Andrews?</P>
+
+<P class="navy">On the meridian, Local Hour
+Angle = 0, so if Betelgeuse was on the meridian at St.Andrews,</p>
+
+<p class="navy">LST in St.Andrews = RA of Betelgeuse = 5h 55m. (Recall that
+LST = RA of stars on local meridian.)</P>
+
+<P class="navy">We are told that the LST was 8h 45m at midnight. But at midnight, Betelgeuse was at Hour Angle 2h50m, so it would be on the meridian 2h 50m <I>before </I>midnight, that is, at 21h 10m. So Betelgeuse was on the meridian in St.Andrews at 21h 10m.</P>
+
+<P class="red">At what time was Betelgeuse on the meridian at Greenwich?</P>
+
+<P class="navy">St.Andrews is 2&deg;48' west of Greenwich = 0h 11m (divide by 15). So Betelgeuse was on the <I>Greenwich </I>meridian 11 minutes before it reached the St.Andrews meridian. <I>i.e</I>. at 20h59m.</P>
 </div><!-- collapsible -->
 </div><!-- collapsible -->
 <p><i>For a more detailed discussion of Sidereal Time and related topics, see Chapter 2 of 
@@ -150,7 +149,7 @@ St.Andrews meridian. <BR><I>i.e</I>. at 20h 59m.</FONT></FONT></P>
 <div data-role="navbar">
 <ul>
 <li> <a href="005.html#one" data-icon="arrow-l" data-iconpos="left" rel="external">  إحداثيات استوائية (2)</a> </li>
-	<li>	<h4> ترجمة قتيبة أقرع</h4></li>
+	<li><h4> ترجمة قتيبة أقرع</h4></li>
 <li><a href="007.html#one" data-icon="arrow-r" data-iconpos="right" rel="external"> تحويلات أفقية - استوائية </a></li>
 </ul>
 </div><!--/navbar-->

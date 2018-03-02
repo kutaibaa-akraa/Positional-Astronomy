@@ -10,34 +10,13 @@
 	<link rel="stylesheet" href="css/theme.css" />
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.mobile-1.3.1.min.js"></script>
-	 <style type="text/css">
-/* تهيئة الصندوق لعناوين الفقرات القابلة للطي */
-input.button {
-  color: #fff; background: #c0c0c0 ;
-  font-size: 1em;
-  font-weight:bold;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  border: solid 1px #ffcf31 ;
-}
-</style>
-<script type="text/javascript">
-function toggleMe(a){
-  var e=document.getElementById(a);
-  if(!e)return true;
-  if(e.style.display=="none"){
-    e.style.display="block"
-  } else {
-    e.style.display="none"
-  }
-  return true;
-}
-</script>
+
 </head> 	
 <body> 
 <!-- Start of first page: #one -->
 <div data-role="page" id="one" data-theme="b">
 <div data-role="panel" data-display="overlay" data-theme="b" id="listpanel">
-	<ul data-inset="true" data-role="listview" data-mini="true" data-iconpos="right" data-filter="true" data-filter-placeholder="بحث عن اسم موضوع">
+	<ul data-inset="true" data-role="listview" data-mini="true" data-iconpos="right" data-filter="true" data-filter-placeholder="بحث عن موضوع">
 	<li data-role="divider">
 <h4>	"الفلك الموضعي"</h4></li>
 		<li>
@@ -73,203 +52,191 @@ function toggleMe(a){
 </li></ul>
 </div><!--/panel-->
 
-	<div data-role="header" data-position="fixed"><h1>اختلاف المنظر المركزي</h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
+	<div data-role="header" data-theme="b" data-position="fixed"><h1>اختلاف المنظر المركزي</h1><a  href="#two" data-icon="refresh" rel="external">Englsh</a>
 <a href="#listpanel" data-icon="bars" rel="external">المواضيع</a>
 	</div><!-- /header -->
-	<div data-role="content">
-	<div class="mikimg"><img src="images/positional.png" class="mikimg" style="max-width: 100%" /></div>
-<H1><FONT SIZE=5>اختلاف المنظر المركزي اليومي<BR></FONT><FONT SIZE=4>Geocentric
-<B>or</B> diurnal parallax</FONT></H1>
-<P><FONT SIZE=4>Refraction affects the apparent altitude of a star.
-<BR>But there are other phenomena that affect its apparent position,
-too.<BR>One of these is parallax.<BR>Refraction decreases the zenith
-angle, but parallax increases it. </FONT>
-</P>
-<P><FONT SIZE=4>Our observations are made from the surface of the
-Earth, not its centre. <BR>This is irrelevant when observing distant
-objects such as stars. <BR>But for closer objects (<I>e.g.</I> within
-the Solar System), a correction must be made. <BR>This is <B>geocentric
+<div data-role="content">
+  <div class="contain">
+    <div class="mikimg">
+  <img class="op" src="images/positional.png" alt="positional" width="660" height="100" >
+<h1 class="center mateen">  اختلاف المنظر المركزي اليومي</h1>
+</div></div>
+
+<p>Refraction affects the apparent altitude of a star. But there are other phenomena that affect its apparent position,
+too. One of these is parallax. Refraction decreases the zenith angle, but parallax increases it. </p>
+
+<p>Our observations are made from the surface of the Earth, not its centre. <BR>This is irrelevant when observing distant objects such as stars. But for closer objects (<I>e.g.</I> within
+the Solar System), a correction must be made. This is <B>geocentric
 parallax</B>, or <B>diurnal</B> (daily) parallax <BR>(since it varies
-daily as the Earth spins around its axis). </FONT>
-</P>
-<P> <div class="mikimg"><img src=" images/prllx1a.png" class="mikimg" style="max-width: 100%" /></div> 
-</P>
-<P><FONT SIZE=4>To an observer at O, the zenith angle of object S
-appears to be z'. <BR>Its true zenith angle, as seen from the centre
+daily as the Earth spins around its axis). </p>
+
+ <div class="mikimg"><img src="images/ar/prllx1a.png" class="mikimg" style="max-width: 100%" /></div>
+
+<p>To an observer at O, the zenith angle of object S appears to be z'. <BR>Its true zenith angle, as seen from the centre
 of the Earth C, is z, which is smaller. <BR>Parallax is greatest for
 an observer at O<SUB>1</SUB>, <BR>where the object appears to be on
-the horizon. <BR>We define the <B>angle of parallax</B> p by <B>p =
-z'-z</B>. </FONT>
-</P>
-<P> <div class="mikimg"><img src=" images/prllx1b.png" class="mikimg" style="max-width: 100%" /></div> 
-</P>
-<P><FONT SIZE=4>If <I>a</I> is the Earth's radius, and <I>r</I> is
-the geocentric distance to the object, <BR>then the <I>plane</I>
-triangle OCS gives: <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sin(p) / a =
+the horizon. <BR>We define the <B>angle of parallax</B> p by <B>p = z'-z</B>. </p>
+
+<div class="mikimg"><img src=" images/ar/prllx1b.png" class="mikimg" style="max-width: 100%" /></div>
+
+<p>If <I>a</I> is the Earth's radius, and <I>r</I> is the geocentric distance to the object, <BR>then the <I>plane</I>
+triangle OCS gives:  sin(p) / a =
 sin(180&deg;-z') / r = sin(z') / r <BR>that is, <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sin(p)
-= (a / r) sin(z') </FONT>
-</P>
-<P><FONT SIZE=4>Parallax is greatest at O<SUB>1</SUB>, where
+= (a / r) sin(z') </p>
+<p>Parallax is greatest at O<SUB>1</SUB>, where
 z'=90&deg;.<BR>The parallax here is called the <B>horizontal
 parallax</B><SPAN STYLE="font-weight: medium">,<BR>designated by</SPAN>
 P = 90&deg;-z, where <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>sin(P) = a
 / r</B>. <BR>For small angles, we may take <B>P = a / r</B>, <BR>where
-P is measured in radians.</FONT></P>
-<P><FONT SIZE=4>In the general case, we may replace the term (a/r) by
+P is measured in radians.</p>
+<p>In the general case, we may replace the term (a/r) by
 sin(P), and write <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sin(p) = sin(P)
 sin(z') <BR>or, since angles of parallax are generally small, <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>p
-= P sin(z')</B> </FONT>
-</P>
-<P><FONT COLOR="#800000"><FONT SIZE=4 STYLE="font-size: 16pt"><B><BR>Exercise:</B></FONT></FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>A minor planet (asteroid)
+= P sin(z')</B> </p>
+
+<div data-role="collapsible" data-content-theme="b" >
+<h1>تمرين:</h1>
+<p class="red">A minor planet (asteroid)
 passes very near the Earth, <BR>at a distance of 200,000 km. <BR>What
 will be its horizontal parallax? <BR>(Take the Earth to be a sphere
-of radius 6378 km.)</FONT></FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>At St.Andrews (latitude
+of radius 6378 km.)</p>
+<p class="red">At St.Andrews (latitude
 +56&deg;20'), <BR>the minor planet is observed to cross the meridian
 <BR>at an apparent altitude of +35&deg;. <BR>What does its
-declination appear to be?</FONT></FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>What is its true declination,
-after correcting for geocentric parallax?</FONT></FONT></P>
-<P>
-	<div>
-<input type="button" class="button" onclick="return toggleMe('para1')" value=" اضغط هنا للحصول على الجواب ">
-</div>
-<div id="para1" style="display:none">
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>Meridian altitude a = 
+declination appear to be?</p>
+
+<p class="red">What is its true declination,
+after correcting for geocentric parallax?</p>
+
+<div data-role="collapsible" data-content-theme="b" >
+<h1>الحل:</h1>
+<p class="navy">Meridian altitude a = 
 (90&deg;-&phi;)
 + &delta; <BR>So the apparent declination
 is<BR>&delta; = a - (90&deg;-&phi;)
-= +1&deg;20'</FONT></FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>What is its true declination,
-after correcting for geocentric parallax?</FONT></FONT></P>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>Apparent altitude = 35&deg;<BR>so
-apparent zenith angle z'= 55&deg;.</FONT></FONT></P>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>Angle of parallax p = P sin(z')
-= 1.497&deg;</FONT></FONT></P>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>Parallax increases the zenith
+= +1&deg;20'</p>
+
+<p class="red">What is its true declination,
+after correcting for geocentric parallax?</p>
+
+<p class="navy">Apparent altitude = 35&deg;<BR>so
+apparent zenith angle z'= 55&deg;.</p>
+
+<p class="navy">Angle of parallax p = P sin(z')
+= 1.497&deg;</p>
+
+<p class="navy">Parallax increases the zenith
 angle. <BR>The true zenith angle z must be less than the observed
 zenith angle z'.<BR>So the true altitude must be greater than the
-observed altitude. </FONT></FONT>
-</P>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>So in this case the true
+observed altitude.</p>
+
+<p class="navy">So in this case the true
 declination must be <BR>greater than the observed declination, by
-1.497&deg;,<BR>making it +2&deg;50'.</FONT></FONT></P>
-</div>
-<BR>
-<P><FONT SIZE=4>Apart from occasional near-earth asteroids,<BR>the
+1.497&deg;,<BR>making it +2&deg;50'.</p>
+</div> <!--collapsible-->
+</div> <!--collapsible-->
+
+<p>Apart from occasional near-earth asteroids,<BR>the
 Moon is the nearest natural object, <BR>with average P around 57
 arc-minutes. <BR>So for calculating times of <B>moonrise and moonset</B>,
 <BR>we must use an altitude of <BR>0&deg; - 16' [semi-diameter] - 34'
 [refraction] + 57' [horizontal parallax] <BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
-+7'. </FONT>
-</P>
-<BR>
-<P><FONT COLOR="#800000"><FONT SIZE=4 STYLE="font-size: 16pt"><B>Exercise:</B></FONT></FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>The Moon is at declination
--14&deg;. <BR>What will be its hour angle at moonrise <BR>(when the
-top edge of the Moon first appears over the horizon), <BR>at a
-latitude of +56&deg;20'?</FONT></FONT></P>
-<P> <div>
-<input type="button" class="button" onclick="return toggleMe('para2')" value=" اضغط هنا للحصول على الجواب ">
-</div>
-<div id="para2" style="display:none">
-<P STYLE="font-weight: medium"><FONT COLOR="#0000ff"><FONT SIZE=4>At
++7'. </p>
+
+<div data-role="collapsible" data-content-theme="b" >
+<h1>تمرين:</h1>
+<P class="red">The Moon is at declination
+-14&deg;. <BR>What will be its hour angle at moonrise <BR>(when the top edge of the Moon first appears over the horizon), <BR>at a
+latitude of +56&deg;20'?</P>
+
+<div data-role="collapsible" data-content-theme="b" >
+<h1>الحل:</h1>
+<p class="navy">At
 moonrise, the true altitude of the Moon is a = +0&deg;7' <BR>(allowing
-for semi-diameter, horizontal refraction and geocentric parallax).</FONT></FONT></P>
-<P STYLE="font-weight: medium"><FONT COLOR="#0000ff"><FONT SIZE=4>Use
-the formula <BR>cos(H) = { sin(a) - sin(&phi;)
-sin(&delta;) } / cos(&phi;)
-cos(&delta;)<BR>where &phi;=
-+56&deg;20' and &delta; = -14&deg;.</FONT></FONT></P>
-<P STYLE="font-weight: medium"><FONT COLOR="#0000ff"><FONT SIZE=4>This
-gives cos(H) = 0.38, <BR>so H = 67.8&deg;    or  292.2&deg; <BR>     
-   = 4h31m or  19h29m.</FONT></FONT></P>
-<P STYLE="font-weight: medium"><FONT COLOR="#0000ff"><FONT SIZE=4>To
-decide which, <BR>note that the Moon is to the <I>east </I>of the
-meridian, <BR>so H = 19h29m.</FONT></FONT></P>
-<P STYLE="font-weight: medium"><FONT COLOR="#0000ff"><FONT SIZE=4>(This
-is 8 minutes later than sunrise, <BR>when the Sun is at the same
-declination.)</FONT></FONT></P>
-</div>
-<BR>
-<P><FONT SIZE=4>Allowing for lunar parallax is essential <BR>when
-predicting occultations of stars by the Moon <BR>(and, of course,
-solar eclipses). </FONT>
-</P>
-<BR>
-<P><FONT COLOR="#800000"><FONT SIZE=4 STYLE="font-size: 16pt"><B>Exercise:</B></FONT></FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>Aldebaran is at Right Ascension
+for semi-diameter, horizontal refraction and geocentric parallax).</p>
+<p class="navy">Use the formula 
+<BR>cos(H) = { sin(a) - sin(&phi;) sin(&delta;) } / cos(&phi;)
+cos(&delta;) where &phi;= +56&deg;20' and &delta; = -14&deg;.</p>
+
+<p class="navy">This gives cos(H) = 0.38, <BR>so H = 67.8&deg;    or  292.2&deg;   = 4h31m or  19h29m.</p>
+
+<p class="navy">To decide which, note that the Moon is to the <I>east </I>of the
+meridian, so H = 19h29m.</p>
+
+<p class="navy">(This
+is 8 minutes later than sunrise, when the Sun is at the same
+declination.)</p>
+
+</div> <!--collapsible-->
+</div> <!--collapsible-->
+
+<P>Allowing for lunar parallax is essential when predicting occultations of stars by the Moon (and, of course, solar eclipses).</P>
+
+<div data-role="collapsible" data-content-theme="b" >
+<h1>تمرين:</h1>
+<p class="red">Aldebaran is at Right Ascension
 4h36m, declination +16&deg;31'. <BR>At a particular instant, the
 geocentric coordinates of the Moon <BR>are also Right Ascension
 4h36m, declination +16&deg;31'. <BR>Local Sidereal Time at St.Andrews
 (latitude +56&deg;20') is 4h36m.<BR>What will be the apparent
 declination of the Moon, after correction for parallax? <BR>(Take the
-horizontal parallax of the Moon as 57 arc-minutes.)</FONT></FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>The semi-diameter of the Moon&#146;s
+horizontal parallax of the Moon as 57 arc-minutes.)</p>
+<p class="red">The semi-diameter of the Moon&#146;s
 disc is 16 arc-minutes. <BR>Will observers at St.Andrews see the Moon
-occult Aldebaran?</FONT></FONT></P>
-<P> <div>
-<input type="button" class="button" onclick="return toggleMe('para3')" value=" اضغط هنا للحصول على الجواب ">
-</div>
-<div id="para3" style="display:none">
-<P STYLE="font-weight: medium"><FONT COLOR="#0000ff"><FONT SIZE=4>Both
+occult Aldebaran?</p>
+<div data-role="collapsible" data-content-theme="b" >
+<h1>الحل:</h1>
+<p class="navy">Both
 objects are on the meridian. <BR>So the Moon&#146;s altitude a =
 (90&deg;-&phi;) + &delta;
-= 50.18&deg;<BR>so its true zenith angle z = (90&deg;-a) = 39.82&deg;</FONT></FONT></P>
-<P STYLE="font-weight: medium"><FONT COLOR="#0000ff"><FONT SIZE=4>The
+= 50.18&deg;<BR>so its true zenith angle z = (90&deg;-a) = 39.82&deg;</p>
+<p class="navy">The
 shift due to parallax is p = P sin(z'), where P = 57',<BR>and z' is
 the apparent zenith angle.<BR>However, we only know z, the true
-zenith angle.</FONT></FONT></P>
-<P STYLE="font-weight: medium"><FONT COLOR="#0000ff"><FONT SIZE=4>For
-a first approximation, take z' = z = 39.82&deg;</FONT></FONT></P>
-<P><FONT COLOR="#0000ff"><SPAN STYLE="font-weight: medium"><FONT SIZE=4>Then
+zenith angle.</p>
+<p class="navy">For
+a first approximation, take z' = z = 39.82&deg;</p>
+<p class="navy">Then
 p = 57' sin(39.82&deg;) = 36.5' = 0.61&deg;.<BR>This would make
 apparent zenith angle z' = 39.82&deg; + 0.61&deg; =
 40.43&deg;.<BR>Re-calculate p = 57' sin(40.43&deg;) = 37.0' = 0.62&deg;.
- <BR>No need to re-calculate again.</FONT></SPAN></FONT></P>
-<P STYLE="font-weight: medium"><FONT COLOR="#0000ff"><FONT SIZE=4>The
+ <BR>No need to re-calculate again.</FONT></SPAN></p>
+<p class="navy">The
 apparent altitude will be 37' lower, <BR>due to geocentric parallax,
-<BR>and so the apparent declination will also be 37' lower.</FONT></FONT></P>
-<P STYLE="font-weight: medium"><FONT COLOR="#0000ff"><FONT SIZE=4>So
+<BR>and so the apparent declination will also be 37' lower.</p>
+<p class="navy">So
 the Moon&#146;s apparent declination will be <BR>+16&deg;31' - 37' =
-+15&deg;54'.</FONT></FONT></P>
-<P STYLE="font-weight: medium"><FONT COLOR="#800000"><FONT SIZE=4>The
++15&deg;54'.</p>
+<P class="red">The
 semi-diameter of the Moon&#146;s disc is 16 arc-minutes. 	 	<BR>Will
-observers at St.Andrews see the Moon occult Aldebaran?</FONT></FONT></P>
-<P STYLE="font-weight: medium"><FONT COLOR="#0000ff"><FONT SIZE=4>Aldebaran
-is still at Right Ascension 4h36m, declination +16&deg;31'
-<BR>(unaffected by geocentric parallax). </FONT></FONT>
-</P>
-<P STYLE="font-weight: medium"><FONT COLOR="#0000ff"><FONT SIZE=4>The
-top edge of the Moon will appear to be at declination <BR>+15&deg;54'
-+ 16' = +16&deg;10' </FONT></FONT>
-</P>
-<P STYLE="font-weight: medium"><FONT COLOR="#0000ff"><FONT SIZE=4>So
-the top edge of the Moon will appear to pass 21' below
-Aldebaran:<BR>there will be no occultation.	</FONT></FONT></P>
-</div>
-<BR>
-<P><FONT SIZE=4>The Earth is not actually spherical. <BR>For more
-accurate calculations, we use the <B>geoid</B>: <BR>a spheroidal
-solid which closely approximates the Earth's true shape. <BR>For any
-particular latitude, this gives corrected values <BR>for geocentric
-distance <I>a</I> and geocentric latitude. </FONT>
-</P>
-<BR><hr>
-<FONT SIZE=4>الموضوع السابق: </FONT><A HREF="012.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
-شروق و غروب الشمس</FONT>
-</A><br />
-	<FONT SIZE=4>الموضوع التالي: </FONT><A HREF="014.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
-اختلاف المنظر الموسمي</FONT>
-</A>
-<FONT SIZE=4> <BR>العودة إلى </FONT><A HREF="index.html" data-icon="refresh" rel="external" ><FONT SIZE=4>الفهرس</FONT></A><FONT SIZE=4>
-</FONT>
+observers at St.Andrews see the Moon occult Aldebaran?</p>
+
+<P class="navy">Aldebaran is still at Right Ascension 4h36m, declination +16&deg;31'
+<BR>(unaffected by geocentric parallax).</P>
+
+<P class="navy">The top edge of the Moon will appear to be at declination +15&deg;54'
++ 16' = +16&deg;10' </P>
+
+<P class="navy">So the top edge of the Moon will appear to pass 21' below Aldebaran:  there will be no occultation.</P>
+
+</div><!--collapsible-->
+</div><!-- collapsible-->
+
+<P>The Earth is not actually spherical. For more accurate calculations, we use the <B>geoid</B>:
+ <BR>a spheroidal solid which closely approximates the Earth's true shape. For any particular latitude, this gives corrected values for geocentric
+distance <I>a</I> and geocentric latitude. </P>
+
 </div><!-- /content -->
 
-<div data-role="footer"  data-position="fixed">
-		<h3>ترجمة قتيبة أقرع</h3>
-	</div><!-- /footer -->
+<div data-role="footer" data-theme="b"  data-position="fixed">
+<div data-role="navbar">
+<ul>
+<li> <a href="012.html#one" data-icon="arrow-l" data-iconpos="left" rel="external"> شروق و غروب الشمس</a> </li>
+	<li><h4> ترجمة قتيبة أقرع</h4></li>
+<li><a href="014.html#one" data-icon="arrow-r" data-iconpos="right" rel="external">اختلاف المنظر الموسمي </a></li>
+</ul>
+</div><!--/navbar-->
+</div><!-- /footer -->
 </div><!-- /page one --> 
 </body>
 </html>

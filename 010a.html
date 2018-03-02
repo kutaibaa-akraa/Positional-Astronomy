@@ -11,34 +11,13 @@
 	<link rel="stylesheet" href="css/theme.css" />
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.mobile-1.3.1.min.js"></script>
-	 <style type="text/css">
-/* تهيئة الصندوق لعناوين الفقرات القابلة للطي */
-input.button {
-  color: #fff; background: #c0c0c0 ;
-  font-size: 1em;
-  font-weight:bold;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  border: solid 1px #ffcf31 ;
-}
-</style>
-<script type="text/javascript">
-function toggleMe(a){
-  var e=document.getElementById(a);
-  if(!e)return true;
-  if(e.style.display=="none"){
-    e.style.display="block"
-  } else {
-    e.style.display="none"
-  }
-  return true;
-}
-</script>
+
 </head> 	
 <body> 
 <!-- Start of first page: #one -->
 <div data-role="page" id="one" data-theme="b">
 <div data-role="panel" data-display="overlay" data-theme="b" id="listpanel">
-	<ul data-inset="true" data-role="listview" data-mini="true" data-iconpos="right" data-filter="true" data-filter-placeholder="بحث عن اسم موضوع">
+	<ul data-inset="true" data-role="listview" data-mini="true" data-iconpos="right" data-filter="true" data-filter-placeholder="بحث عن موضوع">
 	<li data-role="divider">
 <h4>	"الفلك الموضعي"</h4></li>
 		<li>
@@ -74,117 +53,80 @@ function toggleMe(a){
 </li></ul>
 </div><!--/panel-->
 
-	<div data-role="header" data-position="fixed"><h1>القمر</h1><a  href="index.html" data-icon="refresh" rel="external">الفهرس</a>
+	<div data-role="header" data-theme="b" data-position="fixed"><h1>القمر</h1><a  href="#two" data-icon="refresh" rel="external">English</a>
 <a href="#listpanel" data-icon="bars" rel="external">المواضيع</a>
 	</div><!-- /header -->
-	<div data-role="content">
-	<div class="mikimg"><img src="images/positional.png" class="mikimg" style="max-width: 100%" /></div>
 
-<H1><FONT SIZE=5>القمر <BR></FONT>
-<FONT SIZE=4>The Moon</FONT></H1>
-<P><FONT SIZE=4>The Moon always keeps the same face turned towards
-the Earth.<BR>How much we <I>see </I>of that face depends on the
-direction of the Sun:<BR>we only see the part which is illuminated by
-sunlight,<BR>as shown in the diagrams below.</FONT></P>
-<P> <div class="mikimg"><img src=" images/phases1.png" class="mikimg" style="max-width: 100%" /></div> 
-<BR>
-</P>
-<P> <div class="mikimg"><img src=" images/Phases2.png" class="mikimg" style="max-width: 100%" /></div> 
-<BR>
-</P>
-<P> <div class="mikimg"><img src=" images/Phases3.png" class="mikimg" style="max-width: 100%" /></div> 
-<BR>
-</P>
-<P> <div class="mikimg"><img src=" images/Phases4.png" class="mikimg" style="max-width: 100%" /></div> 
-<BR>
-</P>
-<P> <div class="mikimg"><img src=" images/Phases5.png" class="mikimg" style="max-width: 100%" /></div> 
-<BR>
-</P>
-<P> <div class="mikimg"><img src=" images/Phases6.png" class="mikimg" style="max-width: 100%" /></div> 
-<BR>
-</P>
-<P> <div class="mikimg"><img src=" images/Phases7.png" class="mikimg" style="max-width: 100%" /></div> 
-<BR>
-</P>
-<P> <div class="mikimg"><img src=" images/Phases8.png" class="mikimg" style="max-width: 100%" /></div> 
-<BR>
-</P>
-<P> <div class="mikimg"><img src=" images/PhasesA.png" class="mikimg" style="max-width: 100%" /></div> 
-<FONT SIZE=4>The
-interval between one New Moon and the next is the <B><SPAN STYLE="font-style: normal">synodic
-month</SPAN></B>;<BR>it averages 29.53 days.<BR>However, because the
-Earth is orbiting the Sun,<BR>the Moon will return to the same place
-<I>relative to the stars</I><BR>in a shorter interval &#150; the
-<B><SPAN STYLE="font-style: normal">sidereal month</SPAN></B>;<BR>this
-averages 27.32 days.<BR>The diagram shows the Moon at Full, and lined
-up with a certain star, at time t<SUB>0</SUB> .<BR>It is lined up
-with that star again at time t<SUB>1</SUB> , after one sidereal
-month,<BR>but it doesn't reach Full again until time t<SUB>2</SUB> ,
-after one synodic month. <BR></FONT><BR><BR>
-</P>
-<P><FONT SIZE=4>The Moon's actual motion is extremely complicated:<BR>it
-orbits the Earth in an elliptical orbit,<BR>tipped at an angle to the
-Earth's own orbital plane (the ecliptic);<BR>and its orbit is
-constantly being perturbed <BR>by the gravitational influence of the
-Sun.</FONT></P>
-<P><FONT SIZE=4>This is not the place for the full theory of the
-Moon's motion.<BR>However, there are some simple approximations<BR>which
-help to determine when the Moon will or will not be visible.</FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4><B><BR>1. When will the Moon
-transit the meridian?</B></FONT></FONT></P>
-<P><FONT SIZE=4>At New Moon, the Moon lies in the same direction as
-the Sun.<BR><I>(Owing to the tilt of the Moon's orbit, <BR>it does
-not generally pass directly in front of the Sun.)<BR></I><SPAN STYLE="font-style: normal">The
-Moon then moves eastwards, relative to the Sun.<BR>It moves 360&deg;
-in 29.53 days, <BR>at which time it is lined up with the Sun again
-for the next New Moon. <BR>Thus it moves about 12.2&deg; each day,
+<div data-role="content">
+  <div class="contain">
+    <div class="mikimg">
+  <img class="op" src="images/positional.png" alt="positional" width="660" height="100" >
+<h1 class="center mateen"> القمر</h1></div>
+</div>
+<p>The Moon always keeps the same face turned towards the Earth. How much we <I>see </I>of that face depends on the direction of the Sun:<BR>we only see the part which is illuminated by sunlight, as shown in the diagrams below.</p>
+<div class="mikimg"><img src=" images/ar/Phases1.png" class="mikimg" style="max-width: 100%" /></div> 
+
+<div class="mikimg"><img src=" images/ar/Phases2.png" class="mikimg" style="max-width: 100%" /></div> 
+
+<div class="mikimg"><img src=" images/ar/Phases3.png" class="mikimg" style="max-width: 100%" /></div> 
+
+<div class="mikimg"><img src=" images/ar/Phases4.png" class="mikimg" style="max-width: 100%" /></div> 
+
+<div class="mikimg"><img src=" images/ar/Phases5.png" class="mikimg" style="max-width: 100%" /></div> 
+
+<div class="mikimg"><img src=" images/ar/Phases6.png" class="mikimg" style="max-width: 100%" /></div> 
+
+<div class="mikimg"><img src=" images/ar/Phases7.png" class="mikimg" style="max-width: 100%" /></div> 
+
+<div class="mikimg"><img src=" images/ar/Phases8.png" class="mikimg" style="max-width: 100%" /></div> 
+
+<div class="mikimg"><img src=" images/ar/phasesA.png" class="mikimg" style="max-width: 100%" /></div> 
+<p>The interval between one New Moon and the next is the <B>synodic
+month</B>, it averages 29.53 days. However, because the Earth is orbiting the Sun,<BR>the Moon will return to the same place <I>relative to the stars</I>in a shorter interval &#150; the <B>sidereal month</B>; this averages 27.32 days. The diagram shows the Moon at Full, and lined
+up with a certain star, at time t<SUB>0</SUB> . It is lined up with that star again at time t<SUB>1</SUB> , after one sidereal
+month,<BR>but it doesn't reach Full again until time t<SUB>2</SUB> , after one synodic month.</P>
+
+<p>The Moon's actual motion is extremely complicated: it orbits the Earth in an elliptical orbit, tipped at an angle to the
+Earth's own orbital plane (the ecliptic); and its orbit is constantly being perturbed by the gravitational influence of the Sun.</p>
+<p>This is not the place for the full theory of the Moon's motion. However, there are some simple approximations  which
+help to determine when the Moon will or will not be visible.</p>
+<p class="red"><B> 1. When will the Moon
+transit the meridian?</B></p>
+<p>At New Moon, the Moon lies in the same direction as
+the Sun.<I>(Owing to the tilt of the Moon's orbit, <BR>it does
+not generally pass directly in front of the Sun.)<BR></I>The Moon then moves eastwards, relative to the Sun. It moves 360&deg;
+in 29.53 days, at which time it is lined up with the Sun again for the next New Moon. Thus it moves about 12.2&deg; each day,
 relative to the Sun;<BR>which corresponds to lagging behind the Sun,
-as it crosses the sky,<BR>by about 48.8 minutes of time each day.</SPAN></FONT></P>
-<P STYLE="font-style: normal"><FONT SIZE=4>So, if you know the &quot;age&quot;
-of the Moon<BR>(that is, how many days since the last New Moon),<BR>you
-can calculate how much later the Moon will cross the sky, compared to
-the Sun.</FONT></P>
-<P STYLE="font-style: normal"><FONT SIZE=4>The Sun crosses the
-meridian at noon<BR>(you can be more precise than this,<BR>if you
-know your longitude and the Equation of Time).<BR>So you can
-calculate the time at which the Moon will cross the meridian.</FONT></P>
-<P><FONT SIZE=4>The result will not be very accurate,<BR>since the
-Moon's motion is not uniform,<BR>but should be correct to within an
-hour.</FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4 STYLE="font-size: 16pt"><B>Exercise:</B></FONT></FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>The Moon was New on December
+as it crosses the sky,<BR>by about 48.8 minutes of time each day.</p>
+<P>So, if you know the &quot;age&quot;
+of the Moon (that is, how many days since the last New Moon),  you can calculate how much later the Moon will cross the sky, compared to the Sun.</p>
+<P>The Sun crosses the meridian at noon (you can be more precise than this, if you know your longitude and the Equation of Time). So you can calculate the time at which the Moon will cross the meridian.</p>
+<p>The result will not be very accurate,<BR>since the Moon's motion is not uniform,<BR>but should be correct to within an hour.</p>
+
+<div data-role="collapsible" data-content-theme="b" >
+<h1>تمرين:</h1>
+<p class="red">The Moon was New on December
 25th, 2000.<BR>At St.Andrews, on January 1st 2001,<BR>the Sun crossed
 the meridian at 12:15.<BR>At what time did the Moon cross the
-meridian?</FONT></FONT></P>
-<P> <div>
-<input type="button" class="button" onclick="return toggleMe('para1')" value=" اضغط هنا للحصول على الجواب ">
-</div>
-<div id="para1" style="display:none">
-	 <P><FONT COLOR="#0000ff"><FONT SIZE=4>On January 1st,<BR>7 days had
-elapsed since New Moon<BR>(the Moon was &quot;7 days old&quot;).<BR>So
-the Moon was lagging the Sun by 7x48.8 minutes = 5h42m.</FONT></FONT></P>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>So it would cross the meridian
-at 12:15 + 5h42m = 17:57.</FONT></FONT></P>
-<P><BR><BR>
-</P>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>In fact it crossed the meridian
-at 17:24,<BR>so our calculation is in error by 33 minutes.<BR>The
-error is due to:<BR>(a) not knowing the <SPAN STYLE="font-style: normal">exact
-</SPAN><I>time </I>of New Moon on December 25th<BR>(b) the Moon's
-motion not being constant.</FONT></FONT></P>
-</div></P>
-<br />
-<P><FONT COLOR="#800000"><FONT SIZE=4><B>2. When will the Moon rise
-and set?</B></FONT></FONT></P>
-<P STYLE="font-weight: medium"><FONT SIZE=4>If the Moon were always
+meridian?</p>
+
+<div data-role="collapsible" data-content-theme="b" ><h1>الحل:</h1> 
+<p class="navy">On January 1st,  7 days had elapsed since New Moon  (the Moon was &quot;7 days old&quot;). So the Moon was lagging the Sun by 7x48.8 minutes = 5h42m.</p>
+<p class="navy">So it would cross the meridian  at 12:15 + 5h42m = 17:57.</p>
+
+<p class="navy">In fact it crossed the meridian at 17:24,<BR>so our calculation is in error by 33 minutes. The error is due to:<BR>(a) not knowing the exact <I>time </I>of New Moon on December 25th<BR>(b) the Moon's motion not being constant.</P>
+
+</div><!-- /collapsible -->
+</div><!-- /collapsible -->
+
+<p class="red"><B>2. When will the Moon rise and set?</B></p>
+<p>If the Moon were always
 on the celestial equator,<BR>it would always rise 6 hours before
-transit,<BR>and set 6 hours after transit.</FONT></P>
-<P STYLE="font-weight: medium"><FONT SIZE=4>We know that the <I>Sun
+transit,<BR>and set 6 hours after transit.</p>
+<p>We know that the <I>Sun
 </I>does not keep to the celestial equator.<BR>It lies on the equator
 at the equinoxes, in March and September,<BR>but its declination
-varies between 23.4&deg;N in June and 23.4&deg;S in December.<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At
-the equinoxes, anywhere in the world,<BR>the Sun rises due east, 6
+varies between 23.4&deg;N in June and 23.4&deg;S in December.<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; At the equinoxes, anywhere in the world,<BR>the Sun rises due east, 6
 hours before noon, and sets due west, 6 hours after noon.<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;But
 at the summer (June) solstice, in latitudes north of 66.6&deg;N,<BR>the
 Sun never sets at all! (This defines the <I>Arctic Circle.</I>)<BR>In
@@ -194,97 +136,96 @@ about 9 hours after noon.<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Similarly,
 at the winter (December) solstice,<BR>in the Arctic Circle the Sun
 never rises;<BR>in latitudes around 58&deg;N,<BR>the Sun rises in the
 <I>south</I>-east, about 3 hours before noon,<BR>and sets in the
-<I>south</I>-west, about 3 hours after noon.</FONT></P>
-<P STYLE="font-weight: medium"><FONT SIZE=4>Now, the Moon follows
+<I>south</I>-west, about 3 hours after noon.</p>
+<p>Now, the Moon follows
 roughly the same path as the Sun<BR>(ignoring its orbital tilt)<BR>but
 it takes only a month to trace the path which the Sun takes in a
-year.</FONT></P>
-<P STYLE="font-weight: medium"><FONT SIZE=4>The Sun moves about 1&deg;
+year.</p>
+<p>The Sun moves about 1&deg;
 a day (360&deg; in 365.25 days)<BR>The Moon lags behind the Sun by
 about 12.2&deg; a day,<BR>so you can work out the date on which the
-Sun will be at the point where the Moon now is.</FONT></P>
-<P STYLE="font-weight: medium"><FONT SIZE=4>This means you can
-estimate roughly how long the Moon will be above the horizon.</FONT></P>
-<P STYLE="font-weight: medium"><FONT SIZE=4>Having already calculated
+Sun will be at the point where the Moon now is.</p>
+<p>This means you can
+estimate roughly how long the Moon will be above the horizon.</p>
+<p>Having already calculated
 the time at which it will cross the meridian,<BR>you can now estimate
-its rising and setting times.</FONT></P>
-<P STYLE="font-weight: medium"><FONT SIZE=4>This will not be very
+its rising and setting times.</p>
+<p>This will not be very
 accurate.<BR>But it should be sufficient to determine, for example,
 <BR>whether a particular night's observing will be affected by
-moonlight.</FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4 STYLE="font-size: 16pt"><B>Exercise:</B></FONT></FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>Given the data in the previous
+moonlight.</p>
+
+
+<div data-role="collapsible" data-content-theme="b" >
+<h1>تمرين:</h1>
+<p class="red">Given the data in the previous
 exercise,<BR>estimate the times of moonrise and moonset <BR>at
-St.Andrews on January 1st 2001.</FONT></FONT></P>
-<P> <div>
-<input type="button" class="button" onclick="return toggleMe('para2')" value=" اضغط هنا للحصول على الجواب ">
-</div>
-<div id="para2" style="display:none">
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>We know that the Moon was 7
+St.Andrews on January 1st 2001.</p>
+
+<div data-role="collapsible" data-content-theme="b" >
+<h1>الحل:</h1>
+<p class="navy">We know that the Moon was 7
 days old,<BR>so it was 7x12.2&deg; = 85&deg; east of the Sun.<BR>It
 would take the Sun about 85 days to reach this point:<BR>it would get
-there on 26th March,<BR>very close to the Spring Equinox.</FONT></FONT></P>
-<P><A NAME="DDE_LINK1"></A><FONT COLOR="#0000ff"><FONT SIZE=4>So the
-Moon would have been close to the celestial equator,<BR>and it would
-rise about 6 hours before it transited across the meridian,<BR>and
-set about 6 hours after.</FONT></FONT></P>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>We have already determined that
-the Moon crossed the meridian at 17:57.<BR>So it should rise at 17:57
-&#150; 6 hours = 11:57<BR>and it should set at 17:57 + 6 hours =
-23:57</FONT></FONT></P>
-<BR>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>In fact it rose at 11:56 and
-set at 23:06.</FONT></FONT></P>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>This approximate calculation
+there on 26th March,<BR>very close to the Spring Equinox.</p>
+<P class="red">So the Moon would have been close to the celestial equator,<BR>and it would rise about 6 hours before it transited across the meridian,<BR>and set about 6 hours after.</p>
+<p class="navy">We have already determined that the Moon crossed the meridian at 17:57.<BR>So it should rise at 17:57
+&#150; 6 hours = 11:57<BR>and it should set at 17:57 + 6 hours = 23:57</p>
+
+<p class="navy">In fact it rose at 11:56 and
+set at 23:06.</p>
+<p class="navy">This approximate calculation
 has shown us that, on January 1st 2001, <BR>the Moon would be rising
-about midday,<BR>and setting again around midnight.</FONT></FONT>
-</div></P>
-<BR>
-<P><FONT SIZE=4>And here's an example where you can deduce a great
-deal<BR>from very little information:</FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4 STYLE="font-size: 16pt"><B>Exercise:</B></FONT></FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>At a point with latitude near
-58&deg;N,<BR>the Last-Quarter Moon is seen rising in the north-east.</FONT></FONT></P>
-<P><FONT COLOR="#800000"><FONT SIZE=4>What time of day is it?<BR>What
-time of year is it?</FONT></FONT></P>
-<P> <div>
-<input type="button" class="button" onclick="return toggleMe('para3')" value=" اضغط هنا للحصول على الجواب ">
-</div>
-<div id="para3" style="display:none">
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>If the Moon is at Last
+about midday,<BR>and setting again around midnight.</p>
+
+</div><!-- /collapsible -->
+</div><!-- /collapsible -->
+
+<p>And here's an example where you can deduce a great deal  from very little information:</p>
+
+<div data-role="collapsible" data-content-theme="b" >
+<h1>تمرين:</h1>
+<p class="red">At a point with latitude near
+58&deg;N,<BR>the Last-Quarter Moon is seen rising in the north-east.</p>
+<p class="red">What time of day is it?  What time of year is it?</p>
+
+<div data-role="collapsible" data-content-theme="b" >
+<h1>الحل:</h1>
+<p class="navy">If the Moon is at Last
 Quarter,<BR>it is lagging 18 hours behind the Sun - <BR>alternatively,
-it is 6 hours <I>ahead </I>of the Sun.</FONT></FONT></P>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>The Sun crosses the meridian at noon,<BR>so the Moon must be crossing the meridian at 6 am.</FONT></FONT></P>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>At this latitude, if it is
+it is 6 hours <I>ahead </I>of the Sun.</p>
+<p class="navy">The Sun crosses the meridian at noon,<BR>so the Moon must be crossing the meridian at 6 am.</p>
+<p class="navy">At this latitude, if it is
 rising in the north-east, <BR>it must be at its most northern
 point,<BR>so it will be rising about 9 hours before it crosses the
-meridian.<BR>So it must be rising about <B>9 pm</B>.</FONT></FONT></P>
-<BR>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>The Moon is at its most
+meridian.<BR>So it must be rising about <B>9 pm</B>.</p>
+
+<p class="navy">The Moon is at its most
 northern point:<BR>the point the Sun only reaches at midsummer<BR>(that
-is RA = 6h;  declination = +23.4&deg;).</FONT></FONT></P>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>And if the Moon is at Last
+is RA = 6h;  declination = +23.4&deg;).</p>
+<p class="navy">And if the Moon is at Last
 Quarter, <BR>it has travelled three-quarters of the way around the
 sky from the Sun.<BR>So it is 270&deg; east of the Sun -
-<BR>alternatively, it is 90&deg; <I>west </I>of the Sun.</FONT></FONT></P>
-<P><FONT COLOR="#0000ff"><FONT SIZE=4>So the Moon is where the Sun
+<BR>alternatively, it is 90&deg; <I>west </I>of the Sun.</p>
+<p class="navy">So the Moon is where the Sun
 was 90 days ago.<BR>So the Sun must presently be at <BR>(summer
-solstice + 90 days) = <B>autumn equinox</B>.</FONT></FONT></P>
-</div></P>
-<br><hr>
-	<FONT SIZE=4>الموضوع السابق: </FONT><A HREF="010.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
-حركة الشمس و دورها في حفظ الوقت</FONT>
-</A><br />
-	<FONT SIZE=4>الموضوع التالي: </FONT><A HREF="011.html" data-icon="refresh" rel="external" ><FONT SIZE=4>
-الانكسار الجوي</FONT>
-</A>
-<FONT SIZE=4> <BR>العودة إلى </FONT><A HREF="index.html" data-icon="refresh" rel="external" ><FONT SIZE=4>الفهرس</FONT></A><FONT SIZE=4>
-</FONT>
+solstice + 90 days) = <B>autumn equinox</B>.</p>
+
+</div><!-- /collapsible -->
+</div><!-- /collapsible -->
+
 </div><!-- /content -->
 
-<div data-role="footer"  data-position="fixed">
-		<h3>ترجمة قتيبة أقرع</h3>
-	</div><!-- /footer -->
+
+<div data-role="footer" data-theme="b"  data-position="fixed">
+<div data-role="navbar">
+<ul>
+<li> <a href="010.html#one" data-icon="arrow-l" data-iconpos="left" rel="external">الشمس و حفظ الوقت</a> </li>
+	<li><h4> ترجمة قتيبة أقرع</h4></li>
+<li><a href="011.html#one" data-icon="arrow-r" data-iconpos="right" rel="external">الانكسار الجوي</a></li>
+</ul>
+</div><!--/navbar-->
+</div><!-- /footer -->
 </div><!-- /page one --> 
 </body>
 </html>
