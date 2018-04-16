@@ -11,7 +11,15 @@
 	<link rel="stylesheet" href="css/theme.css" />
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery.mobile-1.3.1.min.js"></script>
-
+	 	<script src="js/pinchzoom/pinchzoom.min.js"></script>
+	   <script type="text/javascript">
+    	<!--استطيع عمل زووم لاي عنصر dom -->
+        $(function () {
+            $('div.pinch-zoom').each(function () {
+                new RTP.PinchZoom($(this), {});
+            });
+        })
+    </script>
 </head> 	
 <body> 
 <!-- Start of first page: #one -->
@@ -35,7 +43,7 @@
  <a rel="external" href="007.html"> الانتقال بين أفقي و استوائي </a> </li><li>
 	<a rel="external" href="008.html"> إحداثيات مجرية </a> </li><li>
 	<a rel="external" href="009.html"> إحداثيات بروجية </a> </li><li>
-   <a rel="external" href="009a.html">الرابط بين الإحداثيات المجرية و البروجية</a> </li><li>
+   <a rel="external" href="009a.html">الانتقال بين بروجي و استوائي</a> </li><li>
 <a rel="external" href="010.html">حركة الشمس و ضبط الوقت</a> </li><li>
 	<a rel="external" href="010a.html">القمر</a> </li><li>
 <a rel="external" href="011.html">الإنكسار الجوي</a> </li><li>
@@ -69,14 +77,21 @@
 </P>
 
 <P>النظام الإحداثي الأكثر بساطة هو <B>النظام الأفقي</B>, و الذي يستخدم أفق المكان كدائرة مرجعية له.</p>
- <div class="mikimg"><img src=" images/ar/local-horizon-ar.png" class="mikimg"></div>
- <div class="mikimg"><img src=" images/ar/horiz-azm-alti.png " class="mikimg"></div>
+ <div class="mikimg"><img src=" images/ar/local-horizon-ar.png" class="mikimg"><b><font face="Times New Roman" size="1em">
+(الشكل-16) يختلف أفق المكان بحسب خط عرض الراصد
+</font></b></div>
+ <div class="mikimg"><img src=" images/ar/horiz-azm-alti.png " class="mikimg" ><br /><b><font face="Times New Roman" size="1em">
+(الشكل-17) أفق المكان بحسب الراصد</font></b> </div>
 <p> و أما أقطاب هذه الدائرة فهي نقطتي  <B>السمت</B> فوق رأس الراصد و نقطة  <B>النظير</B> أسفل أقدام الراصد; و تحدد هاتين النقطتين محلياً بشكل خط شاقولي يشكل محور القبة .</P>
- <div class="mikimg"><img src=" images/ar/meridian-ar.png" class="mikimg"></div>
+ <div class="mikimg"><img src=" images/ar/meridian-ar.png" class="mikimg"><br /><b><font face="Times New Roman" size="1em">
+(الشكل-18) السمت و النظير و أفق المكان و دائرة الزوال
+</font></b></div>
 <P>قم برسم  <B>دائرة شاقولية</B> من نقطة السمت إلى النظير و مارة بالنقطة  X.
 </P>
 
-	 <div class="mikimg"><img src=" images/ar/altaz-ar.png" class="mikimg"></div>
+	 <div class="mikimg"><img src=" images/ar/altaz-ar.png" class="mikimg"><b><font face="Times New Roman" size="1em">
+(الشكل-19) عناصر الاحداثيات الافقية
+</font></b></div>
 <p>
 إن <B>الارتفاع</B> <B>(a)</B> للنقطة X هو المسافة الزاوية بين دائرة الأفق و الممثلة بالقوس الشاقولي النازل من النقطة x باتجاه دائرة الأفق.
 و تقاس بقيم ما بين 
@@ -84,17 +99,23 @@
 +90&deg; لنقطة سمت الرأس. و كقيمة بديلة يستخدم 
 , <B>البعد السمتي</B> للنقطة X و هي تساوي
  90&deg; - a.</p>
- <div class="mikimg"><img src=" images/ar/altitude.png" class="mikimg"></div>
+ <div class="mikimg"><img src=" images/ar/altitude.png" class="mikimg"><b><font face="Times New Roman" size="1em">
+(الشكل-20) قياس ارتفاع الأجرام السماوية من الأفق إلى سمت الرأس
+</font></b></div>
 <p>(يستخدم البعض الرمز  h  بدلاً من
  a .) </p>
- <div class="mikimg"><img src=" images/ar/altitude-h-ar.png" class="mikimg"></div>
+ <div class="mikimg"><img src=" images/ar/altitude-h-ar.png" class="mikimg"><b><font face="Times New Roman" size="1em">
+(الشكل-21) استخدام الرمز البديل لقيمة احداثي الارتفاع
+</font></b></div>
 <p>
 إن أي جرمين يملكان قيمة الارتفاع نفسها يقعان على دائرة واحدة تدعى  <B>موازي الارتفاع</B>.
 </P>
 	
 <P>و لتحديد نقطة مرجعية على دائرة الأفق نبحث عن مكان تقاطع المحور الدوراني للأرض مع قبة السماء, و هو اتجاه <B>القطب الشمالي </B>و<B> القطب الجنوبي</B>. 
 الدائرة الشاقولية المارة بهاتين النقطتين ندعوها <B>دائرة الزوال</B>. و عند تقاطعها مع الأفق فإنها تحدد لنا نقطتي الشمال و الجنوب على دائرة الأفق.</p>
- <div class="mikimg"><img src=" images/ar/meridian-ar.png" class="mikimg"></div>
+ <div class="mikimg"><img src=" images/ar/meridian-ar.png" class="mikimg"><b><font face="Times New Roman" size="1em">
+(الشكل-18) تعاريف خاصة بالإحداثيات الأفقية
+</font></b></div>
 <p>
 أي  <B>نقاط الاتجاهات</B>
  (نقطة الشمال هي تلك النقطة القريبة من القطب السماوي الشمالي).
@@ -105,13 +126,21 @@
 <P>تعرف  <B>الزاوية السمتية (Az) </B>لنقطة X بالمسافة الزاوية حول الأفق من نقطة الشمال إلى الدائرة الشاقولية المارة بالجرم x , و يقاس من القيمة  0&deg; و حتى  360&deg; مع اتجاه دوران عقارب الساعة.
 لاحظ كوكب الزهرة و أحد نجوم الدب الأكبر في الشكل التالي و تعرف على إحداثياتها الأفقية.
 </P>
- <div class="mikimg"><img src=" images/ar/determine-azalt-ar.png" class="mikimg"></div>
+ <div class="pinch-zoom">
+ <div class="mikimg"><img src=" images/ar/determine-azalt-ar.png" class="mikimg"><b><font face="Times New Roman" size="1em">
+(الشكل-22) تعريف الزاوية السمتية و الارتفاع لعدة أجرام سماوية مثل الزهرة و نجم القطب
+</font></b></div></div>
 <p>و هذه دائرة الأفق بحسب التقسيم المتداول لحساب الزاوية الساعية التي تكلمنا عنها 
 </p>
- <div class="mikimg"><img src=" images/ar/cardinal-points.png" class="mikimg"></div>
+ <div class="mikimg"><img src=" images/ar/cardinal-points.png" class="mikimg"><b><font face="Times New Roman" size="1em">
+(الشكل-23) نقاط الاتجاهات الاربعة و التقسيم المتداول لحساب الزاوية الساعية
+</font></b></div>
 <P>تذكر بأن  <B>ارتفاع نقطة القطب الشمالي</B> يساوي تماماً <b>العرض</b> لموقع الراصد على سطح الأرض .  و ذلك موضح بالشكل التالي حيث يقع الراصد على خط عرض 40 درجة </P>
- <div class="mikimg"><img src=" images/ar/co-altitude-ar.png" class="mikimg"></div>
-<P>و هذه مقارنة بين الإحداثيات الأفقية و نظام الإحداثيات الجغرافي الأرضي :</P><table class="miktable">
+ <div class="pinch-zoom"> <div class="mikimg"><img src="images/ar/co-altitude-ar.png" class="mikimg"><b><font face="Times New Roman" size="1em">
+(الشكل-24) ارتفاع نقطة القطب و التقسيم المتداول لحساب الزاوية الساعية 
+</font></b></div></div>
+<P>و هذه مقارنة بين الإحداثيات الأفقية و نظام الإحداثيات الجغرافي الأرضي :</P>
+<table class="miktable">
 	<COL WIDTH=164>
 	<COL WIDTH=164>
 	<tr>
@@ -203,7 +232,9 @@
 <p>How far apart did the two objects
 appear? Which was further east?  </P>
 		<div data-role="collapsible" data-content-theme="b" ><h1>الحل</h1>
- <div class="mikimg"><img src=" images/ar/problem3.png" class="mikimg" style="max-width: 100%" /></div>
+ <div class="mikimg"><img src="images/ar/problem3.png" class="mikimg" /><br /><b><font face="Times New Roman" size="1em">
+(الشكل-24) المثلث الكروي حسب معطيات المسألة
+</font></b></div>
   <P class="navy">The difference in azimuth is 14&deg;.</P>
 <P class="navy">Use the cosine rule:</p>
 <div class="que" id="twocent" >cos MS = cos MZ cos ZS + sin MZ sin ZS cos Z <br> cos MS = 0.98
@@ -275,22 +306,42 @@ Galactic coordinates</a> </li><li>
   <h1 class="center mateen">Horizontal &quot;alt-az&quot; Coordinate System </h1>
 </div></div>
 
-
-<P>The location of an object on the sky is fixed by celestial coordinates analogous to the terrestrial latitude/longitude system. </p><p>There are various systems, suitable for different purposes; each system needs a <I>fundamental circle</I> and a <I>fixed point on it</I>.
+<P>The location of an object on the sky is fixed by celestial coordinates analogous to the terrestrial latitude/longitude system. </p>
+<p>There are various systems, suitable for different purposes; each system needs a <I>fundamental circle</I> and a <I>fixed point on it</I>.
 </P>
-<P>The simplest is the <B>horizontal system</B>, which uses the horizon as its fundamental circle. The poles of this
+<P>The simplest is the <B>horizontal system</B>, which uses the horizon as its fundamental circle. </p>
+ <div class="mikimg"><img src=" images/en/local-horizon.png" class="mikimg"><b><font face="Times New Roman" size="1em">
+(Figure-16) Horizon determined relative to observer latitude
+</font></b></div>
+ <div class="mikimg"><img src=" images/en/horiz-azm-alti.png " class="mikimg" ><br /><b><font face="Times New Roman" size="1em">
+(Figure-17) Observer Horizon</font></b> </div>
+<p>The poles of this
 circle are the <B>zenith</B> overhead and the <B>nadir</B> underfoot; these are defined by the local vertical (using a plumb-line or
 similar).
 </P>
+<div class="mikimg"><img src=" images/en/meridian.png" class="mikimg"><b><font face="Times New Roman" size="1em">
+(Figure-18) Defining horizontal elements
+</font></b></div>
 <P>Draw a <B>vertical circle</B> from the zenith to the nadir through object X.
 </P>
 
-	 <div class="mikimg"><img src=" images/ar/altaz.png" class="mikimg"></div>
+	 <div class="mikimg"><img src=" images/en/altaz.png" class="mikimg"><b><font face="Times New Roman" size="1em">
+(Figure-19) Elements of the horizontal coordinates
+</font></b></div>
 <p>
 The <B>altitude</B> <B>(a)</B> of object X is the angular distance along
 the vertical circle from the horizon to X, measured from -90&deg; at nadir to +90&deg; at zenith. Alternatively, the <B>zenith
-distance</B> of X is 90&deg; - a.<BR>(Some authors use  h  instead of
- a .) Any two objects with the same altitude  lie on a small
+distance</B> of X is 90&deg; - a.</p>
+ <div class="mikimg"><img src=" images/en/altitude.png" class="mikimg"><b><font face="Times New Roman" size="1em">
+(Figure-20) Measuring altitude from horizon to azimuth point
+</font></b></div>
+<p>(Some authors use  h  instead of
+ a .) </p>
+
+ <div class="mikimg"><img src=" images/en/altitude-h.png" class="mikimg"><b><font face="Times New Roman" size="1em">
+(Figure-21) using ' h ' instead of ' a '
+</font></b></div>
+<p>Any two objects with the same altitude  lie on a small
 circle called a <B>parallel of altitude</B>.
 </P>
 <P>To fix a point of origin on horizon, <BR>we look at where the spin axis of the Earth intersects the celestial sphere, at
@@ -302,8 +353,17 @@ Celestial Pole). Midway between these are the east and west cardinal points; the
 </P>
 <P>The <B>azimuth (A) </B>of object X is the angular distance around the horizon from the north cardinal point to the vertical circle through X, measured 0&deg;-360&deg; westwards (clockwise).
 </P>
+ <div class="pinch-zoom">
+ <div class="mikimg"><img src=" images/en/determine-azalt.png" class="mikimg"><b><font face="Times New Roman" size="1em">
+(Figure-22) Altitude and Azimuth for many celestial objects 
+</font></b></div></div>
+ <div class="mikimg"><img src=" images/en/cardinal-points.png" class="mikimg"><b><font face="Times New Roman" size="1em">
+(Figure-23) cardinal points division of the horizon circle
+</font></b></div>
 <P>Note that the <B>altitude of the North Celestial Pole</B> is equal to <B>the latitude of the observer</B>.
 </P>
+ <div class="pinch-zoom"> <div class="mikimg"><img src="images/en/co-altitude.png" class="mikimg"><b><font face="Times New Roman" size="1em">
+(Figure-24) altitude of celestial pole depends on observer latitude</font></b></div></div>
 <P>Comparison with the terrestrial system:</P>
 <table class="miktable">
 	 	<COL WIDTH=164>
@@ -399,7 +459,9 @@ Celestial Pole). Midway between these are the east and west cardinal points; the
 <p>How far apart did the two objects
 appear? Which was further east?  </P>
 		<div data-role="collapsible" data-content-theme="b" ><h1>Answer</h1>
- <div class="mikimg"><img src=" images/ar/problem3.png" class="mikimg" style="max-width: 100%" /></div>
+ <div class="mikimg"><img src=" images/en/problem3.png" class="mikimg" style="max-width: 100%" /> <br /><b><font face="Times New Roman" size="1em">
+(Figure-24) Spherical triangle as is.
+</font></b></div>
   <P class="navy">The difference in azimuth is 14&deg;.</P>
 <P class="navy">Use the cosine rule:</p>
 <div class="que">cos MS = cos MZ cos ZS + sin MZ sin ZS cos Z <br> cos MS= 0.98
